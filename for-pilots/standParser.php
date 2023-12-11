@@ -33,7 +33,7 @@ if ($vatsimData !== false) {
 
             // Check if the distance is within the threshold, altitude is below the maximum, and speed is within limits
             if ($distance <= $thresholdDistance && $pilotAltitude <= $maximumAltitude && $pilotSpeed <= $maxSpeed) {
-                var_dump($pilot);
+               //var_dump($pilot);
 
                 $minStandDistance = PHP_INT_MAX; // Initialize minimum stand distance to a large value
                 $closestStand = null; // Initialize closest stand as null
