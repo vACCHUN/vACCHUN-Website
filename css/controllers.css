@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --dark: #100f15;
+  --darkblue: #0066bf;
+  --green: #9abdb6;
+  --lightblue: #3ca3cc;
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+
+header {
+  background-image: url("../img/controllers.png") !important;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  background-color: var(--dark);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.debug {
+  outline: 1px solid red;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.step {
+  font-size: 2em;
+  color: var(--green);
+  text-align: center;
+}
+
+p {
+  color: var(--thumbBG);
+  font-size: 1.1em;
+  text-align: center;
+  justify-content: center;
+}
+
+.controllers {
+  display: grid;
+  grid-template-columns: 17% 17%;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 300px;
+  border-color: var(--darkblue);
+}
+
+
+@media only screen and (max-width: 1621px) {
+  .controllers {
+    grid-template-columns: 20% 20%;
+  }
+  hr {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 971px) {
+  .controllers {
+    grid-template-columns: 40% 40%;
+  }
+  hr {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .controllers {
+    grid-template-columns: 80%;
+  }
+  .controllers .step{
+    order: 0;
+  }
+  .controllers p{
+    order: 1;
+  }
+  hr {
+    display: none;
+  }
+}
+
+#controllers-header {
+  font-size: 3em;
+  color: var(--green);
+  text-align: center;
+}
+
+
+.controllers a {
+  color: var(--darkblue) !important;
+}
+
+#langSwSmall {
+  width: 40px;
+}

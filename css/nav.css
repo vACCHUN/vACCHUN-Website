@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&family=Roboto&display=swap");
+
+:root {
+  --dark: #100f15;
+  --darkblue: #0066bf;
+  --green: #9abdb6;
+  --lightblue: #3ca3cc;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  width: 100%;
+}
+
+#nav-icon {
+  display: none;
+}
+
+.menuitems {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 90%;
+  margin-right: 10px;
+}
+
+nav {
+  z-index: 999999;
+}
+
+.nav-normal {
+  z-index: 999999 !important;
+}
+
+.menuitems a {
+  margin-right: 20px;
+}
+
+nav a {
+  font-family: "Roboto", sans-serif !important;
+  text-transform: uppercase;
+  font-size: 1em !important;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+nav .vacchunlogo {
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 1000 !important;
+}
+
+.menuitem-active {
+  color: var(--darkblue) !important;
+}
+
+.menuitems a {
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.menuitems a:hover {
+  opacity: 1;
+}
+
+.menuitems a::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: var(--darkblue);
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: var(--darkblue);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: -10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1160px) {
+  .vacchunlogo {
+    object-fit: cover;
+    clip-path: inset(44px 0px 0px 0px);
+    height: fit-content;
+    margin-top: -30px !important;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .menuitems {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .menuitems {
+    display: none;
+  }
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+  #nav-icon {
+    display: flex;
+    position: fixed;
+    right: 30px;
+    top: 12px;
+    width: 30px;
+    transition-duration: 300ms;
+  }
+  .color #nav-icon {
+    filter: invert(1);
+  }
+
+  .menuitemsSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -130px;
+  }
+  .menuitemsSmall a {
+    font-size: 1.35em;
+  }
+
+  .vacchunlogoSmall {
+    width: 300px !important;
+  }
+}
+
+#langSw {
+  width: 40px;
+}
+
+.color {
+  background: rgba(193, 204, 225, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 10;
+}
+
+.color img {
+  transition-duration: 300ms;
+}
+
+.color a {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  transition: 300ms;
+}
+
+@media only screen and (min-width: 1160px) {
+  .color {
+    z-index: 999999;
+    height: 60px;
+    
+  }
+  .no-color {
+    height: 90px;
+  }
+
+  .menuitems {
+    width: fit-content;
+    position: fixed;
+    right: 40px;
+  }
+  .langsel {
+    display: flex;
+    align-items: center;
+  }
+  .langsw-div {
+    display: flex;
+    align-items: center;
+  }
+  #langSw {
+    width: 30px;
+  }
+
+  .color .vacchunlogo img {
+    width: 150px;
+  }
+
+  .color .vacchunlogo {
+    position: fixed;
+    top: -25px;
+    object-fit: cover;
+    clip-path: inset(33px 0px 0px 0px);
+  }
+
+  .no-color .vacchunlogo{
+    clip-path: inset(0px 0px 0px 0px) !important;
+    width: 200px !important;
+    height: 126px !important;
+    margin-top: 53px !important;
+    transition-duration: 300ms;
+  }
+}
+
+
+@media only screen and (max-width: 930px) {
+  .color {
+    z-index: 999999;
+    height: 60px;
+  }
+  .menuitems {
+    width: fit-content;
+    position: fixed;
+    right: 40px;
+  }
+  .langsel {
+    display: flex;
+    align-items: center;
+  }
+  .langsw-div {
+    display: flex;
+    align-items: center;
+  }
+  #langSw {
+    width: 30px;
+  }
+
+  .color .vacchunlogo img {
+    width: 150px;
+  }
+
+  .color .vacchunlogo {
+    position: fixed;
+    object-fit: cover;
+    clip-path: inset(33px 0px 0px 0px);
+  }
+}
+
+.no-color {
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 300ms;
+}
+
+.nav-opacity-animation {
+  transition-duration: 1;
+  opacity: 1;
+}
+
+.nav-logo {
+  position: fixed;
+  left: 25px;
+}
+
+.langswitch,
+.calendar {
+  margin: 0px 41px;
+}
+
+.navscdpd {
+  visibility: hidden;
+}
+
+.right,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  /*margin-left: 21px;
+  margin-right: 21px;*/
+  font-size: 1.4em;
+}
+
+#navbar-normal.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+nav img {
+  /*margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;*/
+  width: 200px;
+}
+
+.nav-colored {
+  background-color: transparent;
+}
+
+.nav-small {
+  z-index: 9999999;
+  position: fixed;
+  /*display: flex;*/
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transform-origin: top;
+  height: 0;
+  opacity: 0;
+  transform: scale(1, 0);
+  transition: 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow-y: scroll;
+}
+.nav-small a {
+  color: #fff;
+  margin-bottom: 20px;
+  text-decoration: none !important;
+}
+
+.nav-small #langSwSmall {
+  margin-top: 100px;
+}
+
+.nav-side-img {
+  width: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-inner {
+  display: flex;
+}
+
+#langSw {
+  cursor: pointer;
+}
+
+#nav-close {
+  width: 40px;
+  color: #fff;
+  position: fixed;
+  top: 5px;
+  margin: 0px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* animation */
+
+.nav-opening {
+  display: flex;
+  transform: scale(1, 1);
+  opacity: 1;
+  height: 100vh;
+  transition: 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.menuitemsSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-small {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-height: 850px) {
+  .vacchunlogoSmall {
+    width: 150px !important;
+  }
+}
+
+@media only screen and (max-height: 652px) {
+  .nav-small #langSwSmall {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-height: 580px) {
+  .vacchunlogoSmall {
+    display: none;
+  }
+  .nav-small #langSwSmall {
+    margin-top: 20px;
+  }
+}

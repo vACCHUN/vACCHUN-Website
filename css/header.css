@@ -1,0 +1,59 @@
+:root {
+  --dark: #100f15;
+  --darkblue: #0066bf;
+  --green: #9abdb6;
+  --lightblue: #3ca3cc;
+}
+
+header {
+  background: url("../img/euroscope.png"), lightgray 0% / cover no-repeat;
+  mix-blend-mode: screen;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-position: center center !important;
+}
+
+.header-center {
+  color: var(--green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-center h1 {
+  font-size: 4em;
+  margin: 0px;
+}
+
+.header-center p {
+  font-size: 1.3em;
+  margin: 0px;
+  font-weight: bold;
+  padding: 0px;
+  height: fit-content;
+}
+
+footer {
+  background-color: #13111791;
+  color: #7e7e7e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #0066bf6b;
+}
+footer p {
+  height: fit-content !important;
+  line-height: 0px;
+}

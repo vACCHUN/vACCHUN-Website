@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --dark: #100f15;
+  --darkblue: #0066bf;
+  --green: #9abdb6;
+  --lightblue: #3ca3cc;
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  margin: 0px;
+  padding: 0px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.debug {
+  outline: 1px solid red;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--dark);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 1.3em;
+  color: #fff;
+  padding: 10px 35px;
+  font-weight: 700;
+}
+
+#buttons {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.btn-blue {
+  background: hsla(207, 100%, 50%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(207, 100%, 50%, 1) 0%,
+    hsla(197, 59%, 52%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(207, 100%, 50%, 1) 0%,
+    hsla(197, 59%, 52%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(207, 100%, 50%, 1) 0%,
+    hsla(197, 59%, 52%, 1) 100%
+  );
+}
+
+.ourActivities h1, .ourActivities-small h1{
+  color: var(--green);
+  font-size: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card-container {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  padding: 0px 200px;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  gap: 100px;
+  justify-content: center;
+}
+
+.card-container-small {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 320px;
+  justify-content: center;
+}
+
+.card-container-small .img-circle{
+  margin: 0px !important;
+}
+
+.img-containers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 42px;
+  justify-content: center;
+  align-items: center;
+  height:fit-content;
+  margin-top: -180px;
+}
+
+.cardimg-small img{
+  transform: scale(0.6);
+}
+.cardimg-small{
+  padding: 0px !important;
+  width: 70px;
+  height: 70px;
+  background-color: var(--green) !important;
+  cursor: pointer;
+}
+
+.card {
+  padding: 150px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(45deg, #c3c3c3 0%, #fff 97.2%);
+  box-shadow: 0px 0px 80px 10px rgba(226, 226, 226, 0.1);
+}
+
+.img-circle {
+  background-color: var(--darkblue);
+  padding: 20px;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+  width: 65px;
+  height: 65px;
+}
+
+.img-circle img {
+  width: 60px;
+}
+
+.cardimg-active {
+  background-color: var(--darkblue) !important;
+  transition-duration: 300ms;
+}
+
+.ourActivities-small {
+  display: none;
+}
+
+@media only screen and (max-width: 1170px) {
+  .card-container {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .card-container {
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .card-container {
+    gap: 18px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .ourActivities {
+    display: none;
+  }
+  .ourActivities-small {
+    display: initial;
+  }
+}
+
+p {
+  height: 13vh;
+}
+
+.trainingimg {
+  transform: scale(0.8);
+}
+
+#langSwSmall {
+  margin: 0px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#isLHCCOnline {
+  font-size: 1.3em;
+  color: var(--darkblue);
+  margin-top: 10px;
+}
