@@ -145,19 +145,22 @@ function getStandBySchengen($icao)
 
 function getStandByAvailability()
 {
-    global $StandStatus;
-    try {
-        $stands = [];
-        foreach ($StandStatus->stands() as $stand) {
-            if (!$stand->isOccupied()) {
-                array_push($stands, $stand->getName());
-            }
-        }
-        return $stands;
-    } catch (\Throwable $th) {
-        return false;
-    }
+    global $occupiedStands;
+    global $LHBPStands;
+    $occupiedStandKeys = array_keys($occupiedStands);
+
+    $availableStands = array_filter($LHBPStands, function ($stand) use ($occupiedStandKeys) {
+        return !in_array($stand[0], $occupiedStandKeys);
+    });
+
+    // Extract only the stand identifiers
+    $standIdentifiers = array_map(function ($stand) {
+        return $stand[0];
+    }, $availableStands);
+
+    return $standIdentifiers;
 }
+
 
 function getStandWingspan($standnumber)
 {
@@ -231,6 +234,7 @@ function getStand($cs, $icao, $atyp)
     $byAtyp = getStandsByWingspan($atyp);
     $byAvail = getStandByAvailability();
 
+    //var_dump($byCallsign, $bySchengen, $byAtyp, $byAvail);
     if ($byCallsign && $bySchengen && $byAtyp && $byAvail) {
         $res = array_values(array_intersect($byCallsign, $bySchengen, $byAtyp, $byAvail));
         $res2 = array_values(array_intersect($bySchengen, $byAtyp, $byAvail));

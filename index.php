@@ -38,7 +38,7 @@
     </div>
     <header>
         <script>
-        fetch("https://goaround.today/vACCHUN-Website/isLhccOnline.php", {
+        fetch("./isLhccOnline.php", {
                 method: "POST",
                 headers: {
                 "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",

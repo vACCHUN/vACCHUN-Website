@@ -43,7 +43,7 @@ if ($vatsimData !== false) {
                     $standIdentifier = $stand[0];
                     $standLatitude = $stand[1];
                     $standLongitude = $stand[2];
-                    $standProximity = isset($stand[3]) ? $stand[3] : $defaultStandProximityThreshold;
+                    $standProximity = isset($stand[4]) ? $stand[4] : $defaultStandProximityThreshold;
 
                     // Calculate distance between pilot and stand using haversine formula
                     $standDistance = haversineDistance($standLatitude, $standLongitude, $pilotLatitude, $pilotLongitude);
