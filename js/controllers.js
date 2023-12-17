@@ -2,8 +2,8 @@ import lang from "./lang.js";
 
 var userLang = null;
 
-if (getLanguage("lang")) {
-  userLang = getLanguage("lang");
+if (getLanguage()) {
+  userLang = getLanguage();
 } else {
   userLang = navigator.language || navigator.userLanguage;
 }

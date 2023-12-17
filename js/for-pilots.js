@@ -1,9 +1,8 @@
 import lang from "./lang.js";
-
 var userLang = null;
 
-if (getLanguage("lang")) {
-  userLang = getLanguage("lang");
+if (getLanguage()) {
+  userLang = getLanguage();
 } else {
   userLang = navigator.language || navigator.userLanguage;
 }
@@ -23,14 +22,6 @@ function switchImage() {
   }
 }
 
-/*function switchBg() {
-  if ($metar.includes("OVC075")) {
-    document.header.classList.add("CAVOK");
-  }
-}
-
-switchBg()
-*/
 function applyLanguage() {
   /* NAV */
   document.getElementById("home").textContent = language.nav.home;
