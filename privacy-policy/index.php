@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Adatvédelem // Privacy Policy</title>
-    <script src="../js/privacy-policy.js" type="module" defer></script>
+    <script src="../js/priv-policy.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
     <script src="../js/langCookie.js"></script>
     <link rel="stylesheet" href="../css/privacy-policy.css">
