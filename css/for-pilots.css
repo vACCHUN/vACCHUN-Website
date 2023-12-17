@@ -510,9 +510,11 @@ iframe {
 }
 
 .curr-metar {
-  padding: 30px;
+  padding: 5px;
   width: 100%;
   text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
 }
 
 

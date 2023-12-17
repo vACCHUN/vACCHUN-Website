@@ -6,5 +6,3 @@ function setLanguage(lang) {
 function getLanguage() {
   return localStorage.getItem("lang");
 }
-
-console.log("langc")

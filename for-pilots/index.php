@@ -14,7 +14,6 @@ require_once "./standParser.php";
     <script src="../js/nav.js" type="module" defer></script>
     <script src="../js/chartviewer/chart.js" type="module" defer></script>
     <script src="../js/langCookie.js?v=2"></script>
-
     <link rel="stylesheet" href="../css/for-pilots.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -57,6 +56,7 @@ require_once "./standParser.php";
     </div>
     <header id="header">
         <script>
+            
         const METAR = async () => {
             const APIResponse = await fetch('https://metar.vatsim.net/LHBP');
             const LHBPMetar = await APIResponse.text();
@@ -85,6 +85,8 @@ require_once "./standParser.php";
             }
         }
         METAR();
+
+        
         
         </script>
 
