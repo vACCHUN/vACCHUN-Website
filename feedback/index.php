@@ -7,7 +7,7 @@
     <title>Visszajelzés // Feedback</title>
     <script src="../js/feedback.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
     <link rel="stylesheet" href="../css/feedback.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">

@@ -7,7 +7,7 @@
     <title>Irányítók // Controllers</title>
     <script src="../js/controllers.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
 
     <link rel="stylesheet" href="../css/controllers.css">
     <link rel="stylesheet" href="../css/nav.css">

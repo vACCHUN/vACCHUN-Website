@@ -7,7 +7,7 @@
     <title>Rólunk // About Us</title>
     <script src="../js/about-us.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
     <link rel="stylesheet" href="../css/about-us.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">

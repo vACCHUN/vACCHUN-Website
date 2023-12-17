@@ -7,7 +7,7 @@
     <title>vACCHUN</title>
     <script src="js/index.js" type="module" defer></script>
     <script src="js/nav.js" type="module" defer></script>
-    <script src="js/langCookie.js"></script>
+    <script src="js/langCookie.js?v=2"></script>
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/nav.css">

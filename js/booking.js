@@ -98,7 +98,6 @@ let bookingFields = document.getElementsByClassName("booking-field");
 
 for (let index = 0; index < bookingFields.length; index++) {
   const field = bookingFields[index];
-  console.log(field.children);
 
   field.children[0].addEventListener("focus", () => {
     field.children[1].classList.add("label-up");

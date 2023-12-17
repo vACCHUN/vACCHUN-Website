@@ -7,7 +7,7 @@
     <title>Online Controllers // Online Irányítók</title>
     <script src="../js/online-controllers.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
     <link rel="stylesheet" href="../css/online-controllers.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">

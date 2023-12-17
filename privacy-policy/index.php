@@ -7,7 +7,7 @@
     <title>Adatvédelem // Privacy Policy</title>
     <script src="../js/priv-policy.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
     <link rel="stylesheet" href="../css/privacy-policy.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">

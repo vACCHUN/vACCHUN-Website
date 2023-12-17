@@ -14,7 +14,7 @@ determineDiff();
     <title>Rendezvények // Events</title>
     <script src="../js/events.js" type="module" defer></script>
     <script src="../js/nav.js" type="module" defer></script>
-    <script src="../js/langCookie.js"></script>
+    <script src="../js/langCookie.js?v=2"></script>
 
     <link rel="stylesheet" href="../css/events.css">
     <link rel="stylesheet" href="../css/nav.css">
