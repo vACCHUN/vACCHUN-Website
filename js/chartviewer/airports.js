@@ -41,7 +41,7 @@ const airport = {
     
 }
 const info = {
-    "LHCC": "",
+    "LHCC": "asdasddsds",
     "LHBP": "<h1>Budapest-Ferihegy</h1><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Budapest Liszt Ferenc Nemzetközi Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>",
     "LHDC": "<h1>Debrecen</h1><br><p class='info-text'>This airport is frequently used by Wizz Air Hungary and FlyCoop, and various flight schools, like Pharmaflight and Trener.</p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Debrecen Nemzetközi Repülőtér (DEB)&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>",
     "LHSM": "<h1>Hévíz-Balaton</h1><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Hévíz-Balaton Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>",
@@ -84,6 +84,7 @@ const info = {
 
 const chart = {
     "LHCC": {
+        
         "enroute": {
             "En-route Chart": "../charts/LHCC/enroute/LH_ENR_6_LHCC_ERC_en.pdf",
             "Fauna Chart": "../charts/LHCC/enroute/LH_ENR_6_LHCC_FAUNA_en.pdf",

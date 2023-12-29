@@ -77,7 +77,7 @@ const topbarTexts = document.getElementsByClassName("topbar-text");
 
 function setinfopage(icao) {
   const infopage = document.querySelector("#airport-info");
-  if (icao != false && icao != undefined && icao != "LHCC") {
+  if (icao != false && icao != undefined) {
     infopage.innerHTML = infos[icao];
   } else {
     infopage.innerHTML = "";
@@ -93,9 +93,7 @@ function selectAirport(icao) {
     return;
   }
   airportSelected = icao;
-  airportSelected == "LHCC"
-    ? selectSubmenu("enroute", document.querySelector("#enroutemenu"))
-    : selectSubmenu("info", document.querySelector("#infomenu"));
+  selectSubmenu("info", document.querySelector("#infomenu"));
 
   let aerodrome = false;
   let sid = false;
@@ -129,9 +127,7 @@ function selectAirport(icao) {
   enroute
     ? (enroutemenu.style.display = "flex")
     : (enroutemenu.style.display = "none");
-  airportSelected == "LHCC"
-    ? (infomenu.style.display = "none")
-    : (infomenu.style.display = "flex");
+
 }
 
 selectAirport("LHBP");
