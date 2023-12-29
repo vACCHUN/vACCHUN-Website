@@ -434,7 +434,15 @@ iframe {
   text-wrap: nowrap;
 }
 
+#FIRimg {
+  max-height: 700px;
+  align-self: center;
+}
 
+#airport-info {
+  align-items: center;
+  text-align: center;
+}
 
 .option-input {
   -webkit-appearance: none;

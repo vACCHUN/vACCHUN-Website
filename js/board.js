@@ -53,7 +53,6 @@ function applyLanguage() {
 applyLanguage();
 switchImage();
 
-
 function switchLang() {
   if (language == lang.en) {
     language = lang.hu;
