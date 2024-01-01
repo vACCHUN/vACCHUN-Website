@@ -17,6 +17,7 @@ header {
 ::-webkit-scrollbar {
   width: 11px;
 }
+
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
@@ -28,9 +29,11 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
   border-radius: 6px;
@@ -113,7 +116,10 @@ body {
   margin-top: 40px;
 }
 
-
+a {
+  all: unset;
+  cursor: pointer;
+}
 
 .card-container {
   margin-top: 40px;
@@ -130,7 +136,6 @@ body {
   color: #fff;
 }
 
-
 @media only screen and (max-width: 1720px) {
   .card-container {
     grid-template-columns: auto auto auto auto;
@@ -142,6 +147,7 @@ body {
     grid-template-columns: auto auto auto;
   }
 }
+
 @media only screen and (max-width: 1025px) {
   .card-container {
     grid-template-columns: auto auto;
