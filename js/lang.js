@@ -104,6 +104,14 @@ const lang = {
           title: "Marketing Menedzser - ACCHU07",
           desc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével."
         },
+        UjhelyiDomi: {
+          title: "Webfejlesztő - ACCHU08",
+          desc: "Domi felel a vACCHUN működéséhez szükséges webszolgáltatásokért."
+        },
+        CsorgoCsabi: {
+          title: "Webfejlesztő - ACCHU09",
+          desc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért."
+        },
       }
     },
     privacyPolicy: {
@@ -268,6 +276,14 @@ const lang = {
         GalyassyTamas: {
           title: "Marketing Manager - ACCHU07",
           desc: "Tamás keeps in touch with all partners of vACCHUN."
+        },
+        UjhelyiDomi: {
+          title: "Web Developer - ACCHU08",
+          desc: "Domonkos is responsible for the web services required for the operation of vACCHUN."
+        },
+        CsorgoCsabi: {
+          title: "Web Developer - ACCHU09",
+          desc: "Csaba is responsible for the web services required for the operation of vACCHUN."
         },
       },
     },

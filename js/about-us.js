@@ -78,6 +78,12 @@ function applyLanguage() {
   document.getElementById("GalyassyTamasTitle").textContent = language.aboutUs.staffDescription.GalyassyTamas.title;
   document.getElementById("GalyassyTamasDesc").textContent = language.aboutUs.staffDescription.GalyassyTamas.desc;
 
+  document.getElementById("UjhelyiDomiTitle").textContent = language.aboutUs.staffDescription.UjhelyiDomi.title;
+  document.getElementById("UjhelyiDomiDesc").textContent = language.aboutUs.staffDescription.UjhelyiDomi.desc;
+
+  document.getElementById("CsorgoCsabiTitle").textContent = language.aboutUs.staffDescription.CsorgoCsabi.title;
+  document.getElementById("CsorgoCsabiDesc").textContent = language.aboutUs.staffDescription.CsorgoCsabi.desc;
+
 
 }
 

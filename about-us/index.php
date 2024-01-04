@@ -139,13 +139,39 @@
             <div class="staff-card-trigger" id="staff-card-trigger-ACCHU07">
                 <div class="back">
                     <div class="content">
-                        <p id="GalyassyTamasDesc"> Tomi tartja a kapcsolatot a vACCHUN összes partnerével.</p>
+                        <p id="GalyassyTamasDesc">Tomi tartja a kapcsolatot a vACCHUN összes partnerével.</p>
                     </div>
                 </div>
                 <div class="staff-card" id="ACCHU07">
                     <h2>Galyassy Tamás</h2>
                     <img src="../img/about-us/staff/ACCHU07.jpg">
                     <h3 id="GalyassyTamasTitle">Marketing Menedzser - ACCHU07</h3>
+                </div>
+            </div>
+            <div class="staff-card-trigger" id="staff-card-trigger-ACCHU08">
+                <div class="back">
+                    <div class="content">
+                        <p id="UjhelyiDomiDesc">Domi működteti a vACCHUN működéséhez szükséges webszolgáltatásokat.</p>
+                        <h2><a href="mailto:web@vacchun.hu">web@vacchun.hu</a></h2>
+                    </div>
+                </div>
+                <div class="staff-card" id="ACCHU08">
+                    <h2>Ujhelyi Domonkos</h2>
+                    <img src="../img/about-us/staff/ACCHU08.jpg">
+                    <h3 id="UjhelyiDomiTitle">Webfejlesztő - ACCHU08</h3>
+                </div>
+            </div>
+            <div class="staff-card-trigger" id="staff-card-trigger-ACCHU09">
+                <div class="back">
+                    <div class="content">
+                        <p id="CsorgoCsabiDesc">Csabi működteti a vACCHUN működéséhez szükséges webszolgáltatásokat.</p>
+                        <h2><a href="mailto:web@vacchun.hu">web@vacchun.hu</a></h2>
+                    </div>
+                </div>
+                <div class="staff-card" id="ACCHU09">
+                    <h2>Csörgő Csaba</h2>
+                    <img src="../img/about-us/staff/ACCHU09.png">
+                    <h3 id="CsorgoCsabiTitle">Webfejlesztő - ACCHU09</h3>
                 </div>
             </div>
         </div>

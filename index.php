@@ -18,7 +18,6 @@
 <body>
     <div class="nav-small" id='nav-small'>
         <img id="nav-close" src="img/navclose.svg" alt="Open Menu">
-
         </a>
 
         <div class="menuitemsSmall">
