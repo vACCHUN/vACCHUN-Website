@@ -148,6 +148,7 @@
                     <h3 id="GalyassyTamasTitle">Marketing Menedzser - ACCHU07</h3>
                 </div>
             </div>
+            
             <div class="staff-card-trigger" id="staff-card-trigger-ACCHU08">
                 <div class="back">
                     <div class="content">

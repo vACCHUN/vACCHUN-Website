@@ -61,7 +61,30 @@ function getBudapestEvents($eventData) {
     return $bpEvents;
 }
 
+
 $bpEvents = getBudapestEvents(parseEvents());
+
+
+function getExams() {
+    $exams = [];
+    foreach (getBudapestEvents(parseEvents()) as $key => $event) {
+        if ($event["type"] == "Controller Examination") {
+            array_push($exams, $event);
+        }
+    }
+
+    if (!empty($exams)) {
+        return $exams;
+    }
+
+    return false;
+}
+
+
+if (isset($_POST["getExams"])) {
+    $exams = getExams();
+    echo json_encode($exams);
+} 
 
 
 function getEarliestEvent($eventTitle) {

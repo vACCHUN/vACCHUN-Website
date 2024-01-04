@@ -1,0 +1,9 @@
+<Files "timestamp.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "events.json">
+    Order allow,deny
+    Deny from all
+</Files>

@@ -49,13 +49,38 @@
             document.getElementById("isLHCCOnline").textContent = res ? "Show online controllers" : "We are offline";
             document.getElementById("isLHCCOnline").dataset.online = res ? "true" : "false";
         });
+
+
+        fetch("events/eventParser.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            },
+            body: "getExams=1",
+        })
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            if (!data) {
+                return;
+            }
+
+            if (Object.keys(data).length == 1) {
+                document.getElementById("isExam").textContent = data ? `${data[0].name}` : "";
+            }
+            else {
+                document.getElementById("isExam").textContent = data ? `Multiple exams are taking place soon!` : "";
+            }
+
+        })
         </script>
 
         <div id="header-center" class="header-center">
-            <?php require("online-controllers/onlineControllers.php"); ?>
             <h1 id="headerTitle">vACCHUN</h1>
             <p id="headerText"></p>
             <a id="isLHCCOnline" href="online-controllers/">Loading...</a>
+            <a id="isExam" href="./events/"></a>
             <div id="buttons">
                 <a id="headerEventsBtn" class="btn btn-blue" href="./events/"></a>
             </div>
