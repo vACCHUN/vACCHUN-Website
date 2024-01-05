@@ -93,8 +93,6 @@ body {
   align-items: center;
 }
 
-
-
 .card-container {
   margin-top: 110px;
   margin-bottom: 110px;
@@ -215,4 +213,5 @@ p {
   font-size: 1.3em;
   color: var(--darkblue);
   margin-top: 10px;
+  margin-bottom: 5px;
 }

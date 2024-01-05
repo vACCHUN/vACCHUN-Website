@@ -51,7 +51,7 @@ a {
   text-align: center;
 }
 
-p {
+.controllers p {
   color: var(--thumbBG);
   font-size: 1.1em;
   text-align: center;
