@@ -26,6 +26,7 @@ function switchImage() {
 
 function applyLanguage() {
   /* NAV */
+  /*
   document.getElementById("home").textContent = language.nav.home;
   document.getElementById("homeSmall").textContent = language.nav.home;
   document.getElementById("aboutUs").textContent = language.nav.aboutUs;
@@ -44,12 +45,12 @@ function applyLanguage() {
   document.getElementById("eventsSmall").textContent = language.nav.events;
   /* NAV */
   /* HEADER */
-  document.getElementById("headerTitle").textContent = language.controllers.headerTitle;
+  /*document.getElementById("headerTitle").textContent = language.controllers.headerTitle;
   /* HEADER */
   /* FOOTER */
-   document.getElementById("ppolicy").textContent = language.nav.ppolicy
+   /*document.getElementById("ppolicy").textContent = language.nav.ppolicy
    /* FOOTER */
-  document.getElementById("controllers-header").textContent = language.controllers.header;
+  /*document.getElementById("controllers-header").textContent = language.controllers.header;
   document.getElementById("step1").textContent = language.controllers.step1H;
   document.getElementById("step1P").innerHTML = language.controllers.step1P;
   document.getElementById("step2").textContent = language.controllers.step2H;
@@ -58,10 +59,20 @@ function applyLanguage() {
   document.getElementById("step3P").innerHTML = language.controllers.step3P;
   document.getElementById("step4").textContent = language.controllers.step4H;
   document.getElementById("step4P").innerHTML = language.controllers.step4P;
+  */
+  Object.keys(language.controllers).forEach(function(key) {
+    var element = document.getElementById(key);
+    if (element) {
+        element.innerHTML = language.controllers[key];
+    }
+});
 
-
-
-
+Object.keys(language.nav).forEach(function(key) {
+  var element = document.getElementById(key);
+  if (element) {
+      element.innerHTML = language.nav[key];
+  }
+});
 }
 
 applyLanguage();

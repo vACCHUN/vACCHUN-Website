@@ -43,10 +43,10 @@
         </div>
     </header>
 
-    <h1 id="controllers-header">Hogyan legyél virtuális légiforgalmi irányító?</h1>
+    <h1 id="header">Hogyan legyél virtuális légiforgalmi irányító?</h1>
     <section class="controllers">
         <div class="step">
-            <h2 id="step1"></h2>
+            <h2 id="step1H"></h2>
         </div>
 
         <p id="step1P"></p>
@@ -55,13 +55,13 @@
     <section class="controllers">
         <p id="step2P"></p>
         <div class="step">
-            <h2 id="step2"></h2>
+            <h2 id="step2H"></h2>
         </div>
     </section>
     <hr>
     <section class="controllers">
         <div class="step">
-            <h2 id="step3"></h2>
+            <h2 id="step3H"></h2>
         </div>
 
         <p id="step3P"></p>
@@ -70,11 +70,11 @@
     <section class="controllers">
         <p id="step4P"></p>
         <div class="step">
-            <h2 id="step4"></h2>
+            <h2 id="step4H"></h2>
         </div>
     </section>
     <section>
-        <h1 id="controllers-header">Irányítóink</h1>
+        <h1 id="controllersHeader">Irányítóink</h1>
 
     <nav id="nav-normal">
         <img id="nav-icon" src="../img/nav.svg" alt="Open Menu">

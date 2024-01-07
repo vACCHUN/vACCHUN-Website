@@ -104,12 +104,17 @@ hr {
   }
 }
 
-#controllers-header {
+#header {
   font-size: 3em;
   color: var(--green);
   text-align: center;
 }
 
+#controllersHeader {
+  font-size: 3em;
+  color: var(--green);
+  text-align: center;
+}
 
 .controllers a {
   color: var(--darkblue) !important;

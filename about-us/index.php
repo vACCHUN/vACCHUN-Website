@@ -46,22 +46,22 @@
         <h1 id="introduction">Bemutatkozás</h1>
         <div class="content">
             <div id="whoAreWe">
-                <h2 id="who-are-we-title"></h2>
-                <p id="who-are-we-txt"></p>
+                <h2 id="whoAreWeTitle"></h2>
+                <p id="whoAreWeTxt"></p>
             </div>
             <div id="whyChooseUs">
-                <h2 id="why-choose-us-title"></h2>
-                <p id="why-choose-us-txt"></p>
+                <h2 id="whyChooseUsTitle"></h2>
+                <p id="whyChooseUsTxt"></p>
             </div>
-            <div id="about-the-training">
-                <h2 id="about-the-training-title"></h2>
-                <p id="about-the-training-txt"></p>
+            <div id="aboutTheTraining">
+                <h2 id="aboutTheTrainingTitle"></h2>
+                <p id="aboutTheTrainingTxt"></p>
             </div>
         </div>
     </section>
 
     <section class="socialmedia">
-        <h1 id="socialmedia">Közösség</h1>
+        <h1 id="socialMedia">Közösség</h1>
         <div class="socialmedia-container">
             <a href="https://discord.gg/DAZR36c" class="discord"><img class="socialmedia-icon" src="../img/about-us/socialmedia/discord.svg" alt="Discord"></a>
             <a href="https://www.facebook.com/vacchun" class="facebook"><img class="socialmedia-icon" src="../img/about-us/socialmedia/facebook.svg" alt="Discord"></a>

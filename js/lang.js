@@ -69,50 +69,35 @@ const lang = {
     aboutUs: {
       headerTitle: "Rólunk",
       introduction: "Bemutatkozás",
-      whoAreWe: {
-        title:"Kik vagyunk mi?",
-        txt: "A vACCHUN a VATSIM (Virtual Air Traffic Simulation Network) magyar divíziója. Csapatunk 2001-ben állt össze és azóta is lelkesen kezeli a gépeket és biztosít professzionális irányítást a hálózaton. Csapatunk jelenleg 17 főből áll, de a képzéseinkre folyamatosan jelentkező újoncokkal egyre csak bővül. Sok-sok izgalmas eseményt szerveztünk, kezdve az emlékezetes CityLinkektől, az élő találkozókig külföldi kollégáinkkal. Igyekszünk ezeket a jövőben is így folytatni.",
-      },
-      whyChooseUs: {
-        title: "Miért a vACCHUN?",
-        txt: "Ha egy szűk családias körre vágysz, akkor itt az összetartó kis csapatunkban ezt meglelheted. Ha a profizmust keresed, akkor a magyar légiforgalmi irányítással mindennap érintkező kollégáink mellett jó helyed lesz. Emellett egész csapatunk azon dolgozik, hogy minél közelebb vigyük a valósághoz az irányítást és már csak a repülőtér hiányozzon az ablakodból. Évente akár többször is összejövünk hivatalos rendezvényeken, de csapatunk nagy része ezen kívül is aktívan tartja a kapcsolatot egymással"
-      },
-      aboutTheTraining: {
-        title: "Hogyan zajlik a képzés?",
-        txt: "A képzést az oktatóink végzik. Ők mindig rendelkezésedre állnak, ha kérdésed van és a legjobb tudásuk szerint képeznek ki téged a feladatra. A képzés legelején egy elméleti tananyagot kell elsajátítanod, ezután pedig ki kell töltened egy belépőtesztet. Innentől kezdődik meg a gyakorlati képzésed, amely során a EuroScope szoftvert használva ismerheted meg a légiforgalmi irányítás sajátosságait. A gyakorlati képzés végén egy másfél órás vizsga keretein belül kell bizonyítanod, hogy megállod a helyed a toronyban, csúcsforgalomban is. A vizsga sikeres teljesítése után lesz jogosultságod csatlakozni a hálózatra, mint Budapest Delivery, Ground vagy Tower. Amennyiben többre vágysz, továbbképzés keretein belül lesz lehetőséged továbbhaladni, ahol kezdetben Budapest körzeti légterét, majd Magyarország teljes légterét tudod irányítani.",
-      },
+      whoAreWeTitle: "Kik vagyunk mi?",
+      whoAreWeTxt: "A vACCHUN a VATSIM (Virtual Air Traffic Simulation Network) magyar divíziója. Csapatunk 2001-ben állt össze és azóta is lelkesen kezeli a gépeket és biztosít professzionális irányítást a hálózaton. Csapatunk jelenleg 17 főből áll, de a képzéseinkre folyamatosan jelentkező újoncokkal egyre csak bővül. Sok-sok izgalmas eseményt szerveztünk, kezdve az emlékezetes CityLinkektől, az élő találkozókig külföldi kollégáinkkal. Igyekszünk ezeket a jövőben is így folytatni.",
+      whyChooseUsTitle: "Miért a vACCHUN?",
+      whyChooseUsTxt: "Ha egy szűk családias körre vágysz, akkor itt az összetartó kis csapatunkban ezt meglelheted. Ha a profizmust keresed, akkor a magyar légiforgalmi irányítással mindennap érintkező kollégáink mellett jó helyed lesz. Emellett egész csapatunk azon dolgozik, hogy minél közelebb vigyük a valósághoz az irányítást és már csak a repülőtér hiányozzon az ablakodból. Évente akár többször is összejövünk hivatalos rendezvényeken, de csapatunk nagy része ezen kívül is aktívan tartja a kapcsolatot egymással.",
+      aboutTheTrainingTitle: "Hogyan zajlik a képzés?",
+      aboutTheTrainingTxt: "A képzést az oktatóink végzik. Ők mindig rendelkezésedre állnak, ha kérdésed van és a legjobb tudásuk szerint képeznek ki téged a feladatra. A képzés legelején egy elméleti tananyagot kell elsajátítanod, ezután pedig ki kell töltened egy belépőtesztet. Innentől kezdődik meg a gyakorlati képzésed, amely során a EuroScope szoftvert használva ismerheted meg a légiforgalmi irányítás sajátosságait. A gyakorlati képzés végén egy másfél órás vizsga keretein belül kell bizonyítanod, hogy megállod a helyed a toronyban, csúcsforgalomban is. A vizsga sikeres teljesítése után lesz jogosultságod csatlakozni a hálózatra, mint Budapest Delivery, Ground vagy Tower. Amennyiben többre vágysz, továbbképzés keretein belül lesz lehetőséged továbbhaladni, ahol kezdetben Budapest körzeti légterét, majd Magyarország teljes légterét tudod irányítani.",
       theStaff: "Vezetőség",
       socialMedia: "Közösség",
-      staffDescription: {
-        SuleBalazs: {
-          title: "Igazgató - ACCHU01",
-          desc: "Balázs a VACC általános működéséért felel, ő szervezi és koordinálja az összes részleg munkáját, valamint a tagsági kérdésekben is ő az illetékes, intézi az irányítók felvételét és ellenőrzi a kollégák aktivitását a hálózaton.",
-        },
-        BoziBence: {
-          title: "Képzési Igazgató - ACCHU02",
-          desc: "Bence ügyel a képzések szervezésére, pilóta és ATC oldalon egyaránt."
-        },
-        GrobPeter: {
-          title: "Rendezvény szervező - ACCHU03",
-          desc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
-        },
-        CsernakGergely: {
-          title: "EuroScope fejlesztő - ACCHU06",
-          desc: "Gergő a EuroScope kliens fejlesztője, melyet világszerte használnak a hálózatos irányításhoz.",
-        },
-        GalyassyTamas: {
-          title: "Marketing Menedzser - ACCHU07",
-          desc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével."
-        },
-        UjhelyiDomi: {
-          title: "Webfejlesztő - ACCHU08",
-          desc: "Domi felel a vACCHUN működéséhez szükséges webszolgáltatásokért."
-        },
-        CsorgoCsabi: {
-          title: "Webfejlesztő - ACCHU09",
-          desc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért."
-        },
-      }
+
+        SuleBalazsTitle: "Igazgató - ACCHU01",
+        SuleBalazsDesc: "Balázs a vACC általános működéséért felel, ő szervezi és koordinálja az összes részleg munkáját, valamint a tagsági kérdésekben is ő az illetékes, intézi az irányítók felvételét és ellenőrzi a kollégák aktivitását a hálózaton.",
+
+        BoziBenceTitle: "Képzési Igazgató - ACCHU02",
+        BoziBenceDesc: "Bence ügyel a képzések szervezésére.",
+
+        GrobPeterTitle: "Rendezvény szervező - ACCHU03",
+        GrobPeterDesc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
+
+        CsernakGergelyTitle: "EuroScope fejlesztő - ACCHU06",
+        CsernakGergelyDesc: "Gergő a EuroScope kliens fejlesztője, melyet világszerte használnak a hálózatos irányításhoz.",
+
+        GalyassyTamasTitle: "Marketing Menedzser - ACCHU07",
+        GalyassyTamasDesc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével.",
+
+        UjhelyiDomiTitle: "Webfejlesztő - ACCHU08",
+        UjhelyiDomiDesc: "Domi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
+
+        CsorgoCsabiTitle: "Webfejlesztő - ACCHU09",
+        CsorgoCsabiDesc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
     },
     privacyPolicy: {
       headerTitle: "Adatvédelem",
@@ -155,7 +140,8 @@ const lang = {
       step3H: "3. lépés",
       step3P: "A <a target='_blank' href='http://euroscope.hu/'>EuroScope</a> Csernák Gergely által készített légiforgalmi irányító radarszoftver, amely segítségével a hálózaton kezeljük Magyarország légiforgalmát. Erre az Európa szerte használt szoftverre lesz szükséged a képzés megkezdéséhez.",
       step4H: "4. lépés",
-      step4P: "Mostmár csak a jelentkezés maradt hátra! Ehhez keresd fel Balázst a <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> email címen. Azonban fontos megjegyezni, hogy a képzésnek alapfeltétele a legalább középszinten beszélt angol nyelvtudás, emellett bármilyen repüléssel kapcsolatos tapasztalat is előnyt jelent. Amennyiben felmerült bármilyen kérdésed, bátran keress minket <a href='http://176.241.41.63/vACCHUN-Website/about-us#theStaff'>emailben!</a>"
+      step4P: "Mostmár csak a jelentkezés maradt hátra! Ehhez keresd fel Balázst a <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> email címen. Azonban fontos megjegyezni, hogy a képzésnek alapfeltétele a legalább középszinten beszélt angol nyelvtudás, emellett bármilyen repüléssel kapcsolatos tapasztalat is előnyt jelent. Amennyiben felmerült bármilyen kérdésed, bátran keress minket <a href='http://176.241.41.63/vACCHUN-Website/about-us#theStaff'>emailben!</a>",
+      controllersHeader: "Irányítóink"
     },
     feedback: {
       headerTitle: "Visszajelzés",
@@ -241,51 +227,35 @@ const lang = {
     aboutUs: {
       headerTitle: "About us",
       introduction: "Introduction",
-      whoAreWe: {
-        title:"Who are we?",
-        txt: "vACCHUN is the Hungarian division of VATSIM. Our team established in 2001, is controllig the virtual planes and provide professional air traffic control services ever since. We are currently consist of 17 people, but that number is growing as new trainees join us. We organize a lot of exciting events, like CityLinks and live events.",
-      },
-      whyChooseUs: {
-        title: "Why us?",
-        txt: "If you're looking for a small group of aviation enthusiasts, who love controlling, then you're at the right place. If you're looking for professionalism, than you will most likely enjoy controlling here, along our colleagues, who are in touch with the real air traffic controllers every day. The whole team is working on bringing the air traffic controlling and aviation closer to you."
-      },
-      aboutTheTraining: {
-        title: "How does the training process work?",
-        txt: "The training is conducted by our instructors. They are always available to you if you have questions and they will train you to the best of their knowledge. At the beginning of the training, you need to master the theoretical material, and then you have to complete the entry exam. From this point on, your practical training begins, during which you'll become familiar with the specifics of air traffic control using the EuroScope software. At the end of the practical training, during your one-and-a-half-hour exam, you must demonstrate that you can handle the tower even during peak traffic. Upon successful completion of the exam, you'll be eligible to join the network as Budapest Delivery, Ground, or Tower. Shortly after your exam, you'll have the opportunity for further advancement through further training, where you'll initially be able to control Budapest's local airspace (TMA) and eventually the entire airspace of Hungary.",
-      },
+      whoAreWeTitle: "Who are we?",
+      whoAreWeTxt: "vACCHUN is the Hungarian division of VATSIM. Our team established in 2001, is controllig the virtual planes and provide professional air traffic control services ever since. We are currently consist of 17 people, but that number is growing as new trainees join us. We organize a lot of exciting events, like CityLinks and live events.",
+      whyChooseUsTitle: "Why us?",
+      whyChooseUsTxt: "If you're looking for a small group of aviation enthusiasts, who love controlling, then you're at the right place. If you're looking for professionalism, than you will most likely enjoy controlling here, along our colleagues, who are in touch with the real air traffic controllers every day. The whole team is working on bringing the air traffic controlling and aviation closer to you.",
+      aboutTheTrainingTitle: "How does the training work?",
+      aboutTheTrainingTxt: "The training is conducted by our instructors. They are always available to you if you have questions and they will train you to the best of their knowledge. At the beginning of the training, you need to master the theoretical material, and then you have to complete the entry exam. From this point on, your practical training begins, during which you'll become familiar with the specifics of air traffic control using the EuroScope software. At the end of the practical training, during your one-and-a-half-hour exam, you must demonstrate that you can handle the tower even during peak traffic. Upon successful completion of the exam, you'll be eligible to join the network as Budapest Delivery, Ground, or Tower. Shortly after your exam, you'll have the opportunity for further advancement through further training, where you'll initially be able to control Budapest's local airspace (TMA) and eventually the entire airspace of Hungary.",
       socialMedia: "Community",
       theStaff: "Staff",
 
-      staffDescription: {
-        SuleBalazs: {
-          title: "Director - ACCHU01",
-          desc: "Balazs is responsible for the general operation, arrange and coordinate the entire VACCHUN organization. He also arranges the recruitment of the new members and controls the activity of colleagues on the network.",
-        },
-        BoziBence: {
-          title: "Director of Training Department - ACCHU02",
-          desc: "Bence is responsible for organizing the trainings for pilots and ATC, as well."
-        },
-        GrobPeter: {
-          title: "Event Coordinator - ACCHU03",
-          desc: "Peter coordinates the events and programs of vACCHUN.",
-        },
-        CsernakGergely: {
-          title: "EuroScope Developer - ACCHU06",
-          desc: "Gergő is the developer of EuroScope client that is used worldwide for air traffic controlling.",
-        },
-        GalyassyTamas: {
-          title: "Marketing Manager - ACCHU07",
-          desc: "Tamás keeps in touch with all partners of vACCHUN."
-        },
-        UjhelyiDomi: {
-          title: "Web Developer - ACCHU08",
-          desc: "Domonkos is responsible for the web services required for the operation of vACCHUN."
-        },
-        CsorgoCsabi: {
-          title: "Web Developer - ACCHU09",
-          desc: "Csaba is responsible for the web services required for the operation of vACCHUN."
-        },
-      },
+        SuleBalazsTitle: "Director - ACCHU01",
+        SuleBalazsDesc: "Balazs is responsible for the general operation, arrange and coordinate the entire vACCHUN organization. He also arranges the recruitment of the new members and controls the activity of colleagues on the network.",
+
+        BoziBenceTitle: "Director of Training Department - ACCHU02",
+        BoziBenceDesc: "Bence is responsible for organizing the trainings ATC.",
+
+        GrobPeterTitle: "Event Coordinator - ACCHU03",
+        GrobPeterDesc: "Peter coordinates the events and programs of vACCHUN.",
+
+        CsernakGergelyTitle: "EuroScope Developer - ACCHU06",
+        CsernakGergelyDesc: "Gergő is the developer of EuroScope client that is used worldwide for air traffic controlling.",
+
+        GalyassyTamasTitle: "Marketing Manager - ACCHU07",
+        GalyassyTamasDesc: "Tamás keeps in touch with all partners of vACCHUN.",
+
+        UjhelyiDomiTitle: "Web Developer - ACCHU08",
+        UjhelyiDomiDesc: "Domonkos is responsible for the web services required for the operation of vACCHUN.",
+
+        CsorgoCsabiTitle: "Web Developer - ACCHU09",
+        CsorgoCsabiDesc: "Csaba is responsible for the web services required for the operation of vACCHUN.",
     },
     privacyPolicy: {
       headerTitle: "Privacy Policy",
@@ -328,7 +298,8 @@ const lang = {
       step3H: "Step 3",
       step3P: "<a target='_blank' href='http://euroscope.hu/'>EuroScope.</a> The controlling client made by Gergely Csernák, is widely used across Europe. You'll need this piece of software. Don't worry, it's completely free :)",
       step4H: "Step 4",
-      step4P: "All you have to do now is to send an email! For this, contact Balázs at <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> Be aware, that you'll need basic English, and any aviation-related knowledge is preferred. If you have any questions, feel free to reach out on one of our <a href='http://176.241.41.63/vACCHUN-Website/about-us#theStaff'>contacts!</a>"
+      step4P: "All you have to do now is to send an email! For this, contact Balázs at <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> Be aware, that you'll need basic English, and any aviation-related knowledge is preferred. If you have any questions, feel free to reach out on one of our <a href='http://176.241.41.63/vACCHUN-Website/about-us#theStaff'>contacts!</a>",
+      controllersHeader: "Our controllers"
     },
     feedback: {
       headerTitle: "Feedback",

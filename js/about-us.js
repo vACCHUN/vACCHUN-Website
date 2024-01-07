@@ -24,7 +24,7 @@ function switchImage() {
 }
 
 function applyLanguage() {
-  /* NAV */
+  /* NAV 
   document.getElementById("home").textContent = language.nav.home;
   document.getElementById("homeSmall").textContent = language.nav.home;
   document.getElementById("aboutUs").textContent = language.nav.aboutUs;
@@ -41,15 +41,13 @@ function applyLanguage() {
   document.getElementById("feedbackSmall").textContent = language.nav.feedback;
   document.getElementById("events").textContent = language.nav.events;
   document.getElementById("eventsSmall").textContent = language.nav.events;
-  /* NAV */
-  /* HEADER */
-  document.getElementById("headerTitle").textContent = language.aboutUs.headerTitle;
-  /* HEADER */
-  /* FOOTER */
-  document.getElementById("ppolicy").textContent = language.nav.ppolicy
-  /* FOOTER */
   
-  /* Introduction */
+  document.getElementById("headerTitle").textContent = language.aboutUs.headerTitle;
+ 
+  document.getElementById("ppolicy").textContent = language.nav.ppolicy
+  FOOTER */
+  
+  /* Introduction *//*
   document.getElementById("introduction").textContent = language.aboutUs.introduction;
   document.getElementById("who-are-we-title").textContent = language.aboutUs.whoAreWe.title;
   document.getElementById("who-are-we-txt").textContent = language.aboutUs.whoAreWe.txt;
@@ -83,8 +81,21 @@ function applyLanguage() {
 
   document.getElementById("CsorgoCsabiTitle").textContent = language.aboutUs.staffDescription.CsorgoCsabi.title;
   document.getElementById("CsorgoCsabiDesc").textContent = language.aboutUs.staffDescription.CsorgoCsabi.desc;
+  */
+ 
+  Object.keys(language.aboutUs).forEach(function(key) {
+    var element = document.getElementById(key);
+    if (element) {
+        element.innerHTML = language.aboutUs[key];
+    }
+});
 
-
+Object.keys(language.nav).forEach(function(key) {
+  var element = document.getElementById(key);
+  if (element) {
+      element.innerHTML = language.nav[key];
+  }
+});
 }
 
 applyLanguage();
