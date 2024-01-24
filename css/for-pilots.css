@@ -17,10 +17,6 @@ body {
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-.CAVOK {
-  background-image: url("../img/twr/cavok.png") !important;
-}
-
 .FEW {
   background-image: url("../img/twr/few.png") !important;
 }
@@ -550,5 +546,32 @@ iframe {
   }
 }
 
-
-
+@media only screen and (min-width: 2000px) {
+  .CAVOK {
+    background-image: url("../img/twr/high-res/cavok.png") !important;
+  }
+  
+  .FEW {
+    background-image: url("../img/twr/high-res/few.png") !important;
+  }
+  
+  .SCT {
+    background-image: url("../img/twr/high-res/sct.png") !important;
+  }
+  
+  .BKN {
+    background-image: url("../img/twr/high-res/bkn.png") !important;;
+  }
+  
+  .OVC {
+    background-image: url("../img/twr/high-res/ovc.png") !important;;
+  }
+  
+  .RA {
+    background-image: url("../img/twr/high-res/storm.png") !important;;
+  }
+  
+  .SNOW {
+    background-image: url("../img/twr/high-res/snow.png") !important;;
+  }
+}

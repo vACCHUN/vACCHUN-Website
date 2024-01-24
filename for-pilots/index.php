@@ -74,18 +74,19 @@ require_once "./standParser.php";
             if (LHBPMetar.includes("BKN")) {
                 document.getElementById("header").classList.add("BKN");
             }
-            if (LHBPMetar.includes("OVC")) {
+            if (LHBPMetar.includes("OVC", "aaa")) {
                 document.getElementById("header").classList.add("OVC");
             }
             if (LHBPMetar.includes("RA")) {
                 document.getElementById("header").classList.add("RA");
             }
-            if (LHBPMetar.includes("SN||SP||SW||SG||SHS")) {
+            if (LHBPMetar.includes("SN")) {
                 document.getElementById("header").classList.add("SNOW");
             }
         }
         METAR();
-
+        /*  to be added: SNOW:"SP" "SW" "SG" "SHS"
+            RA: "FG" */
         
         
         </script>

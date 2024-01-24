@@ -9,7 +9,16 @@ const lang = {
       feedback: "Visszajelzés",
       contactUs: "Kapcsolat",
       events: "Rendezvények",
-      ppolicy: "Adatvédelem"
+      ppolicy: "Adatvédelem",
+      homeSmall: "Kezdőlap",
+      aboutUsSmall: "Rólunk",
+      forPilotsSmall: "Pilótáknak",
+      bookingSmall: "Foglalás",
+      controllersSmall: "Irányítók",
+      feedbackSmall: "Visszajelzés",
+      contactUsSmall: "Kapcsolat",
+      eventsSmall: "Rendezvények",
+      ppolicySmall: "Adatvédelem"
     },
     header: {
       headerText: "Simming on the next level",
@@ -167,7 +176,16 @@ const lang = {
       feedback: "Feedback",
       contactUs: "Contact Us",
       events: "Events",
-      ppolicy: "Privacy Policy"
+      ppolicy: "Privacy Policy",
+      homeSmall: "Home",
+      aboutUsSmall: "About us",
+      forPilotsSmall: "For pilots",
+      bookingSmall: "Booking",
+      controllersSmall: "Controllers",
+      feedbackSmall: "Feedback",
+      contactUsSmall: "Contact Us",
+      eventsSmall: "Events",
+      ppolicySmall: "Privacy Policy"
     },
     header: {
       headerText: "Simming on the next level",
