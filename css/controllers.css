@@ -123,3 +123,73 @@ hr {
 #langSwSmall {
   width: 40px;
 }
+
+.ourControllers {
+  padding: 0px 50px;
+  display: grid;
+  gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.controller-card {
+  padding: 20px;
+  background: linear-gradient(45deg, #c3c3c3 0%, #fff 97.2%);
+  box-shadow: 0px 0px 80px 10px rgba(226, 226, 226, 0.1);
+  cursor: pointer;
+  max-height: 50px;
+  transition-duration: 300ms;
+  max-width: 250px;
+
+}
+.controller-card h1{
+  padding: 0px;
+  margin: 0px;
+}
+
+.controller-card .hideable {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.controller-card:hover {
+  max-height: 800px;
+  transition-duration: 450ms;
+}
+
+.controller-card:hover .hideable {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 150ms;
+  transition-duration: 300ms;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hideable table {
+  vertical-align: middle;
+  margin-top: 20px;
+  width: 180px;
+}
+
+.hideable img {
+  width: 20px;
+  margin: auto;
+}
+
+.hideable td {
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.propertyHeader {
+  font-weight: bold;
+}
+
+.property {
+  color: #000000d6;
+}
+
+

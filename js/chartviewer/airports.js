@@ -220,11 +220,18 @@ const chart = {
             "ADC": "../charts/LHNY/aerodrome/LH_AD_2_LHNY_ADC_en.pdf"
         },
         "approach": {
-            "RNAV Y 18": "../charts/LHNY/approach/LH_AD_2_LHNY_RNAV_Y_18_en.pdf",
-            "RNAV Y 36": "../charts/LHNY/approach/LH_AD_2_LHNY_RNAV_Y_36_en.pdf",
-            "RNAV Z 18": "../charts/LHNY/approach/LH_AD_2_LHNY_RNAV_Z_18_en.pdf",
-            "RNAV Z 36": "../charts/LHNY/approach/LH_AD_2_LHNY_RNAV_Z_36_en.pdf",
+            "RNP Y 18": "../charts/LHNY/approach/LH_AD_2_LHNY_RNP_Y_18_en.pdf",
+            "RNP Y 36": "../charts/LHNY/approach/LH_AD_2_LHNY_RNP_Y_36_en.pdf",
+            "RNP Z 18": "../charts/LHNY/approach/LH_AD_2_LHNY_RNP_Z_18_en.pdf",
+            "RNP Z 36": "../charts/LHNY/approach/LH_AD_2_LHNY_RNP_Z_36_en.pdf",
             "VAC": "../charts/LHNY/approach/LH_AD_2_LHNY_VAC_en.pdf"
+        },
+        "sid": {
+            "18": "../charts/LHNY/sid/LH_AD_2_LHNY_SID_18_en.pdf",
+            "36": "../charts/LHNY/sid/LH_AD_2_LHNY_SID_36_en.pdf",
+        },
+        "star": {
+            "18 - 36": "../charts/LHNY/star/LH_AD_2_LHNY_STAR_1836_en.pdf"
         }
     },
     "LHBC": {

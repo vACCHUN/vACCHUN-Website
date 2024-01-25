@@ -159,9 +159,6 @@ const lang = {
       feedbackFreetext: "Mik voltak a tapasztalataid az irányítással kapcsolatban?",
       feedbackSubmit: "Küldés",
     },
-    board: {
-      headerTitle: "Fejlesztés folyamatban, #soon :)",
-    },
     onlineControllers: {
       headerTitle: "Online Irányítók",
     }
@@ -302,7 +299,7 @@ const lang = {
         txt: "<ul><li>We treat the personal data you provide as confidential, and only designated vACCHUN employees can access them. Without your prior information and consent, except for mandatory data provision based on legal requirements, we do not disclose the data to third parties.</li><li>The provided data is stored electronically on vACCHUN's rented server, operated by Viacom Informatikai Kereskedelmi és Szolgáltató Kft. (8 Gyár Street, 2225 Üllő). We apply protective measures during data processing to prevent unauthorized access to personal data, unauthorized modification of data, and ensure auditability in all areas.</li><li>If you wish to object to data processing, as per relevant regulations, vACCHUN will examine your objection within 15 days and make a decision on its validity. We will inform you in writing about the decision. If the objection is justified, we will cease data processing, lock the data, and inform all concerned parties of the measures taken.</li><li>Upon request, we provide information about all your personal data managed by us, as well as information related to their processing. We do not charge a fee for providing copies of the data.</li><li>You can request the correction, amendment, or supplementation of your personal data if they are inaccurate, incorrect, or incomplete.</li><li>Upon your request, we restrict data processing if:</li><ul><li>You dispute the accuracy of the data.</li><li>Data processing is unlawful, but you request restriction instead of deletion.</li><li>The purpose of data processing has ceased, but you request the data for legal claims, enforcement, or defense.</li><li>You objected to data processing, and the objection is under review. We will inform you in writing about lifting the restriction.</li></ul><li>Upon your request, we delete the data if:</li><ul><li>Processing is unlawful.</li><li>The purpose of data processing has ceased, or further processing is not necessary to achieve the purpose.</li><li>You withdraw your consent, and there is no other legal basis for data processing.</li><li>Data deletion is ordered by law, authorities, or a court.</li></ul><li>Data Portability: If requested, we provide your personal data in a structured, widely used, machine-readable format or, if technically feasible, transmit them to another data controller (e.g., another VACC), or ensure transmission. Data transmission or transfer cannot be guaranteed if the data must be deleted.</li><li>We inform you that, due to unlawful data processing resulting in damage or infringement of privacy rights, you may claim compensation or damages.</li><li>We will process requests for the enforcement of rights as quickly as possible but no later than within 15 days from submission. We will inform you in writing about the decision at the contact information you provided.</li></ul>Information related to the enforcement of rights may be delayed, restricted, or omitted for reasons specified by law, proportionate to the intended purpose.",
       },
       official: {
-        title: "Data Protection Officer.",
+        title: "Data Protection Officer",
         txt: "Due to the nature of vACCHUN's activities, it is not obligated to appoint a Data Protection Officer. For matters related to this, you can reach us at <a href='mailto:info@vacchun.hu'>info@vacchun.hu</a>.",
       }
     },
@@ -325,9 +322,6 @@ const lang = {
       feedbackPositionOther: "Other - Please Specify Below",
       feedbackFreetext: "What were your impressions about the session?",
       feedbackSubmit: "Submit",
-    },
-    board: {
-      headerTitle: "Under construction, #soon :)",
     },
     onlineControllers: {
       headerTitle: "Online Controllers",

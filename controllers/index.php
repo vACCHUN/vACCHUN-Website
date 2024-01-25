@@ -75,6 +75,121 @@
     </section>
     <section>
         <h1 id="controllersHeader">Irányítóink</h1>
+        <div class="ourControllers">
+            <?php 
+            $controllerData = file_get_contents('https://vacchun.poci.hu/api/controllers');
+            if ($controllerData) {
+                $controllerData = json_decode($controllerData, true);
+
+                foreach ($controllerData as $k => $v) {
+                    $headerBottom = "";
+                    $sectorsText = "";
+                    $remarkText = $v["atc_remark"];
+                    if ($v["solo"] == null) {
+                        $headerBottom = $v["rating"]["name"];
+                    } else {
+                        $headerBottom = "SOLO";
+                    }
+
+                    foreach ($v["sectors"] as $kS => $sector) {
+                        $sectorsText .= $sector["id"] . ", ";
+                    }
+                    $sectorsText = rtrim($sectorsText, ', ');
+                    if (strlen($sectorsText) == 0) {
+                        $sectorsText = "LHBP";
+                    }
+
+                    if ($v["atc_remark"] == null) {
+                        $remarkText = "None";
+                    } 
+
+                    
+
+
+                    echo "<div class='controller-card'>
+                    <h1>{$v["vatsim_id"]}</h1>
+                    <span>{$headerBottom}</span>
+    
+                    <div class='hideable'>
+                        <table>
+                            <tr>
+                                <td><img src='../img/controllers/cid.svg' alt=''> </td>
+                                <td>
+                                    <span class='propertyHeader'>CID</span>
+                                    <br>
+                                    <span class='property'>{$v["vatsim_id"]}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src='../img/controllers/rating.svg' alt=''> </td>
+                                <td>
+                                    <span class='propertyHeader'>Rating</span>
+                                    <br>
+                                    <span class='property'>{$v["rating"]["name"]}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src='../img/controllers/sectors.svg' alt=''> </td>
+                                <td>
+                                    <span class='propertyHeader'>Sectors</span>
+                                    <br>
+                                    <span class='property'>{$sectorsText}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src='../img/controllers/remarks.svg' alt=''> </td>
+                                <td>
+                                    <span class='propertyHeader'>Remarks</span>
+                                    <br>
+                                    <span class='property'>{$remarkText}</span>
+                                </td>
+                            </tr>";
+
+                            if ($headerBottom == "SOLO") {
+                                echo "<!--SOLO -->
+                                <tr>
+                                    <td><img src='../img/controllers/solo.svg' alt=''> </td>
+                                    <td>
+                                        <span class='propertyHeader'>Solo Position</span>
+                                        <br>
+                                        <span class='property'>{$v["solo"]["position"]}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src='../img/controllers/expiry.svg' alt=''> </td>
+                                    <td>
+                                        <span class='propertyHeader'>Solo expiry</span>
+                                        <br>
+                                        <span class='property'>{$v["solo"]["expiry"]}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src='../img/controllers/issuedby.svg' alt=''> </td>
+                                    <td>
+                                        <span class='propertyHeader'>Solo issued by</span>
+                                        <br>
+                                        <span class='property'>{$v["solo"]["issued_by"]["vatsim_id"]}</span>
+                                    </td>
+                                </tr>";
+                            }
+
+                            
+
+                        
+                        
+                        
+                        
+                            echo "
+                        </table>
+                    </div>
+                </div>";
+                }
+            }
+
+            ?>
+        </div>
+    </section>
+
 
     <nav id="nav-normal">
         <img id="nav-icon" src="../img/nav.svg" alt="Open Menu">
