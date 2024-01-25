@@ -76,6 +76,21 @@
     <section>
         <h1 id="controllersHeader">Irányítóink</h1>
         <div class="ourControllers">
+
+            <script>
+                let hoverTimeout;
+
+                function delayHover(element) {
+                hoverTimeout = setTimeout(() => {
+                    element.classList.add('hovered');
+                }, 300);
+                }
+
+                function resetDelayHover(element) {
+                clearTimeout(hoverTimeout);
+                element.classList.remove('hovered');
+                }
+            </script>
             <?php 
             $controllerData = file_get_contents('https://vacchun.poci.hu/api/controllers');
             if ($controllerData) {
@@ -88,7 +103,7 @@
                     if ($v["solo"] == null) {
                         $headerBottom = $v["rating"]["name"];
                     } else {
-                        $headerBottom = "SOLO";
+                        $headerBottom = "SOLO " . $v["solo"]["position"];
                     }
 
                     foreach ($v["sectors"] as $kS => $sector) {
@@ -106,7 +121,7 @@
                     
 
 
-                    echo "<div class='controller-card'>
+                    echo "<div class='controller-card' onmouseenter='delayHover(this)' onmouseleave='resetDelayHover(this)'>
                     <h1>{$v["vatsim_id"]}</h1>
                     <span>{$headerBottom}</span>
     
