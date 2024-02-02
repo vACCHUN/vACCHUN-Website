@@ -9,7 +9,6 @@ if (getLanguage()) {
 }
 let language = lang.en;
 
-
 if (userLang.includes("hu")) {
   language = lang.hu;
 }

@@ -78,14 +78,14 @@ function switchLang() {
     language = lang.hu;
     document.getElementById("langSw").src = "../img/hu.png";
     document.getElementById("langSwSmall").src = "../img/hu.png";
-    setLanguage("en")
+    setLanguage("hu")
     switchImage();
     applyLanguage();
   } else {
     language = lang.en;
     document.getElementById("langSw").src = "../img/en.png";
     document.getElementById("langSwSmall").src = "../img/en.png";
-    setLanguage("hu")
+    setLanguage("en")
     switchImage();
     applyLanguage();
   }

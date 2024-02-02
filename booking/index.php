@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="icon" href="../img/favicon.png" type="image/icon-type">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -45,17 +44,12 @@
         </div>
     </header>
 
-    <section class="notam-section">
-        <h1 id="bookingSectionH1"></h1>
-        <p style="color: white; text-align: center">This feature is under development. For now please use the old form. <br>Ez a funkció fejlesztés alatt áll. Addig kérlek használd a régi űrlapot.</p>
-        <iframe src="https://vacchun.poci.hu/request/hu" class="booking-iframe" ></iframe>
-    </section>
 
-    <section style="display: none">
+    <section>
         <h1 id="bookingSectionH1"></h1>
-        <form action="index.php#bookingFirstrow" class="booking-form" method="post">
+        <form action="index.php#bookingFirstrow" class="booking-form" id="booking-form" method="post">
             <?php
-                if (isset($_POST["booking-time"]) && isset($_POST["booking-name"]) && isset($_POST["booking-email"]) && isset($_POST["booking-airport"]) && isset($_POST["booking-traffictype"])) {
+                if (isset($_POST["booking-time"]) && isset($_POST["booking-name"]) && isset($_POST["booking-email"]) && isset($_POST["booking-airport"]) && isset($_POST["booking-traffictype"]) && isset($_POST["booking-lang"])) {
                     $userSelectedTime = strtotime($_POST["booking-time"]);
 
                     // Get current server time
@@ -63,13 +57,44 @@
                 
                     // Calculate the difference in seconds
                     $timeDifference = $userSelectedTime - $currentServerTime;
+
+                    
                 
-                    // Check if the time difference is less than 6 hours (in seconds)
-                    if ($timeDifference < 6 * 60 * 60) {
-                        echo "<p class='booking-error' id='bookingError'>You cannot request ATC within 6 hours of departure or arrival. / Nem tudsz kérni irányítást az indulástól vagy érkezéstől számított 6 órán belül!</p>";
+                    // Check if the time difference is less than 3 hours (in seconds)
+                    if ($timeDifference < 3 * 60 * 60) {
+                        echo "<p class='booking-error' id='bookingError'>You cannot request ATC within 3 hours of departure or arrival. / Nem tudsz kérni irányítást az indulástól vagy érkezéstől számított 3 órán belül!</p>";
                     } else {
-                        echo "<p id='bookingSuccess'>Booking successful. We will soon inform you about your request in email. / Sikeres foglalás. Hamarosan értesítünk emailben a foglalásról.</p>";
-                        // api post request ide
+                        $data = array(
+                            'airport' => array('icao' => htmlspecialchars($_POST["booking-airport"])),
+                            'date' => htmlspecialchars($_POST["booking-time"]),
+                            'direction' => htmlspecialchars($_POST["booking-traffictype"]),
+                            'email' => htmlspecialchars($_POST["booking-email"]),
+                            'en' => ($_POST["booking-lang"] == "en" ? true : false),
+                            'name' => htmlspecialchars($_POST["booking-name"])
+                        );
+
+                        $url = 'http://vacchun.poci.hu/api/file-flight';
+
+                        $ch = curl_init($url);
+
+                        curl_setopt($ch, CURLOPT_POST, 1);
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+                        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+                        $response = curl_exec($ch);
+
+                        if($response === false) {
+                            var_dump(curl_error($ch));
+                            echo "<p class='booking-error' id='bookingError'>There has been an error. / Hibába ütköztünk.</p>";
+                        } else {
+                            var_dump($response);
+                            echo "<p id='bookingSuccess'>Booking successful. We will soon inform you about your request in email. / Sikeres foglalás. Hamarosan értesítünk emailben a foglalásról.</p>";
+
+                        }
+
+                        curl_close($ch);
                     }
                 }
             ?>
@@ -110,10 +135,10 @@
                 <span class="input-divider"></span>
                 <select name="booking-traffictype" id="booking-traffictype" class="booking-input booking-select"
                     required>
-                    <option value="departure" id="departure">Induló Forgalom</option>
-                    <option value="arrival" id="arrival">Érkező Forgalom</option>
-                    <option value="vfr-trainingflight" id="vfr-trainingflight">VFR gyakorlórepülés</option>
-                    <option value="ifr-trainingflight" id="ifr-trainingflight">IFR gyakorlórepülés</option>
+                    <option value="1" id="departure">Induló Forgalom</option>
+                    <option value="0" id="arrival">Érkező Forgalom</option>
+                    <option value="2" id="vfr-trainingflight">VFR gyakorlórepülés</option>
+                    <option value="3" id="ifr-trainingflight">IFR gyakorlórepülés</option>
                 </select>
             </div>
 
@@ -123,9 +148,14 @@
                 <input type="text" name="booking-time" id="eobt-eta" placeholder="EOBT/ETA" class="booking-input" required>
             </div>
 
+            <input type="hidden" name="booking-lang" id="booking-lang">
+
+
             <button class="booking-submit" role="submit"><span id="booking-submit">Küldés</span></button>
         </form>
     </section>
+
+    <script>document.getElementById("booking-form").addEventListener("submit", () => {document.getElementById("booking-lang").value = localStorage.getItem("lang")});</script>
 
 
     <nav id="nav-normal">
