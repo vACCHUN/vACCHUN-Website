@@ -100,7 +100,20 @@ require_once "./standParser.php";
     </header>
     <section class="notam-section">
         <h1 id="NOTAM">NOTAM</h1>
-        <iframe src="https://vacchun.poci.hu/notams/hu"></iframe>
+        <div class="controls">
+            <button data-icao="lhcc" id="lhcc" class="notambtn leftbtn">LHCC</button>
+            <button data-icao="lhbp" id="lhbp" class="notambtn active">LHBP</button>
+            <button data-icao="lhdc" id="lhdc" class="notambtn">LHDC</button>
+            <button data-icao="lhsm" id="lhsm" class="notambtn rightbtn">LHSM</button>
+        </div>
+
+        <div class="filterActive">
+            <button id="filterActive">Filter Active</button>
+        </div>
+
+        <div id="notamsDisplay">
+            Loading
+        </div>
     </section>
     <script async
         src="https://www.bing.com/api/maps/mapcontrol?callback=initMap&key=Ar618W1YuXkONdzgUl4menBldwcHr22XEVUJjsVV1Z0UFAmtjvNpj2cERR85YMUw"></script>

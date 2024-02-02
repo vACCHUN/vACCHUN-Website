@@ -575,3 +575,83 @@ iframe {
     background-image: url("../img/twr/high-res/snow.png") !important;;
   }
 }
+
+.notam-section .controls {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0px;
+}
+
+.notam-section .controls button {
+  all:unset;
+  color: #fff;
+  background-color: #4d4d56;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.notam-section .controls button:hover {
+  background-color: rgb(110, 174, 230)
+}
+
+.notam-section .controls .leftbtn {
+  border-radius: 10px 0px 0px 10px;
+}
+.notam-section .controls .rightbtn {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.notam-section .controls .active {
+  background-color: var(--darkblue);
+  color: #fff;
+}
+
+#notamsDisplay {
+  margin-top: 30px;
+  background-color: #1b1b23;
+  color: #fff;
+  width: 50%;
+  height: 600px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow-y:scroll;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  #notamsDisplay {
+    width: 80%;
+  }
+}
+
+.notamRow {
+  border: 1px solid #3b3b4d;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+#notamsCount {
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.notam-section .filterActive button {
+  all:unset;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #4d4d56;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.notam-section .filterActive button:hover {
+  background-color: rgb(110, 174, 230)
+}
+.notam-section .filterActive .active {
+  background-color: var(--darkblue);
+  color: #fff;
+}

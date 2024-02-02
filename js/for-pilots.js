@@ -118,3 +118,52 @@ function switchLang() {
 }
 document.getElementById("langSw").addEventListener("click", switchLang);
 document.getElementById("langSwSmall").addEventListener("click", switchLang);
+
+
+const notambtns = document.getElementsByClassName("notambtn");
+
+let selectedNotam = "lhbp";
+let filterActive = false;
+DisplayNotams(filterActive);
+
+async function DisplayNotams(filtered = false) {
+  document.getElementById("notamsDisplay").innerHTML = "Loading... / Betöltés...";
+  filtered = filtered ? "&filtered=true" : "";
+  const APIResponse = await fetch(`notams.php?icao=` + selectedNotam + filtered);
+  const notams = await APIResponse.json();
+  document.getElementById("notamsDisplay").innerHTML = "";
+
+  let innerhtml = `<span id="notamsCount">${notams.length} NOTAMs</span>`;
+  notams.forEach(notam => {
+      notam = notam.replace(/\n/g, '<br>');
+      innerhtml += `<div class='notamRow'>${notam}</div>`;
+  });
+
+  document.getElementById("notamsDisplay").innerHTML = innerhtml;
+}
+
+
+for (let i = 0; i < notambtns.length; i++) {
+  const notambtn = notambtns[i];
+
+  notambtn.addEventListener("click", (e) => {
+    const icao = notambtn.dataset.icao;
+    
+    document.getElementById(selectedNotam).classList.remove("active");
+    selectedNotam = icao;
+    notambtn.classList.add("active");
+
+    DisplayNotams(filterActive);
+    
+  });
+}
+
+document.getElementById("filterActive").addEventListener("click", () => {
+  filterActive = !filterActive;
+  if (filterActive) {
+    document.getElementById("filterActive").classList.add("active")
+  } else {
+    document.getElementById("filterActive").classList.remove("active");
+  }
+  DisplayNotams(filterActive);
+})
