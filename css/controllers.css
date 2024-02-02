@@ -130,7 +130,31 @@ hr {
   display: grid;
   gap: 10px;
   row-gap: 10px;
+  justify-content: center;
   grid-template-columns: auto auto auto auto auto auto;
+}
+
+@media only screen and (min-width: 2550px) {
+  .ourControllers {
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+}
+
+
+@media only screen and (max-width: 1480px) {
+  .ourControllers {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ourControllers {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .ourControllers {
+    grid-template-columns: auto;
+  }
 }
 
 .controller-card {

@@ -5,6 +5,8 @@
   --lightblue: #3ca3cc;
 }
 
+
+
 header {
   background: url("../img/euroscope.png"), lightgray 0% / cover no-repeat;
   mix-blend-mode: screen;
@@ -47,7 +49,7 @@ footer {
   align-items: center;
   margin: 0px;
   padding: 0px;
-  margin-top: 30px;
+  margin-top: 120px;
 }
 
 footer a {

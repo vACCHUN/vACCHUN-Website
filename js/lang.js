@@ -43,22 +43,18 @@ const lang = {
     forPilots: {
       charts: "Térképek",
       headerTitle: "Pilótáknak",
-      standmap: {
-        header: "Állóhelyek",
-      },
-      standfinder: {
-        header: "Állóhely kereső",
-        realAirline: "Valós légitársaság",
-        VirtualAirline: "Virtuális légitársaság",
-        callsign: "Hívójel",
-        airport: "Induló/Érkező repülőtér",
-        aircraft: "Repülőgép ICAO",
-        cargo: "Cargo",
-        pax: "Utasszállítás",
-        standMarked: "Az általunk ajánlott állóhelyet kék körrel jelöltük a térképen. Jó repülést kívánunk!",
-        unable: "Nem találtunk számodra megfelelő állóhelyet. Az oldal alján, a chartviewerben találhatsz több információt az állóhelyekről.",
-        submit: "Küldés",
-      }
+      standmapHeader: "Állóhelyek",
+      standfinderHeader: "Állóhely kereső",
+      realAirline: "Valós légitársaság",
+      VirtualAirline: "Virtuális légitársaság",
+      callsign: "Hívójel",
+      airport: "Induló/Érkező repülőtér",
+      aircraft: "Repülőgép ICAO",
+      cargo: "Cargo",
+      pax: "Utasszállítás",
+      standMarked: "Az általunk ajánlott állóhelyet kék körrel jelöltük a térképen. Jó repülést kívánunk!",
+      unable: "Nem találtunk számodra megfelelő állóhelyet. Az oldal alján, a chartviewerben találhatsz több információt az állóhelyekről.",
+      submit: "Küldés"
     },
     events: {
       headerTitle: "Rendezvények"
@@ -207,22 +203,18 @@ const lang = {
     forPilots: {
       charts: "Charts",
       headerTitle: "For pilots",
-      standmap: {
-        header: "Stands",
-      },
-      standfinder: {
-        header: "StandFinder",
-        realAirline: "Real Airline",
-        VirtualAirline: "Virtual Airline",
-        callsign: "Callsign",
-        airport: "Destination/Departure airport",
-        aircraft: "Aircraft ICAO",
-        cargo: "Cargo",
-        pax: "Passenger",
-        standMarked: "The recommended stand has been marked with blue on the map. Have a nice flight!",
-        unable: "We were unable to find a stand for you. Please refer to the chartviewer's info page below, to find out which stand suits your flight!",
-        submit: "Submit",
-      }
+      standmapHeader: "Stands",
+      standfinderHeader: "StandFinder",
+      realAirline: "Real Airline",
+      VirtualAirline: "Virtual Airline",
+      callsign: "Callsign",
+      airport: "Destination/Departure airport",
+      aircraft: "Aircraft ICAO",
+      cargo: "Cargo",
+      pax: "Passenger",
+      standMarked: "The recommended stand has been marked with blue on the map. Have a nice flight!",
+      unable: "We were unable to find a stand for you. Please refer to the chartviewer's info page below, to find out which stand suits your flight!",
+      submit: "Submit"
     },
     events: {
       headerTitle: "Events"

@@ -111,52 +111,52 @@ require_once "./standParser.php";
             <div id="lhbpMap"></div>
 
             <div class="standfinder">
-                <h1 id="standfinder-header">Stand Finder</h1>
+                <h1 id="standfinderHeader">Stand Finder</h1>
                 <form action="./index.php#standmapHeader" method="post" class="standfinder-form" id="standfinder-form">
                     <div class='radio-container'>
                         <label class="radio-label" onclick="changeAirlineType(0)">
                             <input type="radio" class="option-input radio" name="standfinder-airlinetype"
                                 id="standfinder-realairline" checked />
-                            <span id="real-airline">Real Airline</span>
+                            <span id="realAirline">Real Airline</span>
                         </label>
                         <label lass="radio-label" onclick="changeAirlineType(1)">
                             <input type="radio" class="option-input radio" name="standfinder-airlinetype"
                                 id="standfinder-va" />
-                            <span id="virtual-airline">Virtual Airline</span>
+                            <span id="VirtualAirline">Virtual Airline</span>
                         </label>
                     </div>
                     <div class="standfinder-field" id="standfinder-callsigninput">
                         <img src="../img/input-icons/headset.svg" class="standfinder-label" alt="">
                         <span class="input-divider"></span>
-                        <input type="text" id="standfinder-airline" name="standfinder-airline" class="standfinder-input"
+                        <input type="text" id="callsign" name="callsign" class="standfinder-input"
                             placeholder="Callsign" maxlength="3" autocomplete="off">
                     </div>
                     <div class="standfinder-field">
                         <img src="../img/input-icons/user.svg" class="standfinder-label" alt="">
                         <span class="input-divider"></span>
-                        <input type="text" id="standfinder-icao" name="standfinder-icao" class="standfinder-input"
+                        <input type="text" id="airport" name="airport" class="standfinder-input"
                             placeholder="Destination/Departure airport" required maxlength="4" autocomplete="off">
                     </div>
                     <div class="standfinder-field">
                         <img src="../img/input-icons/atyp.svg" class="standfinder-label" alt="">
                         <span class="input-divider"></span>
-                        <input type="text" id="standfinder-atyp" name="standfinder-atyp" class="standfinder-input"
+                        <input type="text" id="aircraft" name="aircraft" class="standfinder-input"
                             placeholder="Aircraft ICAO" required maxlength="4" autocomplete="off">
                     </div>
                     <div class='radio-container' id="cargoOrPax" style="display: none;">
                         <label class="radio-label">
                             <input type="radio" class="option-input radio" name="standfinder-vatype"
                                 id="standfinder-vatype-cargo" value="cargo" />
-                            <span id="standfinder-type-cargo">Cargo</span>
+                            <span id="cargo">Cargo</span>
                         </label>
                         <label lass="radio-label">
                             <input type="radio" class="option-input radio" name="standfinder-vatype" value="pax"
                                 id="standfinder-vatype-pax" />
-                            <span id="standfinder-type-pax">Passenger</span>
+                            <span id="pax">Passenger</span>
                         </label>
                     </div>
                     <button class="standfinder-submit" role="submit"><span
-                            id="standfinder-submit">Küldés</span></button>
+                            id="submit">Küldés</span></button>
 
                     <div class="standfinderResult">
                         <?php

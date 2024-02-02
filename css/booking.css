@@ -213,3 +213,9 @@ section h1 {
     height: 1050px;
   }
 }
+
+@media only screen and (min-width: 2500px) {
+  header {
+    background-image: url("../img/high-res/booking.png") !important
+  }
+}

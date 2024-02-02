@@ -23,7 +23,7 @@ function switchImage() {
 }
 
 function applyLanguage() {
-  /* NAV */
+  /* NAV
   document.getElementById("home").textContent = language.nav.home;
   document.getElementById("homeSmall").textContent = language.nav.home;
   document.getElementById("aboutUs").textContent = language.nav.aboutUs;
@@ -42,31 +42,28 @@ function applyLanguage() {
   document.getElementById("eventsSmall").textContent = language.nav.events;
   /* NAV */
 
-  /* HEADER */
+  /* HEADER 
   document.getElementById("charts").textContent = language.forPilots.charts;
   document.getElementById("headerTitle").textContent = language.forPilots.headerTitle;
   /* HEADER */
-  /* FOOTER */
+  /* FOOTER 
   document.getElementById("ppolicy").textContent = language.nav.ppolicy
   /* FOOTER */
 
-  /*standmap*/
+  /*standmap
   document.getElementById("standmapHeader").textContent = language.forPilots.standmap.header;
   /*standmap*/
 
-  /*standfinder*/
+  /*standfinder
   document.getElementById("standfinder-header").textContent = language.forPilots.standfinder.header;
   document.getElementById("real-airline").textContent = language.forPilots.standfinder.realAirline;
-  document.getElementById("virtual-airline").textContent = language.forPilots.standfinder.VirtualAirline;
-  document.getElementById("standfinder-airline").placeholder = language.forPilots.standfinder.callsign;
-  document.getElementById("standfinder-icao").placeholder = language.forPilots.standfinder.airport;
-  document.getElementById("standfinder-atyp").placeholder = language.forPilots.standfinder.aircraft;
+  document.getElementById("virtual-airline").textContent = language.forPilots.standfinder.VirtualAirline
 
   document.getElementById("standfinder-type-cargo").textContent = language.forPilots.standfinder.cargo;
   document.getElementById("standfinder-type-pax").textContent = language.forPilots.standfinder.pax;
 
   document.getElementById("standfinder-submit").textContent = language.forPilots.standfinder.submit;
-   /*standfinder*/
+   /*standfinder
 
 
 
@@ -76,6 +73,26 @@ function applyLanguage() {
   if (document.getElementById("stand-marked")) {
     document.getElementById("stand-marked").textContent = language.forPilots.standfinder.standMarked;
   }
+  */
+
+  Object.keys(language.forPilots).forEach(function(key) {
+    var element = document.getElementById(key);
+    if (element) {
+        element.innerHTML = language.forPilots[key];
+    }
+});
+
+Object.keys(language.nav).forEach(function(key) {
+  var element = document.getElementById(key);
+  if (element) {
+      element.innerHTML = language.nav[key];
+  }
+});
+
+
+document.getElementById("callsign").placeholder = language.forPilots.callsign;
+document.getElementById("airport").placeholder = language.forPilots.airport;
+document.getElementById("aircraft").placeholder = language.forPilots.aircraft;
 }
 
 applyLanguage();
