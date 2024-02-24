@@ -174,17 +174,17 @@ require_once "./standParser.php";
                     <div class="standfinderResult">
                         <?php
                         include("../stands/LHBP/lhbp-standfinder.php");
-                        if ((isset($_POST["standfinder-vatype"]) && $_POST["standfinder-vatype"] != "false") && isset($_POST["standfinder-icao"]) && isset($_POST["standfinder-atyp"])) {
-                            $recommendedStand = getVaStand($_POST["standfinder-icao"], $_POST["standfinder-atyp"], $_POST["standfinder-vatype"]);
+                        if ((isset($_POST["standfinder-vatype"]) && $_POST["standfinder-vatype"] != "false") && isset($_POST["airport"]) && isset($_POST["aircraft"])) {
+                            $recommendedStand = getVaStand($_POST["airport"], $_POST["aircraft"], $_POST["standfinder-vatype"]);
                             if ($recommendedStand) {
                                 echo "<span class='recommendation' id='recommendation'>$recommendedStand</span>";
                                 echo "<span id='stand-marked'>The recommended stand have been marked with blue on the map. Have a nice flight!</span>";
                             } else {
                                 echo "<span id='unable-to-find-stand'>'We were unable to find a stand for you. Please refer to the chartviewer's info page below, to find out which stand suits your flight!</span>";
                             }
-                        } else if (isset($_POST["standfinder-airline"]) && isset($_POST["standfinder-icao"]) && isset($_POST["standfinder-atyp"])) {
+                        } else if (isset($_POST["callsign"]) && isset($_POST["airport"]) && isset($_POST["aircraft"])) {
 
-                            $recommendedStand = getStand(strtoupper($_POST["standfinder-airline"]), strtoupper($_POST["standfinder-icao"]), strtoupper($_POST["standfinder-atyp"]));
+                            $recommendedStand = getStand(strtoupper($_POST["callsign"]), strtoupper($_POST["airport"]), strtoupper($_POST["aircraft"]));
                             if ($recommendedStand) {
                                 echo "<span class='recommendation' id='recommendation'>$recommendedStand</span>";
                                 echo "<span id='stand-marked'>The recommended stand have been marked with blue on the map. Have a nice flight!</span>";

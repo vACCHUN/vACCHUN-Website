@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>vACCHUN</title>
+    <title>Virtual Area Control Center Hungary</title>
     <script src="js/index.js" type="module" defer></script>
     <script src="js/nav.js" type="module" defer></script>
     <script src="js/langCookie.js?v=2"></script>

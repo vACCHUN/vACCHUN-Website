@@ -232,25 +232,48 @@ function getVaStand($icao, $atyp, $isCargo)
 
 function getStand($cs, $icao, $atyp)
 {
+    global $airlineStands;
     $byCallsign = getStandByAirline($cs);
     $bySchengen = getStandBySchengen($icao);
     $byAtyp = getStandsByWingspan($atyp);
     $byAvail = getStandByAvailability();
 
+    $isCargo = false;
+    foreach ($airlineStands as $key => $value) {
+        if ($value[0] == $cs){
+            $isCargo = $value[2];
+        }
+    }
+    if ($isCargo){
+        if ($byCallsign && $byAtyp && $byAvail){
+            $res = array_values(array_intersect($byCallsign, $byAtyp, $byAvail));
+            $res2 = array_values(array_intersect($byAtyp, $byAvail));
+            if (count($res) > 0) {
+                return $res[array_rand($res)];
+                //return sortStands($res)[0];
+            } elseif (count($res2)) {
+                return $res2[array_rand($res2)];
+                //return sortStands($res2)[0];
+            } else {
+                return false;
+            }
+        }
+    }
+    
     //var_dump($byCallsign, $bySchengen, $byAtyp, $byAvail);
     if ($byCallsign && $bySchengen && $byAtyp && $byAvail) {
         $res = array_values(array_intersect($byCallsign, $bySchengen, $byAtyp, $byAvail));
         $res2 = array_values(array_intersect($bySchengen, $byAtyp, $byAvail));
         $res3 = array_values(array_intersect($byAtyp, $byAvail));
         if (count($res) > 0) {
-            //return $res[array_rand($res)];
-            return sortStands($res)[0];
+            return $res[array_rand($res)];
+            //return sortStands($res)[0];
         } elseif (count($res2)) {
-            //return $res2[array_rand($res2)];
-            return sortStands($res2)[0];
+            return $res2[array_rand($res2)];
+            //return sortStands($res2)[0];
         } elseif (count($res3)) {
-            //return $res3[array_rand($res3)];
-            return sortStands($res3)[0];
+            return $res3[array_rand($res3)];
+            //return sortStands($res3)[0];
         } else {
             return false;
         }
