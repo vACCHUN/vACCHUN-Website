@@ -232,6 +232,7 @@ body {
   color: var(--dark);
   justify-content: center;
   width: 300px;
+  margin: auto;
 }
 
 h3 {

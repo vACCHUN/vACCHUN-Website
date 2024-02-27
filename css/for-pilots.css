@@ -661,3 +661,13 @@ iframe {
   background-color: var(--darkblue);
   color: #fff;
 }
+
+.airport-info-div {
+  color: white;
+  text-align: left;
+  padding: 0px 40px;
+}
+
+.airport-info-div strong {
+  color: var(--green);
+}
