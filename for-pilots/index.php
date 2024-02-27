@@ -103,7 +103,9 @@ require_once "./standParser.php";
         <div class="controls">
             <button data-icao="lhcc" id="lhcc" class="notambtn leftbtn">LHCC</button>
             <button data-icao="lhbp" id="lhbp" class="notambtn active">LHBP</button>
-            <button data-icao="lhdc" id="lhdc" class="notambtn">LHDC</button>
+            <button data-icao="lhdc" id="lhdc" class="notambtn smallRightbtn">LHDC</button>
+            <button data-icao="lhpp" id="lhpp" class="notambtn smallLeftbtn">LHPP</button>
+            <button data-icao="lhpr" id="lhpr" class="notambtn">LHPR</button>
             <button data-icao="lhsm" id="lhsm" class="notambtn rightbtn">LHSM</button>
         </div>
 
