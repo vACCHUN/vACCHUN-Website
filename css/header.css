@@ -8,6 +8,7 @@
 
 
 header {
+  position: relative;
   background: url("../img/euroscope.png"), lightgray 0% / cover no-repeat;
   mix-blend-mode: screen;
   background-size: cover;
@@ -59,4 +60,24 @@ footer a {
 footer p {
   height: fit-content !important;
   line-height: 0px;
+}
+
+.downarrow {
+  position: absolute;
+  width: 40px;
+  bottom: 40px;
+  opacity: 0.6;
+  animation: moveArrow 1s infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 40px;
+  }
 }

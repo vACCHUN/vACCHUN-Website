@@ -54,6 +54,7 @@ determineDiff();
         <div id="header-center" class="header-center">
             <h1 id="headerTitle"></h1>
         </div>
+        <img src="../img/downarrow.svg" class="downarrow" alt="">
     </header>
 
     <?php 

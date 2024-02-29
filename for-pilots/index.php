@@ -97,6 +97,7 @@ require_once "./standParser.php";
                 <p id='rawmetar'>Loading METAR...</p>
             </div>
         </div>
+        <img src="../img/downarrow.svg" class="downarrow" alt="">
     </header>
     <section class="notam-section">
         <h1 id="NOTAM">NOTAM</h1>

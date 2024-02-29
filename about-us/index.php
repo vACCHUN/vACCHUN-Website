@@ -40,6 +40,7 @@
         <div id="header-center" class="header-center">
             <h1 id="headerTitle">vACCHUN</h1>
         </div>
+        <img src="../img/downarrow.svg" class="downarrow" alt="">
     </header>
 
     <section class="introduction">
@@ -127,7 +128,7 @@
                         <p id="CsernakGergelyDesc">Gergő a EuroScope kliens fejlesztője, melyet világszerte használnak a
                             hálózatos irányításhoz.
                         </p>
-
+                        <h2><a href="mailto:info@euroscope.hu">info@euroscope.hu</a></h2>
                     </div>
                 </div>
                 <div class="staff-card" id="ACCHU06">
@@ -140,6 +141,7 @@
                 <div class="back">
                     <div class="content">
                         <p id="GalyassyTamasDesc">Tomi tartja a kapcsolatot a vACCHUN összes partnerével.</p>
+                        <h2><a href="mailto:tgaly@vacchun.hu">tgaly@vacchun.hu</a></h2>
                     </div>
                 </div>
                 <div class="staff-card" id="ACCHU07">
