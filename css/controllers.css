@@ -217,4 +217,9 @@ hr {
   color: #000000d6;
 }
 
-
+#rules {
+  text-align: center;
+  color: var(--darkblue);
+  font-size: 30px;
+  margin-top: 50px;
+}

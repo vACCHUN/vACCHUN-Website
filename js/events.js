@@ -14,10 +14,11 @@ var mondayCal = new jsCalendar("#monday-cal");
 setCalendarSaturdays(getOddSaturdays(new Date().getFullYear()));
 setCalendarMondays(getMondays(new Date().getFullYear()));
 
+satCal.setLanguage("en");
+mondayCal.setLanguage("en");
+
 if (userLang.includes("hu")) {
   language = lang.hu;
-  satCal.setLanguage("hu");
-  mondayCal.setLanguage("hu");
 }
 
 function switchImage() {

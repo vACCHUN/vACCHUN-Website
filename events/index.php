@@ -25,7 +25,8 @@ determineDiff();
     <link rel="stylesheet" type="text/css" href="../calendar/jsCalendar.css">
     <link rel="stylesheet" type="text/css" href="../calendar/jsCalendar.darkseries.css">
     <script type="text/javascript" src="../calendar/jsCalendar.js"></script>
-    <!--<script type="text/javascript" src="../calendar/jsCalendar.lang.hu.js"></script>-->
+    <script type="text/javascript" src="../calendar/jsCalendar.lang.hu.js"></script>
+    <script type="text/javascript" src="../calendar/jsCalendar.lang.en.js"></script>
 </head>
 
 <body>

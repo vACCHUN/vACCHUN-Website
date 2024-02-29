@@ -223,7 +223,7 @@
                 </div>
 
     </nav>
-
+         <p id ="rules"><a href="../assets/vACCHUN_szabalyzat_2024.pdf">Szabályzat</a></p>
     <footer>
         <p>Virtual Area Control Center Hungary</p>
         <p><a href="mailto:info@vacchun.hu">info@vacchun.hu</a></p>
