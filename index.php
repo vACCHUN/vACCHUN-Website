@@ -86,6 +86,7 @@
             </div>
             
         </div>
+        <img src="./img/downarrow.svg" class="downarrow" alt="">
     </header>
 
     <section class="ourActivities-small">
