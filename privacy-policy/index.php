@@ -93,7 +93,7 @@
     </nav>
 
     <footer>
-        <p>Virtual Area Control Centre Hungary</p>
+        <p>Virtual Area Control Center Hungary</p>
         <p><a href="mailto:info@vacchun.hu">info@vacchun.hu</a></p>
         <p>Copyright © 2024</p>
     </footer>

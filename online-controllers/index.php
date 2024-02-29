@@ -177,7 +177,7 @@
 
 
     <footer>
-        <p>Virtual Area Control Centre Hungary</p>
+        <p>Virtual Area Control Center Hungary</p>
         <p><a href="mailto:info@vacchun.hu">info@vacchun.hu</a></p>
         <a id="ppolicy" href="../privacy-policy">Adatvédelem</a>
         <p>Copyright © 2024</p>

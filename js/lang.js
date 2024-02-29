@@ -89,7 +89,7 @@ const lang = {
         BoziBenceTitle: "Képzési Igazgató - ACCHU02",
         BoziBenceDesc: "Bence ügyel a képzések szervezésére.",
 
-        GrobPeterTitle: "Rendezvény szervező - ACCHU03",
+        GrobPeterTitle: "Rendezvényszervező - ACCHU03",
         GrobPeterDesc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
 
         CsernakGergelyTitle: "EuroScope fejlesztő - ACCHU06",

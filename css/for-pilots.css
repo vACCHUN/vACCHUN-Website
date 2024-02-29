@@ -590,9 +590,9 @@ iframe {
   cursor: pointer;
 }
 .notam-section .controls button:hover {
-  background-color: rgb(110, 174, 230)
+  background-color: var(--lightblue);
+  color: black;
 }
-
 .notam-section .controls .leftbtn {
   border-radius: 10px 0px 0px 10px;
 }
@@ -665,7 +665,8 @@ iframe {
   border-radius: 10px;
 }
 .notam-section .filterActive button:hover {
-  background-color: rgb(110, 174, 230)
+  background-color: var(--lightblue);
+  color: black;
 }
 .notam-section .filterActive .active {
   background-color: var(--darkblue);

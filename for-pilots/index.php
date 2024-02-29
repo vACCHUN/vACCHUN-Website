@@ -352,7 +352,7 @@ require_once "./standParser.php";
 
     </nav>
     <footer>
-        <p>Virtual Area Control Centre Hungary</p>
+        <p>Virtual Area Control Center Hungary</p>
         <p>Charts are for simulation purposes only!</p>
         <p><a href="mailto:info@vacchun.hu">info@vacchun.hu</a></p>
         <a id="ppolicy" href="../privacy-policy">Adatvédelem</a>
