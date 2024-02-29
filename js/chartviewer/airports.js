@@ -85,7 +85,7 @@ const info = {
     <strong>ICAO:</strong> LHPP<br/>
     <strong>Name:</strong> Pécs/Pogány <br/>
     <strong>Elevation:</strong> 651ft<br/>
-    <strong>Frequencies:</strong> Pér INFO - 126.915<br/>
+    <strong>Frequencies:</strong> Pogány INFO - 126.915<br/>
     <strong>Runways:</strong> 16-34<br/>
     <strong>Surface:</strong> Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1000 AGL | 16 Right - 34 Left<br/>
@@ -97,7 +97,7 @@ const info = {
     <strong>ICAO:</strong> LHNY<br/>
     <strong>Name:</strong> Nyíregyháza <br/>
     <strong>Elevation:</strong> 338ft<br/>
-    <strong>Frequencies:</strong> Nyíregyháza INFO - 119.410<br/>
+    <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 18-36<br/>
     <strong>Surface:</strong> Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1000 AGL | 18 Right - 36 Left<br/>
@@ -109,7 +109,7 @@ const info = {
     <strong>ICAO:</strong> LHUD<br/>
     <strong>Name:</strong> Szeged <br/>
     <strong>Elevation:</strong> 268ft<br/>
-    <strong>Frequencies:</strong> Szeged INFO - 122.810<br/>
+    <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 16L-34R // 16R-34L<br/>
     <strong>Surface:</strong> Grass // Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1200 AMSL | 16L/R Right - 34L/R Left<br/>
@@ -121,7 +121,7 @@ const info = {
     <strong>ICAO:</strong> LHBC<br/>
     <strong>Name:</strong> Békéscsaba <br/>
     <strong>Elevation:</strong> 286ft<br/>
-    <strong>Frequencies:</strong> Békéscsaba INFO - 123.260<br/>
+    <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 17L-35R // 17R-35L<br/>
     <strong>Surface:</strong> Asphalt // Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1200 AMSL | 17L Left - 35R Right // 17R Right (Glider only) - 35L Left (Glider only)<br/>
@@ -133,7 +133,7 @@ const info = {
     <strong>ICAO:</strong> LHFM<br/>
     <strong>Name:</strong> Fertőszentmiklós<br/>
     <strong>Elevation:</strong> 440ft<br/>
-    <strong>Frequencies:</strong> Fertő Traffic - 118,935<br/>
+    <strong>Frequencies:</strong> Budapest Information (West) - 125.500<br/>
     <strong>Runways:</strong> 16-34<br/>
     <strong>Surface:</strong> Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 16 Both - 34 Both<br/>
@@ -144,7 +144,7 @@ const info = {
     <strong>ICAO:</strong> LHAK<br/>
     <strong>Name:</strong> Atkár - Gyöngyöshalász<br/>
     <strong>Elevation:</strong> 364ft<br/>
-    <strong>Frequencies:</strong> Budapest Information - 119,350<br/>
+    <strong>Frequencies:</strong> Budapest Information (North-East) - 134.850<br/>
     <strong>Runways:</strong> 13-31 | 02-20<br/>
     <strong>Surface:</strong> Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 13 Left - 31 Right // 02 Right - 20 Left<br/>
@@ -164,7 +164,7 @@ const info = {
     <strong>ICAO:</strong> LHMR<br/>
     <strong>Name:</strong> Maklár<br/>
     <strong>Elevation:</strong> 541ft<br/>
-    <strong>Frequencies:</strong> Maklár INFO - 129.985<br/>
+    <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 17-35<br/>
     <strong>Surface:</strong> Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1000 AGL | 17 Left - 35 Right<br/>
