@@ -23,6 +23,7 @@ const lang = {
     header: {
       headerText: "Simming on the next level",
       eventsBtn: "Rendezvények",
+      boardButton: "Járatok",
       trafficBtn: "Online forgalom",
       loading: "Betöltés...",
       lhccOnline: "Van elérhető irányítás",
@@ -183,6 +184,7 @@ const lang = {
     header: {
       headerText: "Simming on the next level",
       eventsBtn: "Events",
+      boardButton: "View Flights",
       trafficBtn: "Online traffic",
       loading: "Loading...",
       lhccOnline: "We are online",

@@ -52,6 +52,8 @@ function applyLanguage() {
     language.header.headerText;
   document.getElementById("headerEventsBtn").textContent =
     language.header.eventsBtn;
+  document.getElementById("headerBoardBtn").textContent =
+    language.header.boardButton;
 
   /* HEADER */
   /* FOOTER */

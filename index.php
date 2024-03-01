@@ -82,7 +82,8 @@
             <a id="isLHCCOnline" href="online-controllers/">Loading...</a>
             <a id="isExam" href="./events/"></a>
             <div id="buttons">
-                <a id="headerEventsBtn" class="btn btn-blue" href="./events/"></a>
+                <a id="headerEventsBtn" class="btn btn-blue" href="./events/" style="width: 140px"></a>
+                <a id="headerBoardBtn" class="btn btn-blue" href="https://board.vacchun.hu" style="width: 140px"></a>
             </div>
             
         </div>
