@@ -72,22 +72,39 @@ footer p {
   .downarrow {
     width: 25px;
     position: absolute;
-    bottom: 130px;
+    bottom: 20vh;
     animation: moveArrowSmall 1s infinite;
-  }
+  }  
+}
 
-  
+@media only screen and (max-height: 740px) {
+  .downarrow {
+    bottom: 10vh;
+    animation: moveArrowSmallHeight 1s infinite;
+  }  
+}
+
+@keyframes moveArrowSmallHeight {
+  0% {
+    bottom: 10vh;
+  }
+  50% {
+    bottom: 11vh;
+  }
+  100% {
+    bottom: 10vh;
+  }
 }
 
 @keyframes moveArrowSmall {
   0% {
-    bottom: 130px;
+    bottom: 20vh;
   }
   50% {
-    bottom: 140px;
+    bottom: 21vh;
   }
   100% {
-    bottom: 130px;
+    bottom: 20vh;
   }
 }
 
