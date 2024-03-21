@@ -10,30 +10,36 @@ const airport = {
     "LHBC": "Békéscsaba",
     "LHFM": "Fertőszentmiklós",
     "LHAK": "Atkár-Gyöngyöshalász",
+    "LHBF": "Bükfürdő",
     "LHBI": "Biharkeresztes",
     "LHBL": "Ballószög",
     "LHBS": "Budaörs",
     "LHBY": "Bőny",
     "LHCL": "Cegléd",
     "LHDK": "Dunakeszi",
+    "LHDK": "Dunaújváros",
     "LHFC": "Bodmér-Felcsút",
     "LHGD": "Gödöllő",
+    "LHMP": "Matkópuszta",
     "LHMR": "Maklár",
     "LHGU": "Győrújbarát Heliport",
+    "LHHM": "Hódmezővásárhely",
     "LHHO": "Hajdúszoboszló",
     "LHJK": "Jakabszállás",
     "LHKA": "Kalocsa-Foktő",
     "LHKH": "Kiskunfélegyháza",
+    "LHKI": "Kiskőrős-Akasztó",
     "LHKK": "Kiskunlacháza",
     "LHKV": "Kaposújlak",
     "LHPS": "Pusztaszer",
     "LHPW": "Pusztaszer-West",
+    "LHSI": "Sitke",
     "LHSK": "Siófok-Kiliti",
     "LHSS": "Szolnok-Szandaszőlős",
     "LHST": "Szatymaz",
     "LHSV": "Szarvas-Kákahalom",
+    "LHSZ": "Szentes",
     "LHTL": "Tököl",
-    "LHTP": "Tapolca",
     "LHUH": "Sárszentmihály-Úrhida",
     "LHVE": "Veresegyház",
     "LHKE": "Kecskemét",
@@ -186,7 +192,6 @@ const info = {
     "LHST": `<h1>Szatymaz</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHST&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHSV": `<h1>Szarvas-Kákahalom</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Szarvas-Káka Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHTL": `<h1>Tököl</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHTL&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
-    "LHTP": `<h1>Tapolca</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Tapolca repülőtér (LHTP)&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHUH": `<h1>Sárszentmihály-Úrhida</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Úrhidai Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHVE": `<h1>Veresegyház</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=East Line Air Team&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHKE": `<h1>Kecskemét</h1>`,
@@ -358,12 +363,20 @@ const chart = {
             "VAC": "../charts/LHBC/approach/LH_AD_2_LHBC_VAC_en.pdf"
         }
     },
-    "LHFM": {
+    "LHBF": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_ADC_v4.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBF/images/VFR_LHBF_ADC_v2.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_VAC_v4.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBF/images/VFR_LHBF_VAC_v2.jpg"
+        }
+    },
+    "LHFM": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_ADC_v5.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_VAC_v5.jpg"
         }
     },
     "LHGU": {
@@ -380,14 +393,6 @@ const chart = {
         },
         "approach": {
             "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBY/images/VFR_LHBY_VAC_v6.jpg"
-        }
-    },
-    "LHTP": {
-        "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHTP/images/VFR_LHTP_ADC_v2.jpg"
-        },
-        "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHTP/images/VFR_LHTP_VAC_v2.jpg"
         }
     },
     "LHKV": {
@@ -424,7 +429,7 @@ const chart = {
     },
     "LHTL": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHTL/images/VFR_LHTL_ADC_v7.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHTL/images/VFR_LHTL_ADC_v8.jpg"
         },
         "approach": {
             "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHTL/images/VFR_LHTL_VAC_v8.jpg"
@@ -454,6 +459,14 @@ const chart = {
             "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHDK/images/VFR_LHDK_VAC_v3.jpg"
         }
     },
+    "LHDV": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHDV/images/VFR_LHDV_ADC_v2.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHDV/images/VFR_LHDV_VAC_v3.jpg"
+        }
+    },
     "LHVE": {
         "aerodrome": {
             "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHVE/images/VFR_LHVE_ADC_v3.jpg"
@@ -472,26 +485,34 @@ const chart = {
     },
     "LHBL": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBL/images/VFR_LHBL_ADC_v6.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBL/images/VFR_LHBL_ADC_v7.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBL/images/VFR_LHBL_VAC_v7.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBL/images/VFR_LHBL_VAC_v8.jpg"
         }
     },
     "LHJK": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHJK/images/VFR_LHJK_ADC_v2.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHJK/images/VFR_LHJK_ADC_v3.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHJK/images/VFR_LHJK_VAC_v4.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHJK/images/VFR_LHJK_VAC_v5.jpg"
         }
     },
     "LHKH": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHKH/images/VFR_LHKH_ADC_v1.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHKH/images/VFR_LHKH_ADC_v2.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHKH/images/VFR_LHKH_VAC_v2.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHKH/images/VFR_LHKH_VAC_v3.jpg"
+        }
+    },
+    "LHKI": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHKI/images/VFR_LHKI_ADC_v2.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHKI/images/VFR_LHKI_VAC_v2.jpg"
         }
     },
     "LHAK": {
@@ -512,26 +533,34 @@ const chart = {
     },
     "LHPS": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHPS/images/VFR_LHPS_ADC_v5.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHPS/images/VFR_LHPS_ADC_v6.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHPS/images/VFR_LHPS_VAC_v4.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHPS/images/VFR_LHPS_VAC_v5.jpg"
         }
     },
     "LHPW": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHPW/images/VFR_LHPW_ADC_v5.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHPW/images/VFR_LHPW_ADC_v6.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHPW/images/VFR_LHPW_VAC_v4.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHPW/images/VFR_LHPW_VAC_v5.jpg"
+        }
+    },
+    "LHSI": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHSI/images/VFR_LHSI_ADC_v2.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHSI/images/VFR_LHSI_VAC_v2.jpg"
         }
     },
     "LHST": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHST/images/VFR_LHST_ADC_v6.jpg"
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHST/images/VFR_LHST_ADC_v7.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHST/images/VFR_LHST_VAC_v6.jpg"
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHST/images/VFR_LHST_VAC_v7.jpg"
         }
     },
     "LHSS": {
@@ -548,6 +577,30 @@ const chart = {
         },
         "approach": {
             "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHSV/images/VFR_LHSV_VAC_v2.jpg"
+        }
+    },
+    "LHSZ": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHSZ/images/VFR_LHSZ_ADC_v2.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHSZ/images/VFR_LHSZ_VAC_v3.jpg"
+        }
+    },
+    "LHHM": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHHM/images/VFR_LHHM_ADC_v2.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHHM/images/VFR_LHHM_VAC_v3.jpg"
+        }
+    },
+    "LHMP": {
+        "aerodrome": {
+            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHMP/images/VFR_LHMP_ADC_v3.jpg"
+        },
+        "approach": {
+            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHMP/images/VFR_LHMP_VAC_v3.jpg"
         }
     },
     "LHHO": {
