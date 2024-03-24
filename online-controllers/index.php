@@ -125,6 +125,11 @@
                     } else if ($value["rating"] == 12) {
                         $rating = "ADM";
                     }
+                    $frequency = $value["frequency"];
+
+                    if ($value["frequency"] == "199.998") {
+                        $frequency = "Mentour";
+                    }
     
     
                     echo "<div class='card-wrapper'>";
@@ -134,7 +139,7 @@
                     echo "<h2 class='controllerName'>{$value['name']}</h2>";
                     echo "<p class='rating'>$rating</p>";
                     echo "</div>";
-                    echo "<p class='frequency'>Frequency: <br>{$value['frequency']}</p>";
+                    echo "<p class='frequency'>Frequency: <br>$frequency</p>";
                     echo "</div>";
                     echo "</div>";
                 }
