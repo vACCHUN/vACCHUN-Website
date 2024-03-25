@@ -128,7 +128,7 @@
                     $frequency = $value["frequency"];
 
                     if ($value["frequency"] == "199.998") {
-                        $frequency = "Mentour";
+                        $frequency = "Mentor";
                     }
     
     
