@@ -87,10 +87,8 @@
                         $response = curl_exec($ch);
 
                         if($response === false) {
-                            var_dump(curl_error($ch));
                             echo "<p class='booking-error' id='bookingError'>There has been an error. / Hibába ütköztünk.</p>";
                         } else {
-                            var_dump($response);
                             echo "<p id='bookingSuccess'>Booking successful. We will soon inform you about your request in email. / Sikeres foglalás. Hamarosan értesítünk emailben a foglalásról.</p>";
 
                         }
