@@ -60,6 +60,9 @@ const lang = {
     events: {
       headerTitle: "Rendezvények"
     },
+    notfound: {
+      headerTitle: "404 - Az oldal nem található"
+    },
     booking: {
       headerTitle: "Foglalás",
       bookingFirstrow: "Itt jelezheted irányítóink számára, hogy adott időpontban jelen leszel egyik repterünkön, így megpróbálhatunk lefedettséget biztosítani Neked!",
@@ -220,6 +223,9 @@ const lang = {
     },
     events: {
       headerTitle: "Events"
+    },
+    notfound: {
+      headerTitle: "404 - Not found"
     },
     booking: {
       headerTitle: "Booking",
