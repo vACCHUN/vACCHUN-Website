@@ -49,7 +49,7 @@ const airport = {
 }
 const info = {
     "LHCC": `<h1>Budapest FIR</h1><img id='FIRimg'src='../../img/info/FIR.png'>`,
-    "LHBP": `<h1>Budapest-Ferihegy</h1><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Budapest Liszt Ferenc Nemzetközi Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
+    "LHBP": `<h1>Budapest-Ferihegy</h1><a style='color: #fff'href='../assets/Pilot_Briefing_Budapest_Liszt_Ferenc_Airport.pdf'>LHBP Briefing</a><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Budapest Liszt Ferenc Nemzetközi Repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHDC": `<div class='airport-info-div'>
     <h1>Debrecen</h1>
     <strong>ICAO:</strong> LHDC<br/>
