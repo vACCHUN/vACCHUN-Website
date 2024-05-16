@@ -47,3 +47,13 @@ a {
   all: unset;
   cursor: pointer;
 }
+
+#langSwSmall {
+  margin: 0px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#headerTitle {
+  text-align: center;
+}
