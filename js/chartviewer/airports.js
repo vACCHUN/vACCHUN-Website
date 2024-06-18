@@ -17,7 +17,6 @@ const airport = {
     "LHBY": "Bőny",
     "LHCL": "Cegléd",
     "LHDK": "Dunakeszi",
-    "LHDK": "Dunaújváros",
     "LHFC": "Bodmér-Felcsút",
     "LHGD": "Gödöllő",
     "LHMP": "Matkópuszta",
