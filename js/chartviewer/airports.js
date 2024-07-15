@@ -352,7 +352,8 @@ const chart = {
     },
     "LHBC": {
         "aerodrome": {
-            "ADC": "../charts/LHBC/aerodrome/LH_AD_2_LHBC_ADC_en.pdf"
+            "ADC": "../charts/LHBC/aerodrome/LH_AD_2_LHBC_ADC_en.pdf",
+            "AOCA": "../charts/LHBC/aerodrome/LH_AD_2_LHBC_AOCA_17L35R_en.pdf"
         },   
         "approach": {
             "NDB 17L": "../charts/LHBC/approach/LH_AD_2_LHBC_NDB_17L_en.pdf",
@@ -360,6 +361,13 @@ const chart = {
             "RNP 17L": "../charts/LHBC/approach/LH_AD_2_LHBC_RNP_17L_en.pdf",
             "RNP 35R": "../charts/LHBC/approach/LH_AD_2_LHBC_RNP_35R_en.pdf",
             "VAC": "../charts/LHBC/approach/LH_AD_2_LHBC_VAC_en.pdf"
+        },
+        "sid": {
+            "17L": "../charts/LHBC/sid/LH_AD_2_LHBC_SID_17L_en.pdf",
+            "35R": "../charts/LHBC/sid/LH_AD_2_LHBC_SID_35R_en.pdf"
+        },
+        "star": {
+            "17L - 35R": "../charts/LHBC/star/LH_AD_2_LHBC_STAR_17L35R_en.pdf"
         }
     },
     "LHBF": {
