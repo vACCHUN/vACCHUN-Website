@@ -78,6 +78,8 @@ section h1 {
   margin: 15px;
   margin-bottom: 30px;
   transition: 400ms;
+  max-width: 600px;
+  text-wrap: wrap;
 
   box-shadow: rgba(255, 255, 255, 0.1) 0px 25px 50px -12px;
 
