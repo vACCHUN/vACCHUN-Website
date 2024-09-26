@@ -65,7 +65,8 @@
         <h1 id="socialMedia">Közösség</h1>
         <div class="socialmedia-container">
             <a href="https://discord.gg/DAZR36c" class="discord"><img class="socialmedia-icon" src="../img/about-us/socialmedia/discord.svg" alt="Discord"></a>
-            <a href="https://www.facebook.com/vacchun" class="facebook"><img class="socialmedia-icon" src="../img/about-us/socialmedia/facebook.svg" alt="Discord"></a>
+            <a href="https://www.facebook.com/vacchun" class="facebook"><img class="socialmedia-icon" src="../img/about-us/socialmedia/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/vacchungary/" class="instagram"><img class="socialmedia-icon" src="../img/about-us/socialmedia/instagram.svg" alt="Instagram"></a>
         </div>
     </section>
 
