@@ -12,23 +12,17 @@
   font-weight: bold;
 }
 
+
 ::-webkit-scrollbar {
   width: 11px;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
-
 ::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
   border-radius: 6px;

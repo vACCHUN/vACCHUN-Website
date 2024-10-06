@@ -18,6 +18,10 @@ header {
   background-position: center center !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-center {
   color: var(--green);
   display: flex;
