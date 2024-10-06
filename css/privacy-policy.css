@@ -13,6 +13,9 @@
   width: 11px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 header {
   background-image: url("../img/about-us.png") !important;

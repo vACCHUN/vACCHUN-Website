@@ -41,7 +41,7 @@
         <div id="header-center" class="header-center">
             <h1 id="headerTitle">vACCHUN</h1>
         </div>
-        <img src="../img/downarrow.svg" class="downarrow" alt="">
+        <a href="#downarrow"><img src="../img/downarrow.svg" class="downarrow" id="downarrow" alt=""></a>
     </header>
 
     <h1 id="header">Hogyan legyél virtuális légiforgalmi irányító?</h1>

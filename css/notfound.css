@@ -13,6 +13,10 @@
   width: 11px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);

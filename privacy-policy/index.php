@@ -40,7 +40,7 @@
         <div id="header-center" class="header-center">
             <h1 id="headerTitle">Adatvédelem</h1>
         </div>
-        <img src="../img/downarrow.svg" class="downarrow" alt="">
+        <a href="#downarrow"><img src="../img/downarrow.svg" class="downarrow" id="downarrow" alt=""></a>
     </header>
 
     <section class="pp">

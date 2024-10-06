@@ -9,6 +9,10 @@
   --thumbBG: #90a4ae;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-image: url("../img/controllers.png") !important;
   text-align: center;
