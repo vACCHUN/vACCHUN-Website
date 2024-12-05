@@ -128,6 +128,8 @@ require_once "./standParser.php";
 
             <div class="standfinder">
                 <h1 id="standfinderHeader">Stand Finder</h1>
+                <p id="standfinderDesc"></p>
+                <a href=""><i></i></a>
                 <form action="./index.php#standmapHeader" method="post" class="standfinder-form" id="standfinder-form">
                     <div class='radio-container'>
                         <label class="radio-label" onclick="changeAirlineType(0)">
@@ -198,6 +200,7 @@ require_once "./standParser.php";
                         ?>
                     </div>
                 </form>
+                <a href="../assets/Pilot_Briefing_Budapest_Liszt_Ferenc_Airport.pdf"><h2 id="briefingHeader">Briefing for Budapest Airport</h2></a>
             </div>
         </div>
     </section>

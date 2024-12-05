@@ -353,8 +353,17 @@ iframe {
   width: 35px;
 }
 
+.standfinder p {
+  padding-right: 18%;
+  padding-left: 18%;
+  text-align: center;
+  color: var(--green);
+}
 
-
+.standfinder h2 {
+  text-align: center;
+  color: var(--darkblue);
+}
 
 .standfinder-submit,
 .standfinder-submit *,

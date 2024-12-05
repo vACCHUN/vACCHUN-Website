@@ -44,8 +44,10 @@ const lang = {
     forPilots: {
       charts: "Térképek",
       headerTitle: "Pilótáknak",
-      standmapHeader: "Állóhelyek",
+      standmapHeader: "Állóhelyek - LHBP / BUD",
       standfinderHeader: "Állóhely kereső",
+      standfinderDesc: "Használd az alábbi felületet, és a beírt adatok alapján oszt a rendszer neked állóhelyet. Ha olyan légitársaság hívójelét írod be, ami a valóságban is jár Budapestre, olyan állóhelyet fogsz kapni, ahová az adott légitársaság járatai is szoktak állni.",
+      briefingHeader: "Briefing for Budapest Airport",
       realAirline: "Valós légitársaság",
       VirtualAirline: "Virtuális légitársaság",
       callsign: "Hívójel",
@@ -208,8 +210,10 @@ const lang = {
     forPilots: {
       charts: "Charts",
       headerTitle: "For pilots",
-      standmapHeader: "Stands",
+      standmapHeader: "Stands - LHBP / BUD",
       standfinderHeader: "StandFinder",
+      standfinderDesc: "Use the form below to find a suitable and available stand for your flight. If you input the callsign of an airline that flies to Budapest in real life, you will get a stand that is used by that airline.",
+      briefingHeader: "Briefing for Budapest Airport",
       realAirline: "Real Airline",
       VirtualAirline: "Virtual Airline",
       callsign: "Callsign",
