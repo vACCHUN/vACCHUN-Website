@@ -361,7 +361,7 @@ require_once "./standParser.php";
         <p>All charts are the property of <a href="https://ais.hungarocontrol.hu/aip/">HungaroControl</a></p>
         <p><a href="mailto:info@vacchun.hu">info@vacchun.hu</a></p>
         <a id="ppolicy" href="../privacy-policy">Adatvédelem</a>
-        <p>Copyright © 2024</p>
+        <p>Copyright © 2025</p>
     </footer>
 </body>
 
