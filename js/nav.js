@@ -6,16 +6,10 @@ window.onscroll = function () {
     if (window.scrollY >= 1 ) {
         navsc.classList.add("color");
         navsc.classList.remove("no-color");
-        /*for (const value of disappeared) {
-          value.classList.add("navscdpd")
-        }*/
     } 
     else {
         navsc.classList.remove("color");
         navsc.classList.add("no-color");
-        /*for (const value of disappeared) {
-          value.classList.remove("navscdpd")
-        }*/
     }
 };
 

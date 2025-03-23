@@ -11,14 +11,12 @@ $thresholdDistance = 50; // Max distance from airport (nautical miles)
 $maximumAltitude = 600; // Max altitude in feet
 $maxSpeed = 2; // Max speed in knots
 
-// Fetch VATSIM data
 $vatsimData = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
 
 if ($vatsimData !== false) {
     $vatsimData = json_decode($vatsimData, true);
-    $occupiedStands = []; // Initialize array to hold occupied stands
+    $occupiedStands = [];
 
-    // Loop through each pilot in the VATSIM data
     foreach ($vatsimData['pilots'] as $pilot) {
         if (isset($pilot['latitude']) && isset($pilot['longitude']) && isset($pilot['callsign']) && isset($pilot['altitude']) && isset($pilot['groundspeed'])) {
 
@@ -26,26 +24,22 @@ if ($vatsimData !== false) {
             $pilotLongitude = floatval($pilot['longitude']);
             $pilotCallsign = $pilot['callsign'];
             $pilotAltitude = intval($pilot['altitude']);
-            $pilotSpeed = floatval($pilot['groundspeed']); // Get the speed in knots
+            $pilotSpeed = floatval($pilot['groundspeed']);
 
-            // Calculate distance between pilot and target coordinate using haversine formula
             $distance = haversineDistance($targetLatitude, $targetLongitude, $pilotLatitude, $pilotLongitude);
 
-            // Check if the distance is within the threshold, altitude is below the maximum, and speed is within limits
+            // Check if the distance is within the threshold, altitude is below the maximum, and speed is within limits (basically the aircraft is not airborne and on stand)
             if ($distance <= $thresholdDistance && $pilotAltitude <= $maximumAltitude && $pilotSpeed <= $maxSpeed) {
-               //var_dump($pilot);
 
-                $minStandDistance = PHP_INT_MAX; // Initialize minimum stand distance to a large value
-                $closestStand = null; // Initialize closest stand as null
+                $minStandDistance = PHP_INT_MAX;
+                $closestStand = null; 
 
-                // Check if pilot is near any stand
                 foreach ($LHBPStands as $stand) {
                     $standIdentifier = $stand[0];
                     $standLatitude = $stand[1];
                     $standLongitude = $stand[2];
                     $standProximity = isset($stand[4]) ? $stand[4] : $defaultStandProximityThreshold;
 
-                    // Calculate distance between pilot and stand using haversine formula
                     $standDistance = haversineDistance($standLatitude, $standLongitude, $pilotLatitude, $pilotLongitude);
 
                     // Check if the pilot is within the stand proximity threshold and closer than previously checked stands
@@ -58,19 +52,16 @@ if ($vatsimData !== false) {
 
                 // If a closest stand is found, associate the pilot with that stand
                 if ($closestStand !== null) {
-                    // Add pilot's callsign to the occupied stands list with the closest stand number
                     $occupiedStands[$closestStand] = $pilotCallsign;
                 }
             }
         }
     }
 
-    // Print or process the list of pilots near the target coordinate and on stands
 } else {
     echo "Failed to fetch VATSIM data.";
 }
 
-// Function to calculate distance between two coordinates using Haversine formula
 function haversineDistance($lat1, $lon1, $lat2, $lon2)
 {
     $earthRadius = 6371; // Earth's radius in km

@@ -1,0 +1,3 @@
+<?php
+$webhookurl = "https://discord.com/api/webhooks/123";
+$pociAPI = "https://xyz.com";

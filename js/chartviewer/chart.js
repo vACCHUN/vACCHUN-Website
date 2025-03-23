@@ -133,7 +133,6 @@ function selectAirport(icao) {
 selectAirport("LHBP");
 
 function openChartNewTab(path) {
-  //window.open("charts/" + airportSelected + "/" + airportSubmenu + "/" + path);
   window.open(path);
 }
 
@@ -230,7 +229,6 @@ function selectSubmenu(sub, element) {
       chartselect.appendChild(span);
     }
 
-    /*iframe.classList.remove("hide");*/
   }
   /* Display the right content*/
 

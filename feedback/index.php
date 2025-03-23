@@ -1,3 +1,6 @@
+<?php 
+require_once '../config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +53,6 @@
         <form id="feedback-form" action="index.php#feedback-form" class="booking-form" method="post">
             <p id='feedbackTopText'></p>
             <?php 
-                $webhookurl = "https://discord.com/api/webhooks/1224742464301043886/Z8PUF3WqfdZ_e3vvwym7h8rxNh2kwLgV68p2YFdxXZRO3GSsxVDINPNqigkNknif3lbW";
                 if (isset($_POST["feedback-cid"]) && isset($_POST["feedback-controller"]) && isset($_POST["feedback-position"]) && isset($_POST["feedback-freetext"])) {
                     //=======================================================================================================
                     // Create new webhook in your Discord channel settings and copy&paste URL

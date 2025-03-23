@@ -1,3 +1,4 @@
 .htaccess
 /events/events.json
 /events/timestamp.txt
+config.php

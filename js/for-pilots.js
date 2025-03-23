@@ -23,58 +23,6 @@ function switchImage() {
 }
 
 function applyLanguage() {
-  /* NAV
-  document.getElementById("home").textContent = language.nav.home;
-  document.getElementById("homeSmall").textContent = language.nav.home;
-  document.getElementById("aboutUs").textContent = language.nav.aboutUs;
-  document.getElementById("aboutUsSmall").textContent = language.nav.aboutUs;
-  document.getElementById("forPilots").textContent = language.nav.forPilots;
-  document.getElementById("forPilotsSmall").textContent =
-    language.nav.forPilots;
-  document.getElementById("booking").textContent = language.nav.booking;
-  document.getElementById("bookingSmall").textContent = language.nav.booking;
-  document.getElementById("controllers").textContent = language.nav.controllers;
-  document.getElementById("controllersSmall").textContent =
-    language.nav.controllers;
-  document.getElementById("feedback").textContent = language.nav.feedback;
-  document.getElementById("feedbackSmall").textContent = language.nav.feedback;
-  document.getElementById("events").textContent = language.nav.events;
-  document.getElementById("eventsSmall").textContent = language.nav.events;
-  /* NAV */
-
-  /* HEADER 
-  document.getElementById("charts").textContent = language.forPilots.charts;
-  document.getElementById("headerTitle").textContent = language.forPilots.headerTitle;
-  /* HEADER */
-  /* FOOTER 
-  document.getElementById("ppolicy").textContent = language.nav.ppolicy
-  /* FOOTER */
-
-  /*standmap
-  document.getElementById("standmapHeader").textContent = language.forPilots.standmap.header;
-  /*standmap*/
-
-  /*standfinder
-  document.getElementById("standfinder-header").textContent = language.forPilots.standfinder.header;
-  document.getElementById("real-airline").textContent = language.forPilots.standfinder.realAirline;
-  document.getElementById("virtual-airline").textContent = language.forPilots.standfinder.VirtualAirline
-
-  document.getElementById("standfinder-type-cargo").textContent = language.forPilots.standfinder.cargo;
-  document.getElementById("standfinder-type-pax").textContent = language.forPilots.standfinder.pax;
-
-  document.getElementById("standfinder-submit").textContent = language.forPilots.standfinder.submit;
-   /*standfinder
-
-
-
-  if (document.getElementById("unable-to-find-stand")) {
-    document.getElementById("unable-to-find-stand").textContent = language.forPilots.standfinder.unable;
-  }
-  if (document.getElementById("stand-marked")) {
-    document.getElementById("stand-marked").textContent = language.forPilots.standfinder.standMarked;
-  }
-  */
-
   Object.keys(language.forPilots).forEach(function(key) {
     var element = document.getElementById(key);
     if (element) {

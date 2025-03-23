@@ -49,11 +49,6 @@ function applyLanguage() {
    /* FOOTER */
    document.getElementById("ppolicy").textContent = language.nav.ppolicy
    /* FOOTER */
-
-
-
-
-
 }
 
 applyLanguage();

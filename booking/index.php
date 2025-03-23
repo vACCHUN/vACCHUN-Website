@@ -1,3 +1,6 @@
+<?php 
+require_once '../config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,15 +56,13 @@
                 if (isset($_POST["booking-time"]) && isset($_POST["booking-name"]) && isset($_POST["booking-email"]) && isset($_POST["booking-airport"]) && isset($_POST["booking-traffictype"]) && isset($_POST["booking-lang"])) {
                     $userSelectedTime = strtotime($_POST["booking-time"]);
 
-                    // Get current server time
                     $currentServerTime = time();
                 
-                    // Calculate the difference in seconds
                     $timeDifference = $userSelectedTime - $currentServerTime;
 
                     
                 
-                    // Check if the time difference is less than 3 hours (in seconds)
+                    // Check if the time difference is less than 3 hours
                     if ($timeDifference < 3 * 60 * 60) {
                         echo "<p class='booking-error' id='bookingError'>You cannot request ATC within 3 hours of departure or arrival. / Nem tudsz kérni irányítást az indulástól vagy érkezéstől számított 3 órán belül!</p>";
                     } else {
@@ -74,7 +75,7 @@
                             'name' => htmlspecialchars($_POST["booking-name"])
                         );
 
-                        $url = 'http://vacchun.poci.hu/api/file-flight';
+                        $url = $pociAPI;
 
                         $ch = curl_init($url);
 
