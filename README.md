@@ -41,19 +41,6 @@ sudo git checkout dev
 sudo chown -R www-data:www-data /var/www/html/vACCHUN-Website/events
 ```
 
-### 4. Create `config.php` file
-
-In the root directory, create a file called `config.php` with the following content:
-
-```php
-<?php
-$discordWebhookUrl = "https://discord.com/api/webhooks/123546";
-```
-
-This is **required** for feedbacks to work.
-
-
-
 ### 4. Create `config.php` in the root directory
 
 Create a file named `config.php` in the root of the project and add the following content:
