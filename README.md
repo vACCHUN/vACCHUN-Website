@@ -47,7 +47,7 @@ Create a file named `config.php` in the root of the project and add the followin
 
 ```php
 <?php
-$webhookurl = "https://discord.com/api/webhooks/1353301421138640968/S1y1poUTjWs--iJTiB56out9Ci7E-iNAQbdaaDo2BvD5zI4PuAy6VH0zIAuL6UP39QZO";
+$webhookurl = "https://discord.com/api/webhooks/123";
 $pociAPI = "https://xyz.com";
 ```
 
