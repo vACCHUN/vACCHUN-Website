@@ -71,14 +71,24 @@ cd C:\xampp\htdocs
 git clone https://github.com/vACCHUN/vACCHUN-Website.git
 ```
 
-### 2. Create `config.php` file
+### 2. Switch to `dev` branch (if not already on dev)
 
-In the root of `vACCHUN-Website`, create a file called `config.php` with the following content:
+```bash
+cd vACCHUN-Website
+sudo git checkout dev
+```
+
+### 3. Create `config.php` in the root directory
+
+Create a file named `config.php` in the root of the project and add the following content:
 
 ```php
 <?php
-$discordWebhookUrl = "https://discord.com/api/webhooks/123546";
+$webhookurl = "https://discord.com/api/webhooks/123";
+$pociAPI = "https://xyz.com";
 ```
+
+This is required for feedback submission and other integrations.
 
 Now the site should be accessible at:  
 **http://localhost/vACCHUN-Website/**
