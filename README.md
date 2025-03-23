@@ -28,7 +28,7 @@ cd /var/www/html
 sudo git clone https://github.com/vACCHUN/vACCHUN-Website.git
 ```
 
-### 2. Switch to `dev` branch (if needed)
+### 2. Switch to `dev` branch (if not already on dev)
 
 ```bash
 cd vACCHUN-Website
