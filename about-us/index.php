@@ -94,20 +94,7 @@
                 </div>
 
             </div>
-
-            <div class="staff-card-trigger" id="staff-card-trigger-ACCHU02">
-                <div class="back">
-                    <div class="content">
-                        <p id="BoziBenceDesc">Bence ügyel a képzések szervezésére, pilóta és ATC oldalon egyaránt.</p>
-                        <h2><a href="mailto:td@vacchun.hu">td@vacchun.hu</a></h2>
-                    </div>
-                </div>
-                <div class="staff-card" id="ACCHU02">
-                    <h2>Bozi Bence</h2>
-                    <img src="../img/about-us/staff/ACCHU02.png">
-                    <h3 id="BoziBenceTitle">Képzési Igazgató - ACCHU02</h3>
-                </div>
-            </div>
+            
             <div class="staff-card-trigger" id="staff-card-trigger-ACCHU03">
                 <div class="back">
                     <div class="content">
@@ -155,14 +142,14 @@
             <div class="staff-card-trigger" id="staff-card-trigger-ACCHU08">
                 <div class="back">
                     <div class="content">
-                        <p id="UjhelyiDomiDesc">Domi működteti a vACCHUN működéséhez szükséges webszolgáltatásokat.</p>
-                        <h2><a href="mailto:web@vacchun.hu">web@vacchun.hu</a></h2>
+                        <p id="UjhelyiDomiDesc"></p>
+                        <h2><a href="mailto:td@vacchun.hu">td@vacchun.hu</a></h2>
                     </div>
                 </div>
                 <div class="staff-card" id="ACCHU08">
                     <h2>Ujhelyi Domonkos</h2>
                     <img src="../img/about-us/staff/ACCHU08.jpg">
-                    <h3 id="UjhelyiDomiTitle">Webfejlesztő - ACCHU08</h3>
+                    <h3 id="UjhelyiDomiTitle">Képzési Igazgató - ACCHU08</h3>
                 </div>
             </div>
             <div class="staff-card-trigger" id="staff-card-trigger-ACCHU09">

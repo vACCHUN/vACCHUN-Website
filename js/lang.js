@@ -92,9 +92,6 @@ const lang = {
         SuleBalazsTitle: "Igazgató - ACCHU01",
         SuleBalazsDesc: "Balázs a vACC általános működéséért felel, ő szervezi és koordinálja az összes részleg munkáját, valamint a tagsági kérdésekben is ő az illetékes, intézi az irányítók felvételét és ellenőrzi a kollégák aktivitását a hálózaton.",
 
-        BoziBenceTitle: "Képzési Igazgató - ACCHU02",
-        BoziBenceDesc: "Bence ügyel a képzések szervezésére.",
-
         GrobPeterTitle: "Rendezvényszervező - ACCHU03",
         GrobPeterDesc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
 
@@ -104,8 +101,8 @@ const lang = {
         GalyassyTamasTitle: "Marketing Menedzser - ACCHU07",
         GalyassyTamasDesc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével.",
 
-        UjhelyiDomiTitle: "Webfejlesztő - ACCHU08",
-        UjhelyiDomiDesc: "Domi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
+        UjhelyiDomiTitle: "Képzési igazgató - ACCHU08",
+        UjhelyiDomiDesc: "Domonkos ügyel a képzések szervezésére, lebonyolítására, és felügyeli az oktatók munkáját.",
 
         CsorgoCsabiTitle: "Webfejlesztő - ACCHU09",
         CsorgoCsabiDesc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
@@ -255,11 +252,8 @@ const lang = {
       socialMedia: "Community",
       theStaff: "Staff",
 
-        SuleBalazsTitle: "Director - ACCHU01",
+        SuleBalazsTitle: "vACC Director - ACCHU01",
         SuleBalazsDesc: "Balazs is responsible for the general operation, arrange and coordinate the entire vACCHUN organization. He also arranges the recruitment of the new members and controls the activity of colleagues on the network.",
-
-        BoziBenceTitle: "Director of Training Department - ACCHU02",
-        BoziBenceDesc: "Bence is responsible for organizing the trainings ATC.",
 
         GrobPeterTitle: "Event Coordinator - ACCHU03",
         GrobPeterDesc: "Peter coordinates the events and programs of vACCHUN.",
@@ -270,8 +264,8 @@ const lang = {
         GalyassyTamasTitle: "Marketing Manager - ACCHU07",
         GalyassyTamasDesc: "Tamás keeps in touch with all partners of vACCHUN.",
 
-        UjhelyiDomiTitle: "Web Developer - ACCHU08",
-        UjhelyiDomiDesc: "Domonkos is responsible for the web services required for the operation of vACCHUN.",
+        UjhelyiDomiTitle: "Training Director - ACCHU08",
+        UjhelyiDomiDesc: "Domonkos is responsible for the training of our controllers and overseeing the work of our instructors.",
 
         CsorgoCsabiTitle: "Web Developer - ACCHU09",
         CsorgoCsabiDesc: "Csaba is responsible for the web services required for the operation of vACCHUN.",
