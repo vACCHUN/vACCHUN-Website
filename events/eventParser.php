@@ -2,7 +2,7 @@
 function getEvents()
 {
     $f = fopen("events.json", "w");
-    $data = file_get_contents("https://my.vatsim.net/api/v2/events/view/division/EUD");
+    $data = file_get_contents("https://my.vatsim.net/api/v2/events/latest");
     fwrite($f, $data);
     fclose($f);
     $f = fopen("timestamp.txt", "w");
@@ -48,9 +48,10 @@ function getBudapestEvents($eventData) {
     $bpEvents = [];
     foreach ($eventData as $key => $value) {
         if (count($value["airports"]) > 0)  {
-            $airports = $value["airports"][0]["icao"];
-            if ($airports[0] == "L" && $airports[1] == "H") {
-                array_push($bpEvents, $value);
+            foreach ($value["airports"] as $k => $v) {
+                if ($v["icao"][0] == "L" && $v["icao"][1] == "H") {
+                    array_push($bpEvents, $value);
+                }
             }
         }
        
