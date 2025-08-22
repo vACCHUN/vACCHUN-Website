@@ -17,8 +17,9 @@ const airport = {
     "LHBK": "Balatonkeresztúr Repülőtér",
     "LHBL": "Ballószög Repülőtér",
     "LHBS": "Budaörs Repülőtér",
-    "LHBY": "Bőny",
-    "LHCL": "Cegléd",
+    "LHBY": "Bőny Repülőtér",
+    "LHCL": "Cegléd Repülőtér",
+    "LHDA": "Dáka Repülőtér",
     "LHDK": "Dunakeszi",
     "LHFC": "Bodmér-Felcsút",
     "LHGD": "Gödöllő",
@@ -234,9 +235,40 @@ const info = {
     <strong>Surface:</strong> Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1700 AMSL | 09 Right - 27 Left<br/>
     <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBY": `<div class='airport-info-div'>
+    <h1>Bőny Repülőtér</h1>
+    <strong>ICAO:</strong> LHBY<br/>
+    <strong>Place name:</strong> Bőny<br/>
+    <strong>Elevation:</strong> 512ft<br/>
+    <strong>Frequencies:</strong> Pér Info - 194.910<br/>
+    <strong>Runways:</strong> 13-31<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1500 AMSL | 13 Left - 31 Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHCL": `<div class='airport-info-div'>
+    <h1>Cegléd Repülőtér</h1>
+    <strong>ICAO:</strong> LHCL<br/>
+    <strong>Place name:</strong> Cegléd<br/>
+    <strong>Elevation:</strong> 315ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (North-East) - 134.850<br/>
+    <strong>Runways:</strong> 15-33<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Direction:</strong>15 Left/Right - 33 Left/Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHDA": `<div class='airport-info-div'>
+    <h1>Dáka Repülőtér</h1>
+    <strong>ICAO:</strong> LHDA<br/>
+    <strong>Place name:</strong> Dáka<br/>
+    <strong>Elevation:</strong> 491ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (West) - 125.500<br/>
+    <strong>Runways:</strong> 16-34<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Direction:</strong>16 Right - 34 Left<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
     
-    "LHBY": `<h1>Bőny</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bőny repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
-    "LHCL": `<h1>Cegléd</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHCL&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHDK": `<h1>Dunakeszi</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHDK&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHFC": `<h1>Bodmér-Felcsút</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Felcsút&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     
@@ -473,10 +505,10 @@ const chart = {
     },
     "LHBY": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBY/images/VFR_LHBY_ADC_v4.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/1035/VFR_LHBY_ADC_v6n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBY/images/VFR_LHBY_VAC_v6.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/1036/VFR_LHBY_VAC_v8n.jpg"
         }
     },
     "LHKV": {
@@ -631,12 +663,20 @@ const chart = {
             "VAC": "https://storage.hungarocontrol.hu/media/1160/VFR_LHBK_VAC_v5n.jpg"
         }
     },
-    "LHCL": {
+    "LHDA": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHCL/images/VFR_LHCL_ADC_v2.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/1122/VFR_LHDA_ADC_v2n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHCL/images/VFR_LHCL_VAC_v3.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/1123/VFR_LHDA_VAC_v2n.jpg"
+        }
+    },
+    "LHCL": {
+        "aerodrome": {
+            "ADC": "https://storage.hungarocontrol.hu/media/738/VFR_LHCL_ADC_v3.jpg"
+        },
+        "approach": {
+            "VAC": "https://storage.hungarocontrol.hu/media/737/VFR_LHCL_VAC_v4.jpg"
         }
     },
     "LHPS": {
