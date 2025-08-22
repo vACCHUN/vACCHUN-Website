@@ -7,12 +7,15 @@ const airport = {
     "LHPP": "Pécs-Pogány",
     "LHUD": "Szeged",
     "LHNY": "Nyíregyháza",
-    "LHBC": "Békéscsaba",
+    "LHBC": "Békéscsaba Repülőtér",
+    "LHBD": "Börgönd Repülőtér",
     "LHFM": "Fertőszentmiklós",
-    "LHAK": "Atkár-Gyöngyöshalász",
-    "LHBF": "Bükfürdő",
-    "LHBI": "Biharkeresztes",
-    "LHBL": "Ballószög",
+    "LHAK": "Atkár-Gyöngyöshalász Repülőtér",
+    "LHBA": "Plangi Airport",
+    "LHBF": "Bük-fürdő Repülőtér",
+    "LHBI": "Bihar Airport",
+    "LHBK": "Balatonkeresztúr Repülőtér",
+    "LHBL": "Ballószög Repülőtér",
     "LHBS": "Budaörs",
     "LHBY": "Bőny",
     "LHCL": "Cegléd",
@@ -52,7 +55,7 @@ const info = {
     "LHDC": `<div class='airport-info-div'>
     <h1>Debrecen</h1>
     <strong>ICAO:</strong> LHDC<br/>
-    <strong>Name:</strong> Debrecen International Airport <br/>
+    <strong>Place name:</strong> Debrecen International Airport <br/>
     <strong>Elevation:</strong> 361ft<br/>
     <strong>Frequencies:</strong> Debrecen INFO - 125.910<br/>
     <strong>Runways:</strong> 04R-22L<br/>
@@ -64,7 +67,7 @@ const info = {
     "LHSM": `<div class='airport-info-div'>
     <h1>Sármellék</h1>
     <strong>ICAO:</strong> LHSM<br/>
-    <strong>Name:</strong> Hévíz-Balaton Airport <br/>
+    <strong>Place name:</strong> Hévíz-Balaton Airport <br/>
     <strong>Elevation:</strong> 408ft<br/>
     <strong>Frequencies:</strong> Balaton INFO - 134.585<br/>
     <strong>Runways:</strong> 16-34<br/>
@@ -76,7 +79,7 @@ const info = {
     "LHPR": `<div class='airport-info-div'>
     <h1>Győr-Pér</h1>
     <strong>ICAO:</strong> LHPR<br/>
-    <strong>Name:</strong> Győr/Pér <br/>
+    <strong>Place name:</strong> Győr/Pér <br/>
     <strong>Elevation:</strong> 426ft<br/>
     <strong>Frequencies:</strong> Pér INFO - 129.910<br/>
     <strong>Runways:</strong> 11-29<br/>
@@ -88,7 +91,7 @@ const info = {
     "LHPP": `<div class='airport-info-div'>
     <h1>Pécs-Pogány</h1>
     <strong>ICAO:</strong> LHPP<br/>
-    <strong>Name:</strong> Pécs/Pogány <br/>
+    <strong>Place name:</strong> Pécs/Pogány <br/>
     <strong>Elevation:</strong> 651ft<br/>
     <strong>Frequencies:</strong> Pogány INFO - 126.915<br/>
     <strong>Runways:</strong> 16-34<br/>
@@ -100,7 +103,7 @@ const info = {
     "LHNY": `<div class='airport-info-div'>
     <h1>Nyíregyháza</h1>
     <strong>ICAO:</strong> LHNY<br/>
-    <strong>Name:</strong> Nyíregyháza <br/>
+    <strong>Place name:</strong> Nyíregyháza <br/>
     <strong>Elevation:</strong> 338ft<br/>
     <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 18-36<br/>
@@ -112,7 +115,7 @@ const info = {
     "LHUD": `<div class='airport-info-div'>
     <h1>Szeged</h1>
     <strong>ICAO:</strong> LHUD<br/>
-    <strong>Name:</strong> Szeged <br/>
+    <strong>Place name:</strong> Szeged <br/>
     <strong>Elevation:</strong> 268ft<br/>
     <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 16L-34R // 16R-34L<br/>
@@ -122,9 +125,9 @@ const info = {
     
     
     "LHBC": `<div class='airport-info-div'>
-    <h1>Békéscsaba</h1>
+    <h1>Békéscsaba Repülőtér</h1>
     <strong>ICAO:</strong> LHBC<br/>
-    <strong>Name:</strong> Békéscsaba <br/>
+    <strong>Place name:</strong> Békéscsaba<br/>
     <strong>Elevation:</strong> 286ft<br/>
     <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 17L-35R // 17R-35L<br/>
@@ -136,7 +139,7 @@ const info = {
     "LHFM": `<div class='airport-info-div'>
     <h1>Fertőszentmiklós</h1>
     <strong>ICAO:</strong> LHFM<br/>
-    <strong>Name:</strong> Fertőszentmiklós<br/>
+    <strong>Place name:</strong> Fertőszentmiklós<br/>
     <strong>Elevation:</strong> 440ft<br/>
     <strong>Frequencies:</strong> Budapest Information (West) - 125.500<br/>
     <strong>Runways:</strong> 16-34<br/>
@@ -145,19 +148,93 @@ const info = {
     <strong>Remarks:</strong> Only day VFR allowed. Flight plan must be filed. TIZ R=5km 4000ft. Parachuting PPR. For international traffic report has to be made min. 1 hour before entering or departing respectively.<br/></div>`,
     
     "LHAK": `<div class='airport-info-div'>
-    <h1>Atkár - Gyöngyöshalász</h1>
+    <h1>Atkár - Gyöngyöshalász Repülőtér</h1>
     <strong>ICAO:</strong> LHAK<br/>
-    <strong>Name:</strong> Atkár - Gyöngyöshalász<br/>
+    <strong>Place name:</strong> Atkár<br/>
     <strong>Elevation:</strong> 364ft<br/>
     <strong>Frequencies:</strong> Budapest Information (North-East) - 134.850<br/>
     <strong>Runways:</strong> 13-31 | 02-20<br/>
     <strong>Surface:</strong> Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 13 Left - 31 Right // 02 Right - 20 Left<br/>
     <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBA": `<div class='airport-info-div'>
+    <h1>Plangi Airport</h1>
+    <strong>ICAO:</strong> LHBA<br/>
+    <strong>Place name:</strong> Balkány<br/>
+    <strong>Elevation:</strong> 436ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
+    <strong>Runways:</strong> 17-35<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1500 AMSL | 17 Left/Right - 35 Left/Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBD": `<div class='airport-info-div'>
+    <h1>Börgönd Repülőtér</h1>
+    <strong>ICAO:</strong> LHBD<br/>
+    <strong>Place name:</strong> Börgönd<br/>
+    <strong>Elevation:</strong> 390ft<br/>
+    <strong>Frequencies:</strong> Alba Rádió - 119.560<br/>
+    <strong>Runways:</strong> 01-19<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 01 Left - 19 Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBK": `<div class='airport-info-div'>
+    <h1>Balatonkeresztúr Repülőtér</h1>
+    <strong>ICAO:</strong> LHBK<br/>
+    <strong>Place name:</strong> Balatonkeresztúr<br/>
+    <strong>Elevation:</strong> 361ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (West) - 125.500<br/>
+    <strong>Runways:</strong> 13-31<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1500 AMSL | 13 Right - 31 Left<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBI": `<div class='airport-info-div'>
+    <h1>Bihar Airport</h1>
+    <strong>ICAO:</strong> LHBI<br/>
+    <strong>Place name:</strong> Bihar<br/>
+    <strong>Elevation:</strong> 308ft<br/>
+    <strong>Frequencies:</strong> Bihar Airport Rádió - 118.410<br/>
+    <strong>Runways:</strong> 03-21<br/>
+    <strong>Surface:</strong> Concrete<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1000 AGL | 03 Left/Right - 21 Left/Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBL": `<div class='airport-info-div'>
+    <h1>Ballószög Repülőtér</h1>
+    <strong>ICAO:</strong> LHBL<br/>
+    <strong>Place name:</strong> Ballószög<br/>
+    <strong>Elevation:</strong> 390ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (North-East) - 134.850<br/>
+    <strong>Runways:</strong> 14-32<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1600 AMSL | 14 Right - 32 Left<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBF": `<div class='airport-info-div'>
+    <h1>Bük-fürdő Repülőtér</h1>
+    <strong>ICAO:</strong> LHBF<br/>
+    <strong>Place name:</strong> Bő<br/>
+    <strong>Elevation:</strong> 544ft<br/>
+    <strong>Frequencies:</strong> Budapest Information (West) - 125.500<br/>
+    <strong>Runways:</strong> 16-34<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1500 AMSL | 16 Left/Right - 34 Left/Right<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
+
+    "LHBS": `<div class='airport-info-div'>
+    <h1>Budaörs Repülőtér</h1>
+    <strong>ICAO:</strong> LHBS<br/>
+    <strong>Place name:</strong> Budaörs<br/>
+    <strong>Elevation:</strong> 413ft<br/>
+    <strong>Frequencies:</strong> Budapest Rádió - 124.510<br/>
+    <strong>Runways:</strong> 09-27<br/>
+    <strong>Surface:</strong> Grass<br/>
+    <strong>Traffic Pattern Altitude/Direction:</strong> 1700 AMSL | 09 Right - 27 Left<br/>
+    <strong>Remarks:</strong> Nil<br/></div>`,
     
-    "LHBI": `<h1>Biharkeresztes</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Biharkeresztes&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
-    "LHBL": `<h1>Ballószög</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ballószög repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
-    "LHBS": `<h1>Budaörs</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHBS&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHBY": `<h1>Bőny</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bőny repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHCL": `<h1>Cegléd</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHCL&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHDK": `<h1>Dunakeszi</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHDK&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
@@ -167,7 +244,7 @@ const info = {
     "LHMR": `<div class='airport-info-div'>
     <h1>Maklár</h1>
     <strong>ICAO:</strong> LHMR<br/>
-    <strong>Name:</strong> Maklár<br/>
+    <strong>Place name:</strong> Maklár<br/>
     <strong>Elevation:</strong> 541ft<br/>
     <strong>Frequencies:</strong> Budapest Information (East) - 133.000<br/>
     <strong>Runways:</strong> 17-35<br/>
@@ -372,10 +449,10 @@ const chart = {
     },
     "LHBF": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBF/images/VFR_LHBF_ADC_v2.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/865/VFR_LHBF_ADC_v3n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBF/images/VFR_LHBF_VAC_v2.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/868/VFR_LHBF_VAC_v3n.jpg"
         }
     },
     "LHFM": {
@@ -524,10 +601,34 @@ const chart = {
     },
     "LHAK": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHAK/images/VFR_LHAK_ADC_v3.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/914/VFR_LHAK_ADC_v4n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHAK/images/VFR_LHAK_VAC_v5.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/918/VFR_LHAK_VAC_v6n.jpg"
+        }
+    },
+    "LHBA": {
+        "aerodrome": {
+            "ADC": "https://storage.hungarocontrol.hu/media/795/VFR_LHBA_ADC_v3n.jpg"
+        },
+        "approach": {
+            "VAC": "https://storage.hungarocontrol.hu/media/796/VFR_LHBA_VAC_v4n.jpg"
+        }
+    },
+    "LHBD": {
+        "aerodrome": {
+            "ADC": "https://storage.hungarocontrol.hu/media/897/VFR_LHBD_ADC_v7n.jpg"
+        },
+        "approach": {
+            "VAC": "https://storage.hungarocontrol.hu/media/898/VFR_LHBD_VAC_v6n.jpg"
+        }
+    },
+    "LHBK": {
+        "aerodrome": {
+            "ADC": "https://storage.hungarocontrol.hu/media/1159/VFR_LHBK_ADC_v5n.jpg"
+        },
+        "approach": {
+            "VAC": "https://storage.hungarocontrol.hu/media/1160/VFR_LHBK_VAC_v5n.jpg"
         }
     },
     "LHCL": {
@@ -620,10 +721,10 @@ const chart = {
     },
     "LHBI": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBI/images/VFR_LHBI_ADC_v4.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/1056/VFR_LHBI_ADC_v6n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBI/images/VFR_LHBI_VAC_v4.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/1057/VFR_LHBI_VAC_v7n.jpg"
         }
     },
     "LHSK": {
