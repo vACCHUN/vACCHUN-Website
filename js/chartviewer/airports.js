@@ -16,7 +16,7 @@ const airport = {
     "LHBI": "Bihar Airport",
     "LHBK": "Balatonkeresztúr Repülőtér",
     "LHBL": "Ballószög Repülőtér",
-    "LHBS": "Budaörs",
+    "LHBS": "Budaörs Repülőtér",
     "LHBY": "Bőny",
     "LHCL": "Cegléd",
     "LHDK": "Dunakeszi",
@@ -529,10 +529,10 @@ const chart = {
     },
     "LHBS": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHBS/images/VFR_LHBS_ADC_v5.jpg"
+            "ADC": "https://storage.hungarocontrol.hu/media/924/VFR_LHBS_ADC_v7n.jpg"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHBS/images/VFR_LHBS_VAC_v5.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/923/VFR_LHBS_VAC_v8n.jpg"
         }
     },
     "LHDK": {
