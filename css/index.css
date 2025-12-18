@@ -27,6 +27,97 @@ body {
   border: 3px solid var(--scrollbarBG);
 }
 
+#streamPopup {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #100f15a5;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+#streamPopup h1, #streamPopup h2 {
+  color: var(--green);
+  margin: 3px;
+}
+
+#streamPopup div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#streamPopup p {
+  color: #fff;
+  font-size: 18px;
+  height: min-content !important;
+}
+
+#countdown {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--green);
+  display: flex;
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#countdown div {
+  display: flex;
+  gap: 10px;
+}
+
+#countdown span {
+  color: var(--darkblue);
+  background: rgba(255,255,255,0.06);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  min-width: 2.5ch;
+  text-align: center;
+}
+
+#stream {
+  margin-top: 30px;
+}
+
+#streamPopup button {
+  all: unset;
+  color: #ff3939;
+  font-size: 36px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #countdown {
+    display: flex;
+    flex-direction: row;
+  }
+  .countdownHideable {
+    display: none !important;
+  }
+
+  #stream {
+    width: 100%;
+  }
+  #stream iframe {
+    width: 90%;
+  }
+}
+
+
 .debug {
   outline: 1px solid red;
 }

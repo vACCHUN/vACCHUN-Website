@@ -28,11 +28,11 @@ nav {
 }
 
 nav {
-  z-index: 999999;
+  z-index: 999;
 }
 
 .nav-normal {
-  z-index: 999999 !important;
+  z-index: 999 !important;
 }
 
 .menuitems a {
@@ -178,7 +178,7 @@ nav .vacchunlogo {
 
 @media only screen and (min-width: 1160px) {
   .color {
-    z-index: 999999;
+    z-index: 1200;
     height: 60px;
     
   }
@@ -226,7 +226,7 @@ nav .vacchunlogo {
 
 @media only screen and (max-width: 930px) {
   .color {
-    z-index: 999999;
+    z-index: 1200;
     height: 60px;
   }
   .menuitems {
@@ -311,13 +311,13 @@ nav img {
 }
 
 .nav-small {
-  z-index: 9999999;
+  z-index: 999;
   position: fixed;
   /*display: flex;*/
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  z-index: 1000;
+  z-index: 999;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);

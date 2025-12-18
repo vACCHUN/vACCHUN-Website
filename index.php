@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="nav-small" id='nav-small'>
         <img id="nav-close" src="img/navclose.svg" alt="Open Menu">
         </a>
@@ -37,43 +38,42 @@
     </div>
     <header>
         <script>
-        fetch("./isLhccOnline.php", {
-                method: "POST",
-                headers: {
-                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-                },
-                body: "getOnlineControllers=1",
-        })
-        .then((response) => response.text())
-        .then((res) => {
-            document.getElementById("isLHCCOnline").textContent = res ? "Show online controllers" : "We are offline";
-            document.getElementById("isLHCCOnline").dataset.online = res ? "true" : "false";
-        });
+            fetch("./isLhccOnline.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                    },
+                    body: "getOnlineControllers=1",
+                })
+                .then((response) => response.text())
+                .then((res) => {
+                    document.getElementById("isLHCCOnline").textContent = res ? "Show online controllers" : "We are offline";
+                    document.getElementById("isLHCCOnline").dataset.online = res ? "true" : "false";
+                });
 
 
-        fetch("events/eventParser.php", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            },
-            body: "getExams=1",
-        })
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => {
-            if (!data) {
-                return;
-            }
+            fetch("events/eventParser.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                    },
+                    body: "getExams=1",
+                })
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    if (!data) {
+                        return;
+                    }
 
-            if (Object.keys(data).length == 1) {
-                document.getElementById("isExam").textContent = data ? `${data[0].name}` : "";
-            }
-            else {
-                document.getElementById("isExam").textContent = data ? `Multiple exams are taking place soon!` : "";
-            }
+                    if (Object.keys(data).length == 1) {
+                        document.getElementById("isExam").textContent = data ? `${data[0].name}` : "";
+                    } else {
+                        document.getElementById("isExam").textContent = data ? `Multiple exams are taking place soon!` : "";
+                    }
 
-        })
+                })
         </script>
 
         <div id="header-center" class="header-center">
@@ -85,7 +85,7 @@
                 <a id="headerEventsBtn" class="btn btn-blue" href="./events/" style="width: 140px"></a>
                 <a id="headerBoardBtn" class="btn btn-blue" href="https://board.vacchun.hu" style="width: 140px"></a>
             </div>
-            
+
         </div>
         <a href="#downarrow"><img src="./img/downarrow.svg" class="downarrow" id="downarrow" alt=""></a>
     </header>
@@ -161,6 +161,74 @@
         <a id="ppolicy" href="./privacy-policy">Adatvédelem</a>
         <p>Copyright © 2025</p>
     </footer>
+
+
+
+
+    <section id="streamPopup">
+        <button id="streamPopupClose">X</button>
+        <div>
+            <h1>XMAS Fly-in Hungary 2025</h1>
+        </div>
+        <div id="streamH2">
+            <h2>Live from HungaroControl</h2>
+        </div>
+        <div>
+            <p>Live Stream · December 20, 2025 · 09:00-17:00 UTC</p>
+        </div>
+        <div id="countdown">
+            <div><span id="cd-days">--</span>Days</div>
+            <div><span id="cd-hours">--</span>Hours</div>
+            <div class="countdownHideable"><span id="cd-minutes">--</span>Minutes</div>
+            <div class="countdownHideable"><span id="cd-seconds">--</span>Seconds</div>
+        </div>
+
+
+        <div id="stream" style="display: none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nCQLRpEBDaA" title="YouTube live stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <script>
+        //const streamStartUTC = Date.UTC(2025, 11, 20, 9, 0, 0);
+        //const streamStartUTC = Date.UTC(2025, 11, 18, 9, 5, 0); // test
+        const popup = document.getElementById("streamPopup");
+        const stream = document.getElementById("stream");
+
+        document.getElementById("streamPopupClose").addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        function updateCountdown() {
+            const now = Date.now();
+            const diff = streamStartUTC - now;
+
+            // 30 minutes in ms
+            const showStreamAt = 30 * 60 * 1000;
+
+            if (diff <= showStreamAt) {
+                stream.style.display = "flex";
+            }
+
+            if (diff <= 0) {
+                document.getElementById('countdown').innerText = 'LIVE NOW';
+                return;
+            }
+
+            const totalSeconds = Math.floor(diff / 1000);
+            const days = Math.floor(totalSeconds / 86400);
+            const hours = Math.floor((totalSeconds % 86400) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            document.getElementById('cd-days').textContent = days;
+            document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
 
 </html>
