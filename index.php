@@ -189,7 +189,7 @@
         </div>
     </section>
     <script>
-        //const streamStartUTC = Date.UTC(2025, 11, 20, 9, 0, 0);
+        const streamStartUTC = Date.UTC(2025, 11, 20, 9, 0, 0);
         //const streamStartUTC = Date.UTC(2025, 11, 18, 9, 5, 0); // test
         const popup = document.getElementById("streamPopup");
         const stream = document.getElementById("stream");
