@@ -18,7 +18,7 @@ const lang = {
       feedbackSmall: "Visszajelzés",
       contactUsSmall: "Kapcsolat",
       eventsSmall: "Rendezvények",
-      ppolicySmall: "Adatvédelem"
+      ppolicySmall: "Adatvédelem",
     },
     header: {
       headerText: "Simming on the next level",
@@ -32,14 +32,11 @@ const lang = {
     card: {
       ourActivities: "Tevékenységeink",
       flyingHeader: "Repülés",
-      flying:
-        "Repülni szeretnél egy Airbus A320-al, vagy éppen egy Boeing B737-800-al, de ezt a valóságban nem teheted meg? Itt kipróbálhatod magad teljesen realisztikus környezetben!",
+      flying: "Repülni szeretnél egy Airbus A320-al, vagy éppen egy Boeing B737-800-al, de ezt a valóságban nem teheted meg? Itt kipróbálhatod magad teljesen realisztikus környezetben!",
       controllingHeader: "Légiforgalmi irányítás",
-      controlling:
-        "Inkább a gépek irányítása érdekel? Legyél valós vagy virtuális pilóta, nálunk bármikor kipróbálhatod, hogy milyen a légtér karmesterének lenni.",
+      controlling: "Inkább a gépek irányítása érdekel? Legyél valós vagy virtuális pilóta, nálunk bármikor kipróbálhatod, hogy milyen a légtér karmesterének lenni.",
       trainingHeader: "Oktatás",
-      training:
-        "Oktatóink a te szabadidődhöz igazítva segítenek az irányítás alapjainak elsajátításában. Ennek menetéről bővebb információkat az Irányítók menüpont alatt találsz.",
+      training: "Oktatóink a te szabadidődhöz igazítva segítenek az irányítás alapjainak elsajátításában. Ennek menetéről bővebb információkat az Irányítók menüpont alatt találsz.",
     },
     forPilots: {
       charts: "Térképek",
@@ -57,13 +54,14 @@ const lang = {
       pax: "Utasszállítás",
       standMarked: "Az általunk ajánlott állóhelyet kék körrel jelöltük a térképen. Jó repülést kívánunk!",
       unable: "Nem találtunk számodra megfelelő állóhelyet. Az oldal alján, a chartviewerben találhatsz több információt az állóhelyekről.",
-      submit: "Küldés"
+      submit: "Küldés",
+      lhbpIntl: "Budapest Liszt Ferenc nemzetközi repülőtér",
     },
     events: {
-      headerTitle: "Rendezvények"
+      headerTitle: "Rendezvények",
     },
     notfound: {
-      headerTitle: "404 - Az oldal nem található"
+      headerTitle: "404 - Az oldal nem található",
     },
     booking: {
       headerTitle: "Foglalás",
@@ -89,33 +87,33 @@ const lang = {
       theStaff: "Vezetőség",
       socialMedia: "Közösség",
 
-        SuleBalazsTitle: "Igazgató - ACCHU01",
-        SuleBalazsDesc: "Balázs a vACC általános működéséért felel, ő szervezi és koordinálja az összes részleg munkáját, valamint a tagsági kérdésekben is ő az illetékes, intézi az irányítók felvételét és ellenőrzi a kollégák aktivitását a hálózaton.",
+      SuleBalazsTitle: "Igazgató - ACCHU01",
+      SuleBalazsDesc: "Balázs a vACC általános működéséért felel, ő szervezi és koordinálja az összes részleg munkáját, valamint a tagsági kérdésekben is ő az illetékes, intézi az irányítók felvételét és ellenőrzi a kollégák aktivitását a hálózaton.",
 
-        GrobPeterTitle: "Rendezvényszervező - ACCHU03",
-        GrobPeterDesc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
+      GrobPeterTitle: "Rendezvényszervező - ACCHU03",
+      GrobPeterDesc: "Peti koordinálja az eseményekkel és rendezvényekkel kapcsolatos tennivalókat.",
 
-        CsernakGergelyTitle: "EuroScope fejlesztő - ACCHU06",
-        CsernakGergelyDesc: "Gergő a EuroScope kliens fejlesztője, melyet világszerte használnak a hálózatos irányításhoz.",
+      CsernakGergelyTitle: "EuroScope fejlesztő - ACCHU06",
+      CsernakGergelyDesc: "Gergő a EuroScope kliens fejlesztője, melyet világszerte használnak a hálózatos irányításhoz.",
 
-        GalyassyTamasTitle: "Marketing Menedzser - ACCHU07",
-        GalyassyTamasDesc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével.",
+      GalyassyTamasTitle: "Marketing Menedzser - ACCHU07",
+      GalyassyTamasDesc: "Tomi tartja a kapcsolatot a vACCHUN összes partnerével.",
 
-        UjhelyiDomiTitle: "Képzési igazgató - ACCHU08",
-        UjhelyiDomiDesc: "Domonkos ügyel a képzések szervezésére, lebonyolítására, és felügyeli az oktatók munkáját.",
+      UjhelyiDomiTitle: "Képzési igazgató - ACCHU08",
+      UjhelyiDomiDesc: "Domonkos ügyel a képzések szervezésére, lebonyolítására, és felügyeli az oktatók munkáját.",
 
-        CsorgoCsabiTitle: "Webfejlesztő - ACCHU09",
-        CsorgoCsabiDesc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
+      CsorgoCsabiTitle: "Webfejlesztő - ACCHU09",
+      CsorgoCsabiDesc: "Csabi felel a vACCHUN működéséhez szükséges webszolgáltatásokért.",
     },
     privacyPolicy: {
       headerTitle: "Adatvédelem",
       dearVisitor: {
-        title:"Kedves látogató!",
+        title: "Kedves látogató!",
         txt: "Szeretnénk tájékoztatni, hogy a honlapon lévő adatok megtekintéséhez személyes adatok megadása nem szükséges, ugyanakkor bizonyos funkciók eléréséhez – pl. kapcsolattartás – ez elengedhetetlenül szükséges. A jobb átláthatóság érdekében az alábbiakban összefoglaltuk számodra, hogy megadott adataidat miként és meddig kezeljük.",
       },
       autoInfo: {
         title: "Automatikusan keletkező információk",
-        txt: "<ul><li>Kezelt adat: a felhasználó eszközének IP (internet protokoll) címe, lap meglátogatásának időpontja.</li><li>Az adatkezelés jogalapja: a látogató önkéntes hozzájárulása a weblap meglátogatásával.</li><li>Az adatkezelés céljai: a weboldal üzemeltetése, illetve statisztikai célok.</li><li>Az adatok forrása: a weboldal megtekintésekor automatikusan keletkező adatok.</li><li>Adatkezelés módja: rögzítés, tárolás, elemzés, törlés. Az adatkezelés elektronikusan történik.</li><li>Adatkezelés időtartama: Az utolsó levelezéstől számított 21 nap.</li></ul>"
+        txt: "<ul><li>Kezelt adat: a felhasználó eszközének IP (internet protokoll) címe, lap meglátogatásának időpontja.</li><li>Az adatkezelés jogalapja: a látogató önkéntes hozzájárulása a weblap meglátogatásával.</li><li>Az adatkezelés céljai: a weboldal üzemeltetése, illetve statisztikai célok.</li><li>Az adatok forrása: a weboldal megtekintésekor automatikusan keletkező adatok.</li><li>Adatkezelés módja: rögzítés, tárolás, elemzés, törlés. Az adatkezelés elektronikusan történik.</li><li>Adatkezelés időtartama: Az utolsó levelezéstől számított 21 nap.</li></ul>",
       },
       contact: {
         title: "Kapcsolatfelvételkor megadott adatok",
@@ -136,7 +134,7 @@ const lang = {
       official: {
         title: "Adatvédelmi Tisztviselő",
         txt: "A vACCHUN tevékenységéből kifolyólag nem köteles Adatvédelmi Tisztviselőt kinevezni. Az idevonatkozó ügyekkel kapcsolatosan az <a href='mailto:info@vacchun.hu'>info@vacchun.hu</a> címen tudsz minket elérni.",
-      }
+      },
     },
     controllers: {
       headerTitle: "Irányítók",
@@ -144,12 +142,12 @@ const lang = {
       step1H: "1. lépés",
       step1P: "Amennyiben még nem tetted, <a target='_blank' href='https://my.vatsim.net/register'>regisztrálnod</a> kell a VATSIM hálózatára. Régióként válaszd a következőt: Europe, Middle East and Africa, divízóként pedig Európát.",
       step2H: "2. lépés",
-      step2P: "Az európai kontinensen lévő országok légiforgalmi irányító csoportjait koordináló szervezet a VATEUD. Második lépésként ehhez a szervezethez kell <a target='_blank' href='http://members.vateud.net/'>regisztrálni</a>, itt tudsz nyilatkozni arról, hogy Magyarországon szeretnél irányítani." ,
+      step2P: "Az európai kontinensen lévő országok légiforgalmi irányító csoportjait koordináló szervezet a VATEUD. Második lépésként ehhez a szervezethez kell <a target='_blank' href='http://members.vateud.net/'>regisztrálni</a>, itt tudsz nyilatkozni arról, hogy Magyarországon szeretnél irányítani.",
       step3H: "3. lépés",
       step3P: "A <a target='_blank' href='http://euroscope.hu/'>EuroScope</a> Csernák Gergely által készített légiforgalmi irányító radarszoftver, amely segítségével a hálózaton kezeljük Magyarország légiforgalmát. Erre az Európa szerte használt szoftverre lesz szükséged a képzés megkezdéséhez.",
       step4H: "4. lépés",
       step4P: "Mostmár csak a jelentkezés maradt hátra! Ehhez keresd fel Balázst a <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> email címen. Azonban fontos megjegyezni, hogy a képzésnek alapfeltétele a legalább középszinten beszélt angol nyelvtudás, emellett bármilyen repüléssel kapcsolatos tapasztalat is előnyt jelent. Amennyiben felmerült bármilyen kérdésed, bátran keress minket <a href='https://vacchun.hu/about-us#theStaff'>emailben!</a>",
-      controllersHeader: "Irányítóink"
+      controllersHeader: "Irányítóink",
     },
     feedback: {
       headerTitle: "Visszajelzés",
@@ -160,7 +158,7 @@ const lang = {
     },
     onlineControllers: {
       headerTitle: "Online Irányítók",
-    }
+    },
   },
   en: {
     nav: {
@@ -181,7 +179,7 @@ const lang = {
       feedbackSmall: "Feedback",
       contactUsSmall: "Contact Us",
       eventsSmall: "Events",
-      ppolicySmall: "Privacy Policy"
+      ppolicySmall: "Privacy Policy",
     },
     header: {
       headerText: "Simming on the next level",
@@ -195,14 +193,11 @@ const lang = {
     card: {
       ourActivities: "What we do?",
       flyingHeader: "Flying",
-      flying:
-        "Would you like to fly with an Airbus A320 or Boeing B737-800, but you don't have the opportunity to do it in real life? Here you can try yourself in a realistic environment.",
+      flying: "Would you like to fly with an Airbus A320 or Boeing B737-800, but you don't have the opportunity to do it in real life? Here you can try yourself in a realistic environment.",
       controllingHeader: "Air traffic controlling",
-      controlling:
-        "You'd rather be interested in controlling aircraft? Whether you're a real or virtual pilot, with us at any time you can try to be the conductor of the airspace.",
+      controlling: "You'd rather be interested in controlling aircraft? Whether you're a real or virtual pilot, with us at any time you can try to be the conductor of the airspace.",
       trainingHeader: "Trainings",
-      training:
-        "Our instructors help you to learn the basics of being an air traffic controller, tailored to your time. For more information on how to do this, see the Controllers menu.",
+      training: "Our instructors help you to learn the basics of being an air traffic controller, tailored to your time. For more information on how to do this, see the Controllers menu.",
     },
     forPilots: {
       charts: "Charts",
@@ -220,13 +215,14 @@ const lang = {
       pax: "Passenger",
       standMarked: "The recommended stand has been marked with blue on the map. Have a nice flight!",
       unable: "We were unable to find a stand for you. Please refer to the chartviewer's info page below, to find out which stand suits your flight!",
-      submit: "Submit"
+      submit: "Submit",
+      lhbpIntl: "Budapest Ferenc Liszt International Airport",
     },
     events: {
-      headerTitle: "Events"
+      headerTitle: "Events",
     },
     notfound: {
-      headerTitle: "404 - Not found"
+      headerTitle: "404 - Not found",
     },
     booking: {
       headerTitle: "Booking",
@@ -252,33 +248,33 @@ const lang = {
       socialMedia: "Community",
       theStaff: "Staff",
 
-        SuleBalazsTitle: "vACC Director - ACCHU01",
-        SuleBalazsDesc: "Balazs is responsible for the general operation, arrange and coordinate the entire vACCHUN organization. He also arranges the recruitment of the new members and controls the activity of colleagues on the network.",
+      SuleBalazsTitle: "vACC Director - ACCHU01",
+      SuleBalazsDesc: "Balazs is responsible for the general operation, arrange and coordinate the entire vACCHUN organization. He also arranges the recruitment of the new members and controls the activity of colleagues on the network.",
 
-        GrobPeterTitle: "Event Coordinator - ACCHU03",
-        GrobPeterDesc: "Peter coordinates the events and programs of vACCHUN.",
+      GrobPeterTitle: "Event Coordinator - ACCHU03",
+      GrobPeterDesc: "Peter coordinates the events and programs of vACCHUN.",
 
-        CsernakGergelyTitle: "EuroScope Developer - ACCHU06",
-        CsernakGergelyDesc: "Gergő is the developer of EuroScope client that is used worldwide for air traffic controlling.",
+      CsernakGergelyTitle: "EuroScope Developer - ACCHU06",
+      CsernakGergelyDesc: "Gergő is the developer of EuroScope client that is used worldwide for air traffic controlling.",
 
-        GalyassyTamasTitle: "Marketing Manager - ACCHU07",
-        GalyassyTamasDesc: "Tamás keeps in touch with all partners of vACCHUN.",
+      GalyassyTamasTitle: "Marketing Manager - ACCHU07",
+      GalyassyTamasDesc: "Tamás keeps in touch with all partners of vACCHUN.",
 
-        UjhelyiDomiTitle: "Training Director - ACCHU08",
-        UjhelyiDomiDesc: "Domonkos is responsible for the training of our controllers and overseeing the work of our instructors.",
+      UjhelyiDomiTitle: "Training Director - ACCHU08",
+      UjhelyiDomiDesc: "Domonkos is responsible for the training of our controllers and overseeing the work of our instructors.",
 
-        CsorgoCsabiTitle: "Web Developer - ACCHU09",
-        CsorgoCsabiDesc: "Csaba is responsible for the web services required for the operation of vACCHUN.",
+      CsorgoCsabiTitle: "Web Developer - ACCHU09",
+      CsorgoCsabiDesc: "Csaba is responsible for the web services required for the operation of vACCHUN.",
     },
     privacyPolicy: {
       headerTitle: "Privacy Policy",
       dearVisitor: {
-        title:"Dear visitor!",
+        title: "Dear visitor!",
         txt: "We would like to inform you that providing personal data is not necessary to view the information on the website. However, for certain functions, such as contact, it is essential. For better transparency, we have summarized for you how and for how long we will handle the data you provide.",
       },
       autoInfo: {
         title: "Automatically generated information",
-        txt: "<ul><li>Processed data: user's device IP (internet protocol) address, time of page visit.</li><li>Legal basis for data processing: visitor's voluntary consent by visiting the website.</li><li>Purposes of data processing: website operation and statistical purposes.</li><li>Data source: automatically generated data when viewing the website.</li><li>Mode of data processing: recording, storage, analysis, deletion. Data processing is electronic.</li><li>Duration of data processing: 21 days from the last correspondence.</li></ul>"
+        txt: "<ul><li>Processed data: user's device IP (internet protocol) address, time of page visit.</li><li>Legal basis for data processing: visitor's voluntary consent by visiting the website.</li><li>Purposes of data processing: website operation and statistical purposes.</li><li>Data source: automatically generated data when viewing the website.</li><li>Mode of data processing: recording, storage, analysis, deletion. Data processing is electronic.</li><li>Duration of data processing: 21 days from the last correspondence.</li></ul>",
       },
       contact: {
         title: "Contact information provided during contact",
@@ -299,7 +295,7 @@ const lang = {
       official: {
         title: "Data Protection Officer",
         txt: "Due to the nature of vACCHUN's activities, it is not obligated to appoint a Data Protection Officer. For matters related to this, you can reach us at <a href='mailto:info@vacchun.hu'>info@vacchun.hu</a>.",
-      }
+      },
     },
     controllers: {
       headerTitle: "Controllers",
@@ -307,12 +303,12 @@ const lang = {
       step1H: "Step 1",
       step1P: "If you haven't done it yet, you must <a target='_blank' href='https://my.vatsim.net/register'>register</a> on the VATSIM Network. Choose the following: Europe, Middle East and Africa, and Europe as division.",
       step2H: "Step 2",
-      step2P: "The organization coordinating all controlling-related activities in Europe is VATEUD. You have to <a target='_blank' href='http://members.vateud.net/'>choose Hungary</a> as the place you want to control at." ,
+      step2P: "The organization coordinating all controlling-related activities in Europe is VATEUD. You have to <a target='_blank' href='http://members.vateud.net/'>choose Hungary</a> as the place you want to control at.",
       step3H: "Step 3",
       step3P: "<a target='_blank' href='http://euroscope.hu/'>EuroScope.</a> The controlling client made by Gergely Csernák, is widely used across Europe. You'll need this piece of software. Don't worry, it's completely free :)",
       step4H: "Step 4",
       step4P: "All you have to do now is to send an email! For this, contact Balázs at <a href='mailto:membership@vacchun.hu'>membership@vacchun.hu</a> Be aware, that you'll need basic English, and any aviation-related knowledge is preferred. If you have any questions, feel free to reach out on one of our <a href='https://vacchun.hu/about-us#theStaff'>contacts!</a>",
-      controllersHeader: "Our controllers"
+      controllersHeader: "Our controllers",
     },
     feedback: {
       headerTitle: "Feedback",
@@ -323,8 +319,7 @@ const lang = {
     },
     onlineControllers: {
       headerTitle: "Online Controllers",
-    }
-
+    },
   },
 };
 

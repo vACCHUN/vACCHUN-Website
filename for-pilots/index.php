@@ -20,7 +20,7 @@ require_once "./standParser.php";
     <link rel="icon" href="../img/favicon.png" type="image/icon-type">
     <script async
         src="https://www.bing.com/api/maps/mapcontrol?key=Ar618W1YuXkONdzgUl4menBldwcHr22XEVUJjsVV1Z0UFAmtjvNpj2cERR85YMUw&callback=initMap">
-        </script>
+    </script>
 
     <script type="text/javascript" src="../stands/LHBP/circles.js">
     </script>
@@ -56,39 +56,36 @@ require_once "./standParser.php";
     </div>
     <header id="header">
         <script>
-            
-        const METAR = async () => {
-            const APIResponse = await fetch('https://metar.vatsim.net/LHBP');
-            const LHBPMetar = await APIResponse.text();
-            document.getElementById("rawmetar").textContent = LHBPMetar;
+            const METAR = async () => {
+                const APIResponse = await fetch('https://metar.vatsim.net/LHBP');
+                const LHBPMetar = await APIResponse.text();
+                document.getElementById("rawmetar").textContent = LHBPMetar;
 
-            if (LHBPMetar.includes("CAVOK")) {
-            document.getElementById("header").classList.add("CAVOK");
+                if (LHBPMetar.includes("CAVOK")) {
+                    document.getElementById("header").classList.add("CAVOK");
+                }
+                if (LHBPMetar.includes("FEW")) {
+                    document.getElementById("header").classList.add("FEW");
+                }
+                if (LHBPMetar.includes("SCT")) {
+                    document.getElementById("header").classList.add("SCT");
+                }
+                if (LHBPMetar.includes("BKN")) {
+                    document.getElementById("header").classList.add("BKN");
+                }
+                if (LHBPMetar.includes("OVC", "aaa")) {
+                    document.getElementById("header").classList.add("OVC");
+                }
+                if (LHBPMetar.includes("RA")) {
+                    document.getElementById("header").classList.add("RA");
+                }
+                if (LHBPMetar.includes("SN")) {
+                    document.getElementById("header").classList.add("SNOW");
+                }
             }
-            if (LHBPMetar.includes("FEW")) {
-                document.getElementById("header").classList.add("FEW");
-            }
-            if (LHBPMetar.includes("SCT")) {
-                document.getElementById("header").classList.add("SCT");
-            }
-            if (LHBPMetar.includes("BKN")) {
-                document.getElementById("header").classList.add("BKN");
-            }
-            if (LHBPMetar.includes("OVC", "aaa")) {
-                document.getElementById("header").classList.add("OVC");
-            }
-            if (LHBPMetar.includes("RA")) {
-                document.getElementById("header").classList.add("RA");
-            }
-            if (LHBPMetar.includes("SN")) {
-                document.getElementById("header").classList.add("SNOW");
-            }
-        }
-        METAR();
-        /*  to be added: SNOW:"SP" "SW" "SG" "SHS"
-            RA: "FG" */
-        
-        
+            METAR();
+            /*  to be added: SNOW:"SP" "SW" "SG" "SHS"
+                RA: "FG" */
         </script>
 
         <div id="header-center" class="header-center">
@@ -99,6 +96,15 @@ require_once "./standParser.php";
         </div>
         <a href="#downarrow"><img src="../img/downarrow.svg" class="downarrow" id="downarrow" alt=""></a>
     </header>
+    <section class="briefing-section">
+        <h1 id="lhbpIntl">Budapest Ferenc Liszt International Airport</h1>
+        <div style="display: flex;">
+            <img src="../img/for-pilots/file.svg" alt="PDF File">
+            <a href="../assets/Pilot_Briefing_Budapest_Liszt_Ferenc_Airport.pdf">
+                <h2 id="briefingHeader">Briefing for Budapest Airport</h2>
+            </a>
+        </div>
+    </section>
     <section class="notam-section">
         <h1 id="NOTAM">NOTAM</h1>
         <div class="controls">
@@ -200,7 +206,6 @@ require_once "./standParser.php";
                         ?>
                     </div>
                 </form>
-                <a href="../assets/Pilot_Briefing_Budapest_Liszt_Ferenc_Airport.pdf"><h2 id="briefingHeader">Briefing for Budapest Airport</h2></a>
             </div>
         </div>
     </section>
@@ -246,6 +251,7 @@ require_once "./standParser.php";
         let red = 'rgba(243, 30, 35,0.2)'
         let green = 'rgba(147, 255, 133,0.5)'
         var map;
+
         function initMap() {
             map = new Microsoft.Maps.Map('#lhbpMap', {
                 center: new Microsoft.Maps.Location(47.433972, 19.260377),
@@ -253,7 +259,7 @@ require_once "./standParser.php";
 
                 zoom: 14
             });
-            Microsoft.Maps.loadModule('Microsoft.Maps.SpatialMath', function () {
+            Microsoft.Maps.loadModule('Microsoft.Maps.SpatialMath', function() {
                 var center = map.getCenter();
 
 
@@ -273,10 +279,14 @@ require_once "./standParser.php";
                 }
             });
         }
+
         function createCircle(center, radius, color, label) {
             var locs = Microsoft.Maps.SpatialMath.getRegularPolygon(center, radius, 36, Microsoft.Maps.SpatialMath.DistanceUnits.Miles);
 
-            addPolygonWithLabel(new Microsoft.Maps.Polygon(locs, { fillColor: color, strokeThickness: 0 }), label)
+            addPolygonWithLabel(new Microsoft.Maps.Polygon(locs, {
+                fillColor: color,
+                strokeThickness: 0
+            }), label)
         }
 
 
@@ -293,14 +303,12 @@ require_once "./standParser.php";
                 title: label
             });
 
-            polygon.metadata = { label: labelPin };
+            polygon.metadata = {
+                label: labelPin
+            };
 
             map.entities.push(labelPin);
         }
-
-
-
-
     </script>
 
 

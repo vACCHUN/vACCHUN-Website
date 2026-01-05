@@ -26,21 +26,20 @@ body {
 }
 
 .BKN {
-  background-image: url("../img/twr/bkn.png") !important;;
+  background-image: url("../img/twr/bkn.png") !important;
 }
 
 .OVC {
-  background-image: url("../img/twr/ovc.png") !important;;
+  background-image: url("../img/twr/ovc.png") !important;
 }
 
 .RA {
-  background-image: url("../img/twr/storm.png") !important;;
+  background-image: url("../img/twr/storm.png") !important;
 }
 
 .SNOW {
-  background-image: url("../img/twr/snow.png") !important;;
+  background-image: url("../img/twr/snow.png") !important;
 }
-
 
 ::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
@@ -52,7 +51,7 @@ body {
 }
 
 header {
-  background-image: url('../img/twr/cavok.png') !important;
+  background-image: url("../img/twr/cavok.png") !important;
   background-size: cover !important;
 }
 
@@ -141,7 +140,6 @@ section h1 {
 
 .chartcontainer {
   height: 800px;
-  
 }
 
 .airport p {
@@ -162,8 +160,6 @@ section h1 {
   display: none;
   text-align: center;
 }
-
-
 
 .airport-mil {
   background-color: #4d5650;
@@ -204,12 +200,11 @@ section h1 {
 }
 
 iframe {
-  width:100%;
+  width: 100%;
   height: 685px;
   border: none !important;
   margin-top: 15px;
 }
-
 
 .show-airport {
   display: flex;
@@ -239,7 +234,7 @@ iframe {
 
 #chartselect {
   overflow-x: auto;
-  overflow-y:hidden;
+  overflow-y: hidden;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -272,7 +267,7 @@ iframe {
   }
 
   .chartcontainer {
-    width:100%;
+    width: 100%;
   }
 }
 
@@ -346,7 +341,6 @@ iframe {
   width: 1px;
   height: 19px;
 }
-
 
 .standfinder-label {
   margin-right: 6px;
@@ -426,7 +420,7 @@ iframe {
   --progress: 0;
 }
 
-.recommendation{
+.recommendation {
   background-color: var(--darkblue);
   color: #fff;
   padding: 5px;
@@ -482,20 +476,20 @@ iframe {
 .option-input:checked::before {
   width: 30px;
   height: 30px;
-  display:flex;
-  content: '✔';
+  display: flex;
+  content: "✔";
   font-size: 15px;
-  font-weight:bold;
+  font-weight: bold;
   position: absolute;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
 .option-input:checked::after {
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
   background: var(--darkblue);
-  content: '';
+  content: "";
   display: block;
   position: relative;
   z-index: 100;
@@ -516,7 +510,8 @@ iframe {
   text-align: center;
 }
 
-#stand-marked, #unable-to-find-stand {
+#stand-marked,
+#unable-to-find-stand {
   padding: 30px;
 }
 
@@ -524,16 +519,14 @@ iframe {
   padding: 5px;
   width: 100%;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
-
 
 @media only screen and (max-width: 382px) {
   .radio-container {
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -559,29 +552,29 @@ iframe {
   .CAVOK {
     background-image: url("../img/twr/high-res/cavok.png") !important;
   }
-  
+
   .FEW {
     background-image: url("../img/twr/high-res/few.png") !important;
   }
-  
+
   .SCT {
     background-image: url("../img/twr/high-res/sct.png") !important;
   }
-  
+
   .BKN {
-    background-image: url("../img/twr/high-res/bkn.png") !important;;
+    background-image: url("../img/twr/high-res/bkn.png") !important;
   }
-  
+
   .OVC {
-    background-image: url("../img/twr/high-res/ovc.png") !important;;
+    background-image: url("../img/twr/high-res/ovc.png") !important;
   }
-  
+
   .RA {
-    background-image: url("../img/twr/high-res/storm.png") !important;;
+    background-image: url("../img/twr/high-res/storm.png") !important;
   }
-  
+
   .SNOW {
-    background-image: url("../img/twr/high-res/snow.png") !important;;
+    background-image: url("../img/twr/high-res/snow.png") !important;
   }
 }
 
@@ -592,7 +585,7 @@ iframe {
 }
 
 .notam-section .controls button {
-  all:unset;
+  all: unset;
   color: #fff;
   background-color: #4d4d56;
   padding: 5px 10px;
@@ -623,7 +616,7 @@ iframe {
   display: grid;
   justify-content: center;
   align-items: center;
-  overflow-y:scroll;
+  overflow-y: scroll;
   padding: 30px;
   border-radius: 10px;
 }
@@ -665,7 +658,7 @@ iframe {
 }
 
 .notam-section .filterActive button {
-  all:unset;
+  all: unset;
   margin-top: 30px;
   color: #fff;
   background-color: #4d4d56;
@@ -690,4 +683,34 @@ iframe {
 
 .airport-info-div strong {
   color: var(--green);
+}
+
+.briefing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.briefing-section img {
+  width: 35px;
+}
+
+#briefingHeader {
+  color: var(--darkblue);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 0.6;
+    text-shadow: 0 0 10px rgba(0, 50, 150, 0.6);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
