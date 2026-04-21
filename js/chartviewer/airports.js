@@ -44,7 +44,7 @@ const airport = {
     "LHKE": "Kecskemét",
     "LHSN": "Szolnok",
     "LHPA": "Pápa"
-    
+
 }
 const info = {
     "LHCC": `<h1>Budapest FIR</h1><img id='FIRimg'src='../../img/info/FIR.png'>`,
@@ -72,7 +72,7 @@ const info = {
     <strong>Traffic Pattern Altitude/Direction:</strong> 1500 AGL | 16 Both - 34 Both<br/>
     <strong>Remarks:</strong> RMZ and TMZ. IFR flights entering controlled airspace after departure shall obtain en route clearance before take-off. VFR reporting points in use (BALATON, DIOSKAL).<br/></div>`,
 
-    
+
     "LHPR": `<div class='airport-info-div'>
     <h1>Győr-Pér</h1>
     <strong>ICAO:</strong> LHPR<br/>
@@ -119,8 +119,8 @@ const info = {
     <strong>Surface:</strong> Grass // Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1200 AMSL | 16L/R Right - 34L/R Left<br/>
     <strong>Remarks:</strong> Engine driven aircraft are required to establish two way radio communication with Szeged AFIS unit whenever arriving to, departing from LHUD or overflying LHUD TIZ airspace.<br/></div>`,
-    
-    
+
+
     "LHBC": `<div class='airport-info-div'>
     <h1>Békéscsaba</h1>
     <strong>ICAO:</strong> LHBC<br/>
@@ -131,8 +131,8 @@ const info = {
     <strong>Surface:</strong> Asphalt // Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1200 AMSL | 17L Left - 35R Right // 17R Right (Glider only) - 35L Left (Glider only)<br/>
     <strong>Remarks:</strong> NIL<br/></div>`,
-    
-    
+
+
     "LHFM": `<div class='airport-info-div'>
     <h1>Fertőszentmiklós</h1>
     <strong>ICAO:</strong> LHFM<br/>
@@ -143,7 +143,7 @@ const info = {
     <strong>Surface:</strong> Asphalt<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 16 Both - 34 Both<br/>
     <strong>Remarks:</strong> Only day VFR allowed. Flight plan must be filed. TIZ R=5km 4000ft. Parachuting PPR. For international traffic report has to be made min. 1 hour before entering or departing respectively.<br/></div>`,
-    
+
     "LHAK": `<div class='airport-info-div'>
     <h1>Atkár - Gyöngyöshalász</h1>
     <strong>ICAO:</strong> LHAK<br/>
@@ -154,7 +154,7 @@ const info = {
     <strong>Surface:</strong> Grass<br/>
     <strong>Traffic Pattern Altitude/Direction:</strong> 1400 AMSL | 13 Left - 31 Right // 02 Right - 20 Left<br/>
     <strong>Remarks:</strong> Nil<br/></div>`,
-    
+
     "LHBI": `<h1>Biharkeresztes</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Biharkeresztes&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHBL": `<h1>Ballószög</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ballószög repülőtér&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHBS": `<h1>Budaörs</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHBS&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
@@ -162,8 +162,8 @@ const info = {
     "LHCL": `<h1>Cegléd</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHCL&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHDK": `<h1>Dunakeszi</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=LHDK&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
     "LHFC": `<h1>Bodmér-Felcsút</h1><br><p class='info-text'></p><div class='mapouter'><div class='gmap_canvas'><iframe class='gmap_iframe' width='100%' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Felcsút&amp;t=p&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:400px!important;}</style></div>`,
-    
-    
+
+
     "LHMR": `<div class='airport-info-div'>
     <h1>Maklár</h1>
     <strong>ICAO:</strong> LHMR<br/>
@@ -200,7 +200,7 @@ const info = {
 
 const chart = {
     "LHCC": {
-        
+
         "enroute": {
             "En-route Chart": "../charts/LHCC/enroute/LH_ENR_6_LHCC_ERC_en.pdf",
             "Fauna Chart": "../charts/LHCC/enroute/LH_ENR_6_LHCC_FAUNA_en.pdf",
@@ -223,7 +223,7 @@ const chart = {
             "13L": "../charts/LHBP/sid/LH_AD_2_LHBP_SID_13L_en.pdf",
             "13R": "../charts/LHBP/sid/LH_AD_2_LHBP_SID_13R_en.pdf",
             "31R": "../charts/LHBP/sid/LH_AD_2_LHBP_SID_31R_en.pdf",
-            "31L": "../charts/LHBP/sid/LH_AD_2_LHBP_SID_31L_en.pdf"  
+            "31L": "../charts/LHBP/sid/LH_AD_2_LHBP_SID_31L_en.pdf"
         },
         "star": {
             "13L - 13R": "../charts/LHBP/star/LH_AD_2_LHBP_STAR_13L13R_en.pdf",
@@ -231,7 +231,7 @@ const chart = {
             "ATCSMAC": "../charts/LHBP/star/LH_AD_2_LHBP_ATCSMAC_en.pdf",
             "Holding Procedures": "../charts/LHBP/star/LH_AD_2_LHBP_HLDG_en.pdf",
             "TMA": "../charts/LHBP/star/LH_AD_2_LHBP_TMA_en.pdf"
-        }, 
+        },
         "approach": {
             "ILS or LOC 13L": "../charts/LHBP/approach/LH_AD_2_LHBP_ILS_OR_LOC_13L_en.pdf",
             "ILS or LOC 13R": "../charts/LHBP/approach/LH_AD_2_LHBP_ILS_OR_LOC_13R_en.pdf",
@@ -324,10 +324,10 @@ const chart = {
             "AOCA": "../charts/LHPP/aerodrome/LH_AD_2_LHPP_AOCA_1634_en.pdf"
         },
         "approach": {
-            "ILS or LOC 34": "../charts/LHPP/approach/LH_AD_2_LHPP_ILS_OR_LOC_34_en.pdf",
-            "NDB 16": "../charts/LHPP/approach/LH_AD_2_LHPP_NDB_16_en.pdf",
-            "RNP 16": "../charts/LHPP/approach/LH_AD_2_LHPP_RNP_16_en.pdf",
-            "RNP 34": "../charts/LHPP/approach/LH_AD_2_LHPP_RNP_34_en.pdf",
+            "ILS or LOC 33": "../charts/LHPP/approach/LH_AD_2_LHPP_ILS_OR_LOC_33_en.pdf",
+            "NDB 15": "../charts/LHPP/approach/LH_AD_2_LHPP_NDB_15_en.pdf",
+            "RNP 15": "../charts/LHPP/approach/LH_AD_2_LHPP_RNP_15_en.pdf",
+            "RNP 33": "../charts/LHPP/approach/LH_AD_2_LHPP_RNP_33_en.pdf",
             "VAC": "../charts/LHPP/approach/LH_AD_2_LHPP_VAC_en.pdf"
         }
     },
@@ -354,7 +354,7 @@ const chart = {
         "aerodrome": {
             "ADC": "../charts/LHBC/aerodrome/LH_AD_2_LHBC_ADC_en.pdf",
             "AOCA": "../charts/LHBC/aerodrome/LH_AD_2_LHBC_AOCA_17L35R_en.pdf"
-        },   
+        },
         "approach": {
             "NDB 17L": "../charts/LHBC/approach/LH_AD_2_LHBC_NDB_17L_en.pdf",
             "NDB 35R": "../charts/LHBC/approach/LH_AD_2_LHBC_NDB_35R_en.pdf",
@@ -380,10 +380,10 @@ const chart = {
     },
     "LHFM": {
         "aerodrome": {
-            "ADC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_ADC_v5.jpg"
+            "ADC": "https://ais.hungarocontrol.hu/vfrmanual/LHFM"
         },
         "approach": {
-            "VAC": "https://vfrmanual.hungarocontrol.hu/files/LHFM/images/VFR_LHFM_VAC_v5.jpg"
+            "VAC": "https://storage.hungarocontrol.hu/media/934/VFR_LHFM_VAC_v6n.jpg"
         }
     },
     "LHGU": {
@@ -636,4 +636,4 @@ const chart = {
     }
 }
 
-export default {airport, info, chart};
+export default { airport, info, chart };
