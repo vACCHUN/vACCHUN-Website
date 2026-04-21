@@ -87,11 +87,20 @@ function setinfopage(icao) {
 setinfopage("LHBP");
 selectSubmenu("info", document.querySelector("#infomenu"));
 
+const AIP_AIRPORTS = ["LHBC", "LHBP", "LHDC", "LHNY", "LHPP", "LHPR", "LHSM", "LHUD"];
+const VFRMANUAL_BASE_URL = "https://ais.hungarocontrol.hu/vfrmanual";
+
 function selectAirport(icao) {
   if (icao == "LHKE" || icao == "LHSN" || icao == "LHPA") {
     window.open(milAip[icao], "_blank");
     return;
   }
+
+  if (!AIP_AIRPORTS.includes(icao) && icao !== "LHCC") {
+    window.open(`${VFRMANUAL_BASE_URL}/${icao}`, "_blank");
+    return;
+  }
+
   airportSelected = icao;
   selectSubmenu("info", document.querySelector("#infomenu"));
 
