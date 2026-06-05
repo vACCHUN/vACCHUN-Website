@@ -146,7 +146,7 @@ const lang = {
       step3H: "3. lépés",
       step3P: "A <a target='_blank' href='http://euroscope.hu/'>EuroScope</a> Csernák Gergely által készített légiforgalmi irányító radarszoftver, amely segítségével a hálózaton kezeljük Magyarország légiforgalmát. Erre az Európa szerte használt szoftverre lesz szükséged a képzés megkezdéséhez.",
       step4H: "4. lépés",
-      step4P: "Mostmár csak a jelentkezés maradt hátra! Ezt a <a target='_blank' href='https://discord.com/invite/DAZR36c'>discord</a> szerverünkön tudod megtenni. Azonban fontos megjegyezni, hogy a képzésnek alapfeltétele a legalább középszinten beszélt angol nyelvtudás, emellett bármilyen repüléssel kapcsolatos tapasztalat is előnyt jelent. Amennyiben felmerült bármilyen kérdésed, bátran keress minket <a href='https://vacchun.hu/about-us#theStaff'>emailben!</a>",
+      step4P: "Mostmár csak a jelentkezés maradt hátra! Ezt a <a target='_blank' href='https://discord.com/invite/DAZR36c'>Discord</a> szerverünkön tudod megtenni. Azonban fontos megjegyezni, hogy a képzésnek alapfeltétele a legalább középszinten beszélt angol nyelvtudás, emellett bármilyen repüléssel kapcsolatos tapasztalat is előnyt jelent. Amennyiben felmerült bármilyen kérdésed, bátran keress minket <a href='https://vacchun.hu/about-us#theStaff'>emailben vagy Discordon!</a>",
       controllersHeader: "Irányítóink",
     },
     feedback: {
@@ -307,7 +307,7 @@ const lang = {
       step3H: "Step 3",
       step3P: "<a target='_blank' href='http://euroscope.hu/'>EuroScope.</a> The controlling client made by Gergely Csernák, is widely used across Europe. You'll need this piece of software. Don't worry, it's completely free :)",
       step4H: "Step 4",
-      step4P: "All you have to do now is to send an email! You can send in your application on our <a target='_blank' href='https://discord.com/invite/DAZR36c'>discord</a> server. Be aware, that you'll need basic English, and any aviation-related knowledge is preferred. If you have any questions, feel free to reach out on one of our <a href='https://vacchun.hu/about-us#theStaff'>contacts!</a>",
+      step4P: "All you have to do now is to send an email! You can send in your application on our <a target='_blank' href='https://discord.com/invite/DAZR36c'>Discord</a> server. Be aware, that you'll need basic English, and any aviation-related knowledge is preferred. If you have any questions, feel free to reach out on one of our <a href='https://vacchun.hu/about-us#theStaff'>contacts or via Discord!</a>",
       controllersHeader: "Our controllers",
     },
     feedback: {
