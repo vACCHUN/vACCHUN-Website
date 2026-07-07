@@ -54,6 +54,7 @@ function applyLanguage() {
   document.getElementById("feedbackPositionOther").innerHTML = language.feedback.feedbackPositionOther;
   document.getElementById("feedback-freetext").placeholder = language.feedback.feedbackFreetext;
   document.getElementById("feedback-submit").textContent = language.feedback.feedbackSubmit;
+  document.getElementById("feedback-email").placeholder = language.feedback.feedbackEmail;
   /* FEEDBACK FORM */
   
 

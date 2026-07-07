@@ -154,6 +154,7 @@ const lang = {
       feedbackTopText: "Meg voltál elégedve irányításunkkal? Vagy esetleg volt valami problémád? Itt tudsz írni visszajelzést számunkra.",
       feedbackPositionOther: "Egyéb - Kérjük írd le alább",
       feedbackFreetext: "Mik voltak a tapasztalataid az irányítással kapcsolatban?",
+      feedbackEmail: "Email cím - Opcionális",
       feedbackSubmit: "Küldés",
     },
     onlineControllers: {
@@ -315,6 +316,7 @@ const lang = {
       feedbackTopText: "Were you satisfied with our service? Or did you encounter any issues? You can provide us with your feedback here!",
       feedbackPositionOther: "Other - Please Specify Below",
       feedbackFreetext: "What were your impressions about the session?",
+      feedbackEmail: "Email address - Optional",
       feedbackSubmit: "Submit",
     },
     onlineControllers: {

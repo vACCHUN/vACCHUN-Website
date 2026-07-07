@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once '../config.php';
 ?>
 <!DOCTYPE html>
@@ -52,121 +52,127 @@ require_once '../config.php';
         <h1 id="bookingSectionH1"></h1>
         <form id="feedback-form" action="index.php#feedback-form" class="booking-form" method="post">
             <p id='feedbackTopText'></p>
-            <?php 
-                if (isset($_POST["feedback-cid"]) && isset($_POST["feedback-controller"]) && isset($_POST["feedback-position"]) && isset($_POST["feedback-freetext"])) {
-                    //=======================================================================================================
-                    // Create new webhook in your Discord channel settings and copy&paste URL
-                    //=======================================================================================================
+            <?php
+            if (isset($_POST["feedback-cid"]) && isset($_POST["feedback-controller"]) && isset($_POST["feedback-position"]) && isset($_POST["feedback-freetext"])) {
+                //=======================================================================================================
+                // Create new webhook in your Discord channel settings and copy&paste URL
+                //=======================================================================================================
 
-                    $cid = isset($_POST["feedback-cid"]) ? htmlspecialchars($_POST["feedback-cid"]) : "";
-                    $controller = isset($_POST["feedback-controller"]) ? htmlspecialchars($_POST["feedback-controller"]) : "";
-                    $position = isset($_POST["feedback-position"]) ? htmlspecialchars($_POST["feedback-position"]) : "";
-                    $freetext = isset($_POST["feedback-freetext"]) ? htmlspecialchars($_POST["feedback-freetext"]) : "";
+                $cid = isset($_POST["feedback-cid"]) ? htmlspecialchars($_POST["feedback-cid"]) : "";
+                $controller = isset($_POST["feedback-controller"]) ? htmlspecialchars($_POST["feedback-controller"]) : "";
+                $position = isset($_POST["feedback-position"]) ? htmlspecialchars($_POST["feedback-position"]) : "";
+                $freetext = isset($_POST["feedback-freetext"]) ? htmlspecialchars($_POST["feedback-freetext"]) : "";
+                $email = isset($_POST["feedback-email"]) ? htmlspecialchars($_POST["feedback-email"]) : false;
 
-                    $memberData = file_get_contents("https://api.vatsim.net/v2/members/$cid");
-                    if ($memberData) {
-                        $memberData = json_decode($controllerData, true);
-                        if ($memberData["detail"] != "Not Found") {
-                            $timestamp = date("c", strtotime("now"));
+                $memberData = file_get_contents("https://api.vatsim.net/v2/members/$cid");
+                if ($memberData) {
+                    $memberData = json_decode($controllerData, true);
+                    if ($memberData["detail"] != "Not Found") {
+                        $timestamp = date("c", strtotime("now"));
 
-                            $json_data = json_encode([
-                                // Message
-                                "content" => "",
-                                
-                                // Username
-                                "username" => "vACCHUN Feedback",
+                        $json_data = json_encode([
+                            // Message
+                            "content" => "",
 
-                                // Avatar URL.
-                                // Uncoment to replace image set in webhook
-                                "avatar_url" => "https://i.imgur.com/ynHh9cW.png",
+                            // Username
+                            "username" => "vACCHUN Feedback",
 
-                                // Text-to-speech
-                                "tts" => false,
+                            // Avatar URL.
+                            // Uncoment to replace image set in webhook
+                            "avatar_url" => "https://i.imgur.com/ynHh9cW.png",
 
-                                // File upload
-                                // "file" => "",
+                            // Text-to-speech
+                            "tts" => false,
 
-                                // Embeds Array
-                                "embeds" => [
-                                    [
-                                        // Embed Title
-                                        "title" => "Új visszajelzés érkezett!",
+                            // File upload
+                            // "file" => "",
 
-                                        // Embed Type
-                                        "type" => "rich",
+                            // Embeds Array
+                            "embeds" => [
+                                [
+                                    // Embed Title
+                                    "title" => "New feedback received!",
 
-                                        // Embed Description
-                                        "description" => "",
+                                    // Embed Type
+                                    "type" => "rich",
 
-                                        // URL of title link
-                                        // "url" => "https://gist.github.com/Mo45/cb0813cb8a6ebcd6524f6a36d4f8862c",
+                                    // Embed Description
+                                    "description" => "",
 
-                                        // Timestamp of embed must be formatted as ISO8601
-                                        "timestamp" => $timestamp,
+                                    // URL of title link
+                                    // "url" => "https://gist.github.com/Mo45/cb0813cb8a6ebcd6524f6a36d4f8862c",
 
-                                        // Embed left border color in HEX
-                                        "color" => hexdec( "3366ff" ),
+                                    // Timestamp of embed must be formatted as ISO8601
+                                    "timestamp" => $timestamp,
 
-                                        "footer" => [
-                                            "text" => "vACCHUN",
-                                            "icon_url" => "https://vacchun.hu/img/favicon.png"
+                                    // Embed left border color in HEX
+                                    "color" => hexdec("3366ff"),
+
+                                    "footer" => [
+                                        "text" => "vACCHUN",
+                                        "icon_url" => "https://vacchun.hu/img/favicon.png"
+                                    ],
+
+                                    "author" => [
+                                        "name" => "Sent by: $cid",
+                                        "url" => "https://stats.vatsim.net/stats/$cid"
+                                    ],
+
+                                    "fields" => [
+                                        [
+                                            "name" => "vATCO CID: ",
+                                            "value" => $controller,
+                                            "inline" => true
                                         ],
-
-                                        "author" => [
-                                            "name" => "Küldte: $cid",
-                                            "url" => "https://stats.vatsim.net/stats/$cid"
+                                        [
+                                            "name" => "Position: ",
+                                            "value" => $position,
+                                            "inline" => true
                                         ],
-
-                                        "fields" => [
-                                            [
-                                                "name" => "Controller: ",
-                                                "value" => $controller,
-                                                "inline" => true
-                                            ],
-                                            [
-                                                "name" => "Position: ",
-                                                "value" => $position,
-                                                "inline" => true
-                                            ],
-                                            [
+                                        [
                                             "name" => "Feedback: ",
                                             "value" => $freetext,
                                             "inline" => false
-                                            ]
+                                        ],
+                                        [
+                                            "name" => "Email: ",
+                                            "value" => !$email ? "Nincs megadva" : $email,
+                                            "inline" => false
                                         ]
                                     ]
                                 ]
+                            ]
 
-                            ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
+                        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 
-                            $ch = curl_init( $webhookurl );
-                            curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
-                            curl_setopt( $ch, CURLOPT_POST, 1);
-                            curl_setopt( $ch, CURLOPT_POSTFIELDS, $json_data);
-                            curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
-                            curl_setopt( $ch, CURLOPT_HEADER, 0);
-                            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+                        $ch = curl_init($webhookurl);
+                        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
+                        curl_setopt($ch, CURLOPT_POST, 1);
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, $json_data);
+                        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+                        curl_setopt($ch, CURLOPT_HEADER, 0);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-                            $response = curl_exec( $ch );
-                            // If you need to debug, or find out why you can't send message uncomment line below, and execute script.
-                            // echo $response;
-                            curl_close( $ch );
-                            echo "<p style='color:green'>Köszönjük a visszajelzést! // Thank you for your feedback.</p>";
-                        } else {
-                            echo "<p style='color:red'>Nem található ilyen CID a rendszerben // The provided CID can not be found.</p>";
-                        }
+                        $response = curl_exec($ch);
+                        // If you need to debug, or find out why you can't send message uncomment line below, and execute script.
+                        // echo $response;
+                        curl_close($ch);
+                        echo "<p style='color:green'>Köszönjük a visszajelzést! // Thank you for your feedback.</p>";
+                    } else {
+                        echo "<p style='color:red'>Nem található ilyen CID a rendszerben // The provided CID can not be found.</p>";
                     }
-                    
-
-
-                    //=======================================================================================================
-                    // Compose message. You can use Markdown
-                    // Message Formatting -- https://discordapp.com/developers/docs/reference#message-formatting
-                    //========================================================================================================
-
-                    
                 }
+
+
+
+                //=======================================================================================================
+                // Compose message. You can use Markdown
+                // Message Formatting -- https://discordapp.com/developers/docs/reference#message-formatting
+                //========================================================================================================
+
+
+            }
             ?>
 
 
@@ -185,7 +191,7 @@ require_once '../config.php';
                     required>
                     <option disabled selected>Irányító // Controller</option>
 
-                    <?php 
+                    <?php
                     $controllerData = file_get_contents('https://vacchun.poci.hu/api/controllers');
                     if ($controllerData) {
                         $controllerData = json_decode($controllerData, true);
@@ -195,7 +201,7 @@ require_once '../config.php';
                             echo "<option value='$cid'>$cid</option>";
                         }
                     }
-                    
+
                     ?>
                     <option value="Unknown">Ismeretlen // Unknown</option>
                 </select>
@@ -221,6 +227,12 @@ require_once '../config.php';
                     <option value="LHSM_I_TWR">LHSM_I_TWR</option>
                     <option value="other" id="feedbackPositionOther">Other - Please Specify Below</option>
                 </select>
+            </div>
+
+            <div class="booking-field">
+                <img src="../img/input-icons/email.svg" class="booking-label" alt="">
+                <span class="input-divider"></span>
+                <input type="email" id="feedback-email" name="feedback-email" class="booking-input" placeholder="Email">
             </div>
 
             <div class="booking-field">
